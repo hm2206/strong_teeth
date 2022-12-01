@@ -1120,6 +1120,22 @@
         "documentation": {}
     },
     {
+        "label": "session",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
         "label": "Persona",
         "importPath": "models.persona",
         "description": "models.persona",
@@ -1253,6 +1269,22 @@
         "description": "models.paciente_alergia",
         "isExtraImport": true,
         "detail": "models.paciente_alergia",
+        "documentation": {}
+    },
+    {
+        "label": "Usuario",
+        "importPath": "models.usuario",
+        "description": "models.usuario",
+        "isExtraImport": true,
+        "detail": "models.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "Usuario",
+        "importPath": "models.usuario",
+        "description": "models.usuario",
+        "isExtraImport": true,
+        "detail": "models.usuario",
         "documentation": {}
     },
     {
@@ -1440,6 +1472,14 @@
         "documentation": {}
     },
     {
+        "label": "QLabel",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QMainWindow",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
@@ -1496,67 +1536,11 @@
         "documentation": {}
     },
     {
-        "label": "App",
-        "importPath": "app",
-        "description": "app",
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
         "isExtraImport": true,
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "App",
-        "importPath": "app",
-        "description": "app",
-        "isExtraImport": true,
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "App",
-        "importPath": "app",
-        "description": "app",
-        "isExtraImport": true,
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "App",
-        "importPath": "app",
-        "description": "app",
-        "isExtraImport": true,
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "QEvent",
-        "importPath": "PyQt5.QtCore",
-        "description": "PyQt5.QtCore",
-        "isExtraImport": true,
-        "detail": "PyQt5.QtCore",
-        "documentation": {}
-    },
-    {
-        "label": "QObject",
-        "importPath": "PyQt5.QtCore",
-        "description": "PyQt5.QtCore",
-        "isExtraImport": true,
-        "detail": "PyQt5.QtCore",
-        "documentation": {}
-    },
-    {
-        "label": "QEvent",
-        "importPath": "PyQt5.QtCore",
-        "description": "PyQt5.QtCore",
-        "isExtraImport": true,
-        "detail": "PyQt5.QtCore",
-        "documentation": {}
-    },
-    {
-        "label": "QObject",
-        "importPath": "PyQt5.QtCore",
-        "description": "PyQt5.QtCore",
-        "isExtraImport": true,
-        "detail": "PyQt5.QtCore",
+        "detail": "PyQt5.QtGui",
         "documentation": {}
     },
     {
@@ -1568,12 +1552,76 @@
         "documentation": {}
     },
     {
-        "label": "sys",
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "QEvent",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QEvent",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "json",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
         "documentation": {}
     },
     {
@@ -1615,6 +1663,24 @@
         "description": "configs.migration",
         "isExtraImport": true,
         "detail": "configs.migration",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
         "documentation": {}
     },
     {
@@ -1910,7 +1976,7 @@
         "kind": 6,
         "importPath": "screens.app",
         "description": "screens.app",
-        "peekOfCode": "class AppScreen(QMainWindow):\n    btn_save: QPushButton\n    def __init__(self, app: App):\n        super(AppScreen, self).__init__()\n        uic.loadUi(\"ui/app.ui\", self)\n        self._app = app",
+        "peekOfCode": "class AppScreen(QMainWindow):\n    lbl_username: QLabel\n    btn_logout: QPushButton\n    def __init__(self, app: App):\n        super(AppScreen, self).__init__()\n        uic.loadUi(\"ui/app.ui\", self)\n        self._app = app\n        self.btn_logout.clicked.connect(self.logout)\n    def showEvent(self, evt: QShowEvent):\n        self.auth = self._app.auth",
         "detail": "screens.app",
         "documentation": {}
     },
@@ -1955,7 +2021,7 @@
         "kind": 2,
         "importPath": "validations.login_validator",
         "description": "validations.login_validator",
-        "peekOfCode": "def login_validator(username: str, password: str):\n    trust = DontTrust(\n        username=Schema().string().email(),\n        password=Schema().string().min(6).max(24)\n    )\n    try:\n        trust.validate(\n            username=username,\n            password=password\n        )",
+        "peekOfCode": "def login_validator(username: str, password: str) -> bool:\n    trust = DontTrust(\n        username=Schema().string().email(),\n        password=Schema().string().min(6).max(24)\n    )\n    try:\n        trust.validate(\n            username=username,\n            password=password\n        )",
         "detail": "validations.login_validator",
         "documentation": {}
     },
@@ -1964,7 +2030,7 @@
         "kind": 6,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "class App:\n    def __init__(self):\n        self._app = QtWidgets.QApplication([])\n    def _imports(self):\n        from screens.app import AppScreen\n        from screens.login import LoginScreen\n        from screens.persona import PersonScreen\n        self.app_screen = AppScreen(self)\n        self.login_screen = LoginScreen(self)\n        self.persona_screen = PersonScreen(self)",
+        "peekOfCode": "class App:\n    path_session = \"storage/session.json\"\n    auth: Usuario\n    def __init__(self):\n        self._app = QtWidgets.QApplication([])\n    def _imports(self):\n        from screens.app import AppScreen\n        from screens.login import LoginScreen\n        from screens.persona import PersonScreen\n        self.app_screen = AppScreen(self)",
         "detail": "app",
         "documentation": {}
     },

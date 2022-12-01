@@ -2,11 +2,14 @@ from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow, QLineEdit, QPushButton
 from PyQt5.QtCore import QEvent, QObject
 from PyQt5.QtGui import QCloseEvent
-import sys
+import json
 from validations.login_validator import login_validator
 from app import App
 import bcrypt
 from PyQt5.QtWidgets import QMessageBox
+import json
+from configs.db import session
+from models.usuario import Usuario
 
 
 class LoginScreen(QMainWindow):
@@ -29,23 +32,22 @@ class LoginScreen(QMainWindow):
         self.btn_save.setEnabled(False)
         self.btn_save.setText("Validando...")
 
-        login_validator(
+        is_valid_data = login_validator(
             username=self.input_username.text(),
             password=self.input_password.text()
         )
 
-        password = b"nomeacuerdo73"
-        hashed = bcrypt.hashpw(b"nomeacuerdo73", bcrypt.gensalt(14))
-        is_valid = bcrypt.checkpw(password, hashed)
-
-        if (not is_valid):
-            msg = QMessageBox()
-            msg.setIcon(QMessageBox.critical)
-            msg.setWindowTitle("No autorizado")
-            msg.setText("Las credenciales de accesso son invalidas!!!")
-            self.disable_default()
+        if (not is_valid_data):
+            self.clear_submit()
             return None
 
+        is_valid = self.validate_user()
+
+        if (not is_valid):
+            self.error_credential()
+            return None
+
+        self.save_session()
         self.hide()
         self._app.app_screen.show()
 
@@ -63,10 +65,64 @@ class LoginScreen(QMainWindow):
         self.input_password.setEnabled(False)
         self.input_username.setEnabled(True)
 
+    def clear_password(self):
+        self.input_username.setEnabled(True)
+        self.input_password.setText("")
+        self.input_password.setEnabled(True)
+        self.btn_save.setText("Entrar")
+        self.btn_save.setEnabled(False)
+
     def block_components(self):
         self.btn_save.setEnabled(False)
         self.input_password.setEnabled(False)
         self.input_username.setEnabled(False)
+
+    def validate_user(self) -> bool:
+        try:
+            email = self.input_username.text()
+            user: Usuario = session.query(
+                Usuario).filter_by(email=email).first()
+
+            if (not user):
+                return False
+
+            bytes_hashed = str(user.password).encode("utf-8")
+            bytes_password = self.input_password.text().encode("utf-8")
+
+            is_valid = bcrypt.checkpw(bytes_password, bytes_hashed)
+
+            if (is_valid):
+                self._app.auth = user
+
+            return is_valid
+        except Exception as e:
+            print(e)
+            return False
+
+    def save_session(self):
+        auth = self._app.auth
+        with open(self._app.path_session, "w") as file:
+            json.dump({"user_id": auth.id, "token": auth.password}, file)
+
+    def clear_submit(self):
+        self.input_username.setText("")
+        self.input_username.setEnabled(True)
+        self.input_password.setText("")
+        self.input_password.setEnabled(False)
+        self.btn_save.setText("Entrar")
+        self.btn_save.setEnabled(False)
+
+    def enable_submit(self):
+        self.btn_save.setEnabled(True)
+        self.btn_save.setText("Entrar")
+
+    def error_credential(self):
+        msg = QMessageBox()
+        msg.setIcon(QMessageBox.Critical)
+        msg.setWindowTitle("No autorizado")
+        msg.setText("Las credenciales de accesso son invalidas!!!")
+        msg.exec_()
+        self.clear_password()
 
     def closeEvent(self, evt: QCloseEvent):
         self._app.exit()
