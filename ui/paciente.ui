@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_persona</class>
+ <widget class="QMainWindow" name="w_persona">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>585</width>
+    <height>522</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pacientes</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="persona_tabla">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>210</y>
+      <width>531</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>#ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Persona</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Descripción</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Alergias</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Embarazo</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>150</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Guardar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>181</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Persona</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>90</y>
+      <width>301</width>
+      <height>91</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>291</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>181</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Alergias</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>10</y>
+      <width>201</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Lactancia</string>
+    </property>
+    <widget class="QRadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>112</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Si</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_2">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>112</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>No</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>70</y>
+      <width>201</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Embarazo</string>
+    </property>
+    <widget class="QRadioButton" name="radioButton_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>112</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Si</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_4">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>112</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>No</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

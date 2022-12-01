@@ -1,0 +1,1980 @@
+[
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Date",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Time",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Time",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Float",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Time",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Date",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Time",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Date",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Time",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Date",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Float",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Float",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Environment",
+        "importPath": "configs.environment",
+        "description": "configs.environment",
+        "isExtraImport": true,
+        "detail": "configs.environment",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "dotenv_values",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Persona",
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "isExtraImport": true,
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "Persona",
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "isExtraImport": true,
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "PersonGeneroEnum",
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "isExtraImport": true,
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "Marca",
+        "importPath": "models.marca",
+        "description": "models.marca",
+        "isExtraImport": true,
+        "detail": "models.marca",
+        "documentation": {}
+    },
+    {
+        "label": "Proveedor",
+        "importPath": "models.proveedor",
+        "description": "models.proveedor",
+        "isExtraImport": true,
+        "detail": "models.proveedor",
+        "documentation": {}
+    },
+    {
+        "label": "Producto",
+        "importPath": "models.producto",
+        "description": "models.producto",
+        "isExtraImport": true,
+        "detail": "models.producto",
+        "documentation": {}
+    },
+    {
+        "label": "Tratamiento",
+        "importPath": "models.tratamiento",
+        "description": "models.tratamiento",
+        "isExtraImport": true,
+        "detail": "models.tratamiento",
+        "documentation": {}
+    },
+    {
+        "label": "Contacto",
+        "importPath": "models.contacto",
+        "description": "models.contacto",
+        "isExtraImport": true,
+        "detail": "models.contacto",
+        "documentation": {}
+    },
+    {
+        "label": "Turno",
+        "importPath": "models.turno",
+        "description": "models.turno",
+        "isExtraImport": true,
+        "detail": "models.turno",
+        "documentation": {}
+    },
+    {
+        "label": "Horario",
+        "importPath": "models.horario",
+        "description": "models.horario",
+        "isExtraImport": true,
+        "detail": "models.horario",
+        "documentation": {}
+    },
+    {
+        "label": "Personal",
+        "importPath": "models.personal",
+        "description": "models.personal",
+        "isExtraImport": true,
+        "detail": "models.personal",
+        "documentation": {}
+    },
+    {
+        "label": "Doctor",
+        "importPath": "models.doctor",
+        "description": "models.doctor",
+        "isExtraImport": true,
+        "detail": "models.doctor",
+        "documentation": {}
+    },
+    {
+        "label": "Agenda",
+        "importPath": "models.agenda",
+        "description": "models.agenda",
+        "isExtraImport": true,
+        "detail": "models.agenda",
+        "documentation": {}
+    },
+    {
+        "label": "Alergia",
+        "importPath": "models.alergia",
+        "description": "models.alergia",
+        "isExtraImport": true,
+        "detail": "models.alergia",
+        "documentation": {}
+    },
+    {
+        "label": "Paciente",
+        "importPath": "models.paciente",
+        "description": "models.paciente",
+        "isExtraImport": true,
+        "detail": "models.paciente",
+        "documentation": {}
+    },
+    {
+        "label": "Odontograma",
+        "importPath": "models.odontograma",
+        "description": "models.odontograma",
+        "isExtraImport": true,
+        "detail": "models.odontograma",
+        "documentation": {}
+    },
+    {
+        "label": "PacienteAlergia",
+        "importPath": "models.paciente_alergia",
+        "description": "models.paciente_alergia",
+        "isExtraImport": true,
+        "detail": "models.paciente_alergia",
+        "documentation": {}
+    },
+    {
+        "label": "Usuario",
+        "importPath": "models.usuario",
+        "description": "models.usuario",
+        "isExtraImport": true,
+        "detail": "models.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "Historia",
+        "importPath": "models.historia",
+        "description": "models.historia",
+        "isExtraImport": true,
+        "detail": "models.historia",
+        "documentation": {}
+    },
+    {
+        "label": "PacienteTratamiento",
+        "importPath": "models.paciente_tratamiento",
+        "description": "models.paciente_tratamiento",
+        "isExtraImport": true,
+        "detail": "models.paciente_tratamiento",
+        "documentation": {}
+    },
+    {
+        "label": "Asistencia",
+        "importPath": "models.asistencia",
+        "description": "models.asistencia",
+        "isExtraImport": true,
+        "detail": "models.asistencia",
+        "documentation": {}
+    },
+    {
+        "label": "Cita",
+        "importPath": "models.cita",
+        "description": "models.cita",
+        "isExtraImport": true,
+        "detail": "models.cita",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtCore",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtGui",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtWidgets",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtCore",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtGui",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtWidgets",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtWidgets",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QMainWindow",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMainWindow",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMainWindow",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "QEvent",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QEvent",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QCloseEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "login_validator",
+        "importPath": "validations.login_validator",
+        "description": "validations.login_validator",
+        "isExtraImport": true,
+        "detail": "validations.login_validator",
+        "documentation": {}
+    },
+    {
+        "label": "bcrypt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "bcrypt",
+        "description": "bcrypt",
+        "detail": "bcrypt",
+        "documentation": {}
+    },
+    {
+        "label": "DontTrust",
+        "importPath": "donttrust",
+        "description": "donttrust",
+        "isExtraImport": true,
+        "detail": "donttrust",
+        "documentation": {}
+    },
+    {
+        "label": "Schema",
+        "importPath": "donttrust",
+        "description": "donttrust",
+        "isExtraImport": true,
+        "detail": "donttrust",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "importPath": "configs.migration",
+        "description": "configs.migration",
+        "isExtraImport": true,
+        "detail": "configs.migration",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "peekOfCode": "engine = create_engine(Environment.get_db_url())\nSessionMaker = sessionmaker(bind=engine)\nsession = SessionMaker()\nBase = declarative_base()",
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "SessionMaker",
+        "kind": 5,
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "peekOfCode": "SessionMaker = sessionmaker(bind=engine)\nsession = SessionMaker()\nBase = declarative_base()",
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "kind": 5,
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "peekOfCode": "session = SessionMaker()\nBase = declarative_base()",
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "peekOfCode": "Base = declarative_base()",
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Environment",
+        "kind": 6,
+        "importPath": "configs.environment",
+        "description": "configs.environment",
+        "peekOfCode": "class Environment:\n    @staticmethod\n    def get_db_url():\n        return dotenv_values(\".env\").get(\"DB_URL\")",
+        "detail": "configs.environment",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "configs.migration",
+        "description": "configs.migration",
+        "peekOfCode": "class Migration:\n    def run(self):\n        Base.metadata.create_all(engine)",
+        "detail": "configs.migration",
+        "documentation": {}
+    },
+    {
+        "label": "AgendaEstadoEnum",
+        "kind": 6,
+        "importPath": "models.agenda",
+        "description": "models.agenda",
+        "peekOfCode": "class AgendaEstadoEnum(EnumLocal):\n    Pendiente = \"Pendiente\"\nclass Agenda(Base):\n    __tablename__ = 'agendas'\n    __table_args__ = (\n        UniqueConstraint('fecha', 'hora', 'doctor_id', name=\"u_agenda\"),\n    )\n    id = Column(Integer, primary_key=True)\n    fecha = Column(Date, nullable=False)\n    hora = Column(Time, nullable=False)",
+        "detail": "models.agenda",
+        "documentation": {}
+    },
+    {
+        "label": "Agenda",
+        "kind": 6,
+        "importPath": "models.agenda",
+        "description": "models.agenda",
+        "peekOfCode": "class Agenda(Base):\n    __tablename__ = 'agendas'\n    __table_args__ = (\n        UniqueConstraint('fecha', 'hora', 'doctor_id', name=\"u_agenda\"),\n    )\n    id = Column(Integer, primary_key=True)\n    fecha = Column(Date, nullable=False)\n    hora = Column(Time, nullable=False)\n    estado = Column(Enum(AgendaEstadoEnum), nullable=False)\n    doctor_id = Column(Integer, ForeignKey(\"doctores.id\"), nullable=False)",
+        "detail": "models.agenda",
+        "documentation": {}
+    },
+    {
+        "label": "Alergia",
+        "kind": 6,
+        "importPath": "models.alergia",
+        "description": "models.alergia",
+        "peekOfCode": "class Alergia(Base):\n    __tablename__ = 'alergias'\n    __table_args__ = (\n        UniqueConstraint('nombre'),\n    )\n    id = Column(Integer, primary_key=True)\n    nombre = Column(String(100), nullable=False)\n    descripcion = Column(Text, nullable=True)",
+        "detail": "models.alergia",
+        "documentation": {}
+    },
+    {
+        "label": "AsistenciaTipoEnum",
+        "kind": 6,
+        "importPath": "models.asistencia",
+        "description": "models.asistencia",
+        "peekOfCode": "class AsistenciaTipoEnum(EnumLocal):\n    Entrada = \"Entrada\"\n    Salida = \"Salida\"\nclass Asistencia(Base):\n    __tablename__ = 'asistencias'\n    id = Column(Integer, primary_key=True)\n    personal_id = Column(Integer, ForeignKey(\"personales.id\"), nullable=False)\n    horario_id = Column(Integer, ForeignKey(\"horarios.id\"), nullable=False)\n    tipo = Column(Enum(AsistenciaTipoEnum), nullable=False)\n    marcaje = Column(Time, nullable=False)",
+        "detail": "models.asistencia",
+        "documentation": {}
+    },
+    {
+        "label": "Asistencia",
+        "kind": 6,
+        "importPath": "models.asistencia",
+        "description": "models.asistencia",
+        "peekOfCode": "class Asistencia(Base):\n    __tablename__ = 'asistencias'\n    id = Column(Integer, primary_key=True)\n    personal_id = Column(Integer, ForeignKey(\"personales.id\"), nullable=False)\n    horario_id = Column(Integer, ForeignKey(\"horarios.id\"), nullable=False)\n    tipo = Column(Enum(AsistenciaTipoEnum), nullable=False)\n    marcaje = Column(Time, nullable=False)",
+        "detail": "models.asistencia",
+        "documentation": {}
+    },
+    {
+        "label": "Cita",
+        "kind": 6,
+        "importPath": "models.cita",
+        "description": "models.cita",
+        "peekOfCode": "class Cita(Base):\n    __tablename__ = \"citas\"\n    id = Column(Integer, primary_key=True)\n    asistencia = Column(Time, nullable=False)\n    abono = Column(Float, nullable=False, default=0)\n    descripcion = Column(Text, nullable=True)\n    agenda_id = Column(Integer, ForeignKey(\"agendas.id\"), nullable=False)\n    tratamiento_id = Column(Integer, ForeignKey(\n        \"tratamientos.id\"), nullable=False)\n    paciente_id = Column(Integer, ForeignKey(\"pacientes.id\"), nullable=False)",
+        "detail": "models.cita",
+        "documentation": {}
+    },
+    {
+        "label": "ContactoTipoEnum",
+        "kind": 6,
+        "importPath": "models.contacto",
+        "description": "models.contacto",
+        "peekOfCode": "class ContactoTipoEnum(EnumLocal):\n    Telefono = \"Telefono\"\n    Celular = \"Celular\"\n    Correo = \"Correo\"\nclass Contacto(Base):\n    __tablename__ = 'contactos'\n    id = Column(Integer, primary_key=True)\n    tipo = Column(Enum(ContactoTipoEnum), nullable=False)\n    valor = Column(String(20), nullable=False)\n    person_id = Column(Integer, ForeignKey(\"personas.id\"), nullable=False)",
+        "detail": "models.contacto",
+        "documentation": {}
+    },
+    {
+        "label": "Contacto",
+        "kind": 6,
+        "importPath": "models.contacto",
+        "description": "models.contacto",
+        "peekOfCode": "class Contacto(Base):\n    __tablename__ = 'contactos'\n    id = Column(Integer, primary_key=True)\n    tipo = Column(Enum(ContactoTipoEnum), nullable=False)\n    valor = Column(String(20), nullable=False)\n    person_id = Column(Integer, ForeignKey(\"personas.id\"), nullable=False)",
+        "detail": "models.contacto",
+        "documentation": {}
+    },
+    {
+        "label": "Doctor",
+        "kind": 6,
+        "importPath": "models.doctor",
+        "description": "models.doctor",
+        "peekOfCode": "class Doctor(Base):\n    __tablename__ = 'doctores'\n    id = Column(Integer, primary_key=True)\n    cmp = Column(String(10), nullable=False)\n    personal_id = Column(Integer, ForeignKey(\"personales.id\"), nullable=False)\n    personal = relationship(\"Personal\")",
+        "detail": "models.doctor",
+        "documentation": {}
+    },
+    {
+        "label": "Historia",
+        "kind": 6,
+        "importPath": "models.historia",
+        "description": "models.historia",
+        "peekOfCode": "class Historia(Base):\n    __tablename__ = 'historias'\n    id = Column(Integer, primary_key=True)\n    fecha_inicio = Column(Date, nullable=False)\n    hora_inicio = Column(Time, nullable=False)\n    observacion = Column(Text, nullable=True)\n    paciente_id = Column(Integer, ForeignKey(\n        \"pacientes.id\"), nullable=False, unique=True)\n    paciente = relationship(\"Paciente\")",
+        "detail": "models.historia",
+        "documentation": {}
+    },
+    {
+        "label": "Horario",
+        "kind": 6,
+        "importPath": "models.horario",
+        "description": "models.horario",
+        "peekOfCode": "class Horario(Base):\n    __tablename__ = 'horarios'\n    __table_args__ = (\n        UniqueConstraint('turno_id', 'fecha'),\n    )\n    id = Column(Integer, primary_key=True)\n    fecha = Column(Date, nullable=False)\n    hora_ingreso = Column(Time, nullable=False)\n    hora_salida = Column(Time, nullable=False)\n    turno_id = Column(Integer, ForeignKey(\"turnos.id\"), nullable=False)",
+        "detail": "models.horario",
+        "documentation": {}
+    },
+    {
+        "label": "Marca",
+        "kind": 6,
+        "importPath": "models.marca",
+        "description": "models.marca",
+        "peekOfCode": "class Marca(Base):\n    __tablename__ = \"marcas\"\n    id = Column(Integer, primary_key=True)\n    nombre = Column(String(100), nullable=False, unique=True)\n    descripcion = Column(Text, nullable=True)",
+        "detail": "models.marca",
+        "documentation": {}
+    },
+    {
+        "label": "Odontograma",
+        "kind": 6,
+        "importPath": "models.odontograma",
+        "description": "models.odontograma",
+        "peekOfCode": "class Odontograma(Base):\n    __tablename__ = 'odontogramas'\n    __table_args__ = (\n        UniqueConstraint('paciente_id', 'numero_diente', name=\"u_odontograma\"),\n    )\n    id = Column(Integer, primary_key=True)\n    numero_diente = Column(Integer, nullable=False)\n    observacion = Column(Text, nullable=True)\n    paciente_id = Column(Integer, ForeignKey(\"pacientes.id\"), nullable=False)\n    paciente = relationship(\"Paciente\")",
+        "detail": "models.odontograma",
+        "documentation": {}
+    },
+    {
+        "label": "PacienteCondicionEnum",
+        "kind": 6,
+        "importPath": "models.paciente",
+        "description": "models.paciente",
+        "peekOfCode": "class PacienteCondicionEnum(EnumLocal):\n    Embarazo = \"Embarazo\"\n    Lactancia = \"Lactancia\"\nclass Paciente(Base):\n    __tablename__ = 'pacientes'\n    id = Column(Integer, primary_key=True)\n    condicion = Column(Enum(PacienteCondicionEnum), nullable=True)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    persona = relationship(\"Persona\")",
+        "detail": "models.paciente",
+        "documentation": {}
+    },
+    {
+        "label": "Paciente",
+        "kind": 6,
+        "importPath": "models.paciente",
+        "description": "models.paciente",
+        "peekOfCode": "class Paciente(Base):\n    __tablename__ = 'pacientes'\n    id = Column(Integer, primary_key=True)\n    condicion = Column(Enum(PacienteCondicionEnum), nullable=True)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    persona = relationship(\"Persona\")",
+        "detail": "models.paciente",
+        "documentation": {}
+    },
+    {
+        "label": "PacienteAlergia",
+        "kind": 6,
+        "importPath": "models.paciente_alergia",
+        "description": "models.paciente_alergia",
+        "peekOfCode": "class PacienteAlergia(Base):\n    __tablename__ = 'paciente_alergias'\n    __table_args__ = (\n        UniqueConstraint('paciente_id', 'alergia_id', name=\"u_paciente_ale\"),\n    )\n    id = Column(Integer, primary_key=True)\n    paciente_id = Column(Integer, ForeignKey(\"pacientes.id\"), nullable=False)\n    alergia_id = Column(Integer, ForeignKey(\"alergias.id\"), nullable=False)\n    paciente = relationship(\"Paciente\")\n    alergia = relationship(\"Alergia\")",
+        "detail": "models.paciente_alergia",
+        "documentation": {}
+    },
+    {
+        "label": "PacienteTratamiento",
+        "kind": 6,
+        "importPath": "models.paciente_tratamiento",
+        "description": "models.paciente_tratamiento",
+        "peekOfCode": "class PacienteTratamiento(Base):\n    __tablename__ = 'paciente_tratamientos'\n    id = Column(Integer, primary_key=True)\n    paciente_id = Column(Integer, ForeignKey(\"pacientes.id\"), nullable=False)\n    tratamiento_id = Column(Integer, ForeignKey(\n        \"tratamientos.id\"), nullable=False)\n    paciente = relationship(\"Paciente\")\n    tratamiento = relationship(\"Tratamiento\")",
+        "detail": "models.paciente_tratamiento",
+        "documentation": {}
+    },
+    {
+        "label": "PersonGeneroEnum",
+        "kind": 6,
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "peekOfCode": "class PersonGeneroEnum(EnumLocal):\n    Male = \"M\"\n    Female = \"F\"\nclass Persona(Base):\n    __tablename__ = 'personas'\n    __table_args__ = (\n        UniqueConstraint('numero_identidad'),\n    )\n    id = Column(Integer, primary_key=True)\n    nombres = Column(String(40), nullable=False)",
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "Persona",
+        "kind": 6,
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "peekOfCode": "class Persona(Base):\n    __tablename__ = 'personas'\n    __table_args__ = (\n        UniqueConstraint('numero_identidad'),\n    )\n    id = Column(Integer, primary_key=True)\n    nombres = Column(String(40), nullable=False)\n    apellido_paterno = Column(String(100), nullable=False)\n    apellido_materno = Column(String(100), nullable=True)\n    numero_identidad = Column(String(10), nullable=False)",
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "Personal",
+        "kind": 6,
+        "importPath": "models.personal",
+        "description": "models.personal",
+        "peekOfCode": "class Personal(Base):\n    __tablename__ = 'personales'\n    id = Column(Integer, primary_key=True)\n    numero_essalud = Column(String(30), nullable=True)\n    turno_id = Column(Integer, ForeignKey(\"turnos.id\"), nullable=False)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    turno = relationship(\"Turno\")\n    persona = relationship(\"Persona\")",
+        "detail": "models.personal",
+        "documentation": {}
+    },
+    {
+        "label": "Producto",
+        "kind": 6,
+        "importPath": "models.producto",
+        "description": "models.producto",
+        "peekOfCode": "class Producto(Base):\n    __tablename__ = \"productos\"\n    id = Column(Integer, primary_key=True)\n    nombre = Column(String(100), unique=True, nullable=False)\n    stock = Column(Integer, nullable=False, default=0)\n    precio_compra = Column(Float, nullable=False, default=0)\n    precio_venta = Column(Float, nullable=False, default=0)\n    descripcion = Column(Text, nullable=True)\n    marca_id = Column(Integer, ForeignKey(\"marcas.id\"), nullable=True)\n    proveedor_id = Column(Integer, ForeignKey(\"proveedores.id\"), nullable=True)",
+        "detail": "models.producto",
+        "documentation": {}
+    },
+    {
+        "label": "Proveedor",
+        "kind": 6,
+        "importPath": "models.proveedor",
+        "description": "models.proveedor",
+        "peekOfCode": "class Proveedor(Base):\n    __tablename__ = 'proveedores'\n    __table_args__ = (\n        UniqueConstraint('razon_social', 'ruc'),\n    )\n    id = Column(Integer, primary_key=True)\n    razon_social = Column(String(100), nullable=False)\n    ruc = Column(String(40), nullable=False)\n    direccion = Column(String(255), nullable=False)\n    telefono = Column(String(12), nullable=False)",
+        "detail": "models.proveedor",
+        "documentation": {}
+    },
+    {
+        "label": "Tratamiento",
+        "kind": 6,
+        "importPath": "models.tratamiento",
+        "description": "models.tratamiento",
+        "peekOfCode": "class Tratamiento(Base):\n    __tablename__ = 'tratamientos'\n    id = Column(Integer, primary_key=True)\n    nombre = Column(String(100), nullable=False, unique=True)\n    descripcion = Column(Text, nullable=True)\n    precio = Column(Float, nullable=False, default=0)",
+        "detail": "models.tratamiento",
+        "documentation": {}
+    },
+    {
+        "label": "Turno",
+        "kind": 6,
+        "importPath": "models.turno",
+        "description": "models.turno",
+        "peekOfCode": "class Turno(Base):\n    __tablename__ = \"turnos\"\n    id = Column(Integer, primary_key=True)\n    nombre = Column(String(40), nullable=False)",
+        "detail": "models.turno",
+        "documentation": {}
+    },
+    {
+        "label": "UsuarioRoleEnum",
+        "kind": 6,
+        "importPath": "models.usuario",
+        "description": "models.usuario",
+        "peekOfCode": "class UsuarioRoleEnum(EnumLocal):\n    ADMIN = \"ADMIN\",\n    DOCTOR = \"DOCTOR\",\n    BASICO = \"BASICO\",\n    PACIENTE = \"PACIENTE\"\nclass Usuario(Base):\n    __tablename__ = 'usuarios'\n    __table_args__ = (\n        UniqueConstraint('role', 'persona_id', name=\"u_usuario\"),\n    )",
+        "detail": "models.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "Usuario",
+        "kind": 6,
+        "importPath": "models.usuario",
+        "description": "models.usuario",
+        "peekOfCode": "class Usuario(Base):\n    __tablename__ = 'usuarios'\n    __table_args__ = (\n        UniqueConstraint('role', 'persona_id', name=\"u_usuario\"),\n    )\n    id = Column(Integer, primary_key=True)\n    email = Column(String(50), nullable=False, unique=True)\n    password = Column(String(255), nullable=False)\n    role = Column(Enum(UsuarioRoleEnum), nullable=False)\n    estado = Column(Boolean, nullable=False, default=True)",
+        "detail": "models.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "AppScreen",
+        "kind": 6,
+        "importPath": "screens.app",
+        "description": "screens.app",
+        "peekOfCode": "class AppScreen(QMainWindow):\n    btn_save: QPushButton\n    def __init__(self, app: App):\n        super(AppScreen, self).__init__()\n        uic.loadUi(\"ui/app.ui\", self)\n        self._app = app",
+        "detail": "screens.app",
+        "documentation": {}
+    },
+    {
+        "label": "LoginScreen",
+        "kind": 6,
+        "importPath": "screens.login",
+        "description": "screens.login",
+        "peekOfCode": "class LoginScreen(QMainWindow):\n    input_username: QLineEdit\n    input_password: QLineEdit\n    btn_save: QPushButton\n    def __init__(self, app: App):\n        super(LoginScreen, self).__init__()\n        uic.loadUi(\"ui/login.ui\", self)\n        self._app = app\n        self.input_username.textChanged.connect(self.change_username)\n        self.input_password.textChanged.connect(self.change_password)",
+        "detail": "screens.login",
+        "documentation": {}
+    },
+    {
+        "label": "PersonScreen",
+        "kind": 6,
+        "importPath": "screens.persona",
+        "description": "screens.persona",
+        "peekOfCode": "class PersonScreen(QMainWindow):\n    btn_save: QPushButton\n    def __init__(self, app: App):\n        super(PersonScreen, self).__init__()\n        uic.loadUi(\"ui/persona.ui\", self)\n        self._app = app\n        self.btn_save.clicked.connect(self.btn_save_click)\n    def btn_save_click(self, evt: QEvent):\n        print(\"ok\")",
+        "detail": "screens.persona",
+        "documentation": {}
+    },
+    {
+        "label": "Ui_MainWindow",
+        "kind": 6,
+        "importPath": "ui.ui_app",
+        "description": "ui.ui_app",
+        "peekOfCode": "class Ui_MainWindow(object):\n    def setupUi(self, MainWindow):\n        MainWindow.setObjectName(\"MainWindow\")\n        MainWindow.setWindowModality(QtCore.Qt.ApplicationModal)\n        MainWindow.resize(964, 724)\n        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)\n        sizePolicy.setHorizontalStretch(0)\n        sizePolicy.setVerticalStretch(0)\n        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())\n        MainWindow.setSizePolicy(sizePolicy)",
+        "detail": "ui.ui_app",
+        "documentation": {}
+    },
+    {
+        "label": "Ui_MainWindow",
+        "kind": 6,
+        "importPath": "ui.ui_login copy",
+        "description": "ui.ui_login copy",
+        "peekOfCode": "class Ui_MainWindow(object):\n    def setupUi(self, MainWindow):\n        MainWindow.setObjectName(\"MainWindow\")\n        MainWindow.setWindowModality(QtCore.Qt.ApplicationModal)\n        MainWindow.resize(291, 290)\n        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)\n        sizePolicy.setHorizontalStretch(0)\n        sizePolicy.setVerticalStretch(0)\n        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())\n        MainWindow.setSizePolicy(sizePolicy)",
+        "detail": "ui.ui_login copy",
+        "documentation": {}
+    },
+    {
+        "label": "login_validator",
+        "kind": 2,
+        "importPath": "validations.login_validator",
+        "description": "validations.login_validator",
+        "peekOfCode": "def login_validator(username: str, password: str):\n    trust = DontTrust(\n        username=Schema().string().email(),\n        password=Schema().string().min(6).max(24)\n    )\n    try:\n        trust.validate(\n            username=username,\n            password=password\n        )",
+        "detail": "validations.login_validator",
+        "documentation": {}
+    },
+    {
+        "label": "App",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class App:\n    def __init__(self):\n        self._app = QtWidgets.QApplication([])\n    def _imports(self):\n        from screens.app import AppScreen\n        from screens.login import LoginScreen\n        from screens.persona import PersonScreen\n        self.app_screen = AppScreen(self)\n        self.login_screen = LoginScreen(self)\n        self.persona_screen = PersonScreen(self)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = App()\napp.configs()\napp.run()",
+        "detail": "main",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>964</width>
+    <height>724</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Strong Teeth</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #263238;</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>30</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="text">
+     <string>Strong Teeth</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>521</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../assets/images/logo.png</pixmap>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_save">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>110</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color:  white;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
+}</string>
+    </property>
+    <property name="text">
+     <string>Personas</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_save_2">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>170</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color:  white;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
+}</string>
+    </property>
+    <property name="text">
+     <string>Usuarios</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_save_3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>230</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color:  white;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
+}</string>
+    </property>
+    <property name="text">
+     <string>Horarios</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_save_4">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>350</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color:  white;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
+}</string>
+    </property>
+    <property name="text">
+     <string>Pacientes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_save_5">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>290</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color:  white;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
+}</string>
+    </property>
+    <property name="text">
+     <string>Personal</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_save_6">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>410</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color:  white;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
+}</string>
+    </property>
+    <property name="text">
+     <string>Tratamientos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_save_7">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>470</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color:  white;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
+}</string>
+    </property>
+    <property name="text">
+     <string>Proveedores</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_save_8">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>530</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color:  white;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
+}</string>
+    </property>
+    <property name="text">
+     <string>Productos</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="sizeGripEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
