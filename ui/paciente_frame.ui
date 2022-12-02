@@ -14,7 +14,7 @@
    <string>Frame</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">background-color: #263238;</string>
   </property>
   <property name="lineWidth">
    <number>0</number>
@@ -59,9 +59,9 @@
       <property name="geometry">
        <rect>
         <x>486</x>
-        <y>30</y>
+        <y>20</y>
         <width>211</width>
-        <height>20</height>
+        <height>41</height>
        </rect>
       </property>
       <property name="sizePolicy">

@@ -123,14 +123,14 @@
           <property name="geometry">
            <rect>
             <x>80</x>
-            <y>10</y>
-            <width>191</width>
-            <height>31</height>
+            <y>0</y>
+            <width>171</width>
+            <height>41</height>
            </rect>
           </property>
           <property name="font">
            <font>
-            <pointsize>20</pointsize>
+            <pointsize>18</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -146,6 +146,12 @@
           </property>
           <property name="text">
            <string>Strong Teeth</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::PlainText</enum>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -184,7 +190,7 @@
           </property>
           <property name="font">
            <font>
-            <pointsize>10</pointsize>
+            <pointsize>9</pointsize>
            </font>
           </property>
           <property name="styleSheet">
@@ -287,7 +293,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>330</y>
+               <y>280</y>
                <width>171</width>
                <height>41</height>
               </rect>
@@ -306,7 +312,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>390</y>
+               <y>330</y>
                <width>171</width>
                <height>41</height>
               </rect>
@@ -357,7 +363,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>90</y>
+               <y>80</y>
                <width>171</width>
                <height>41</height>
               </rect>
@@ -376,7 +382,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>510</y>
+               <y>430</y>
                <width>171</width>
                <height>41</height>
               </rect>
@@ -395,7 +401,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>570</y>
+               <y>480</y>
                <width>171</width>
                <height>41</height>
               </rect>
@@ -414,7 +420,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>150</y>
+               <y>130</y>
                <width>171</width>
                <height>41</height>
               </rect>
@@ -433,7 +439,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>210</y>
+               <y>180</y>
                <width>171</width>
                <height>41</height>
               </rect>
@@ -452,7 +458,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>270</y>
+               <y>230</y>
                <width>171</width>
                <height>41</height>
               </rect>
@@ -471,7 +477,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>450</y>
+               <y>380</y>
                <width>171</width>
                <height>41</height>
               </rect>
