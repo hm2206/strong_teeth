@@ -18,11 +18,9 @@ class App:
     def _imports(self):
         from screens.app import AppScreen
         from screens.login import LoginScreen
-        from screens.persona import PersonScreen
 
         self.app_screen = AppScreen(self)
         self.login_screen = LoginScreen(self)
-        self.persona_screen = PersonScreen(self)
 
     def run(self):
         self._imports()

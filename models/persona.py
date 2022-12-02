@@ -7,6 +7,22 @@ class PersonGeneroEnum(EnumLocal):
     Male = "M"
     Female = "F"
 
+    @staticmethod
+    def parseText(value: object):
+        return "Femenino"
+
+
+def genero_to_str(value: PersonGeneroEnum):
+    if (str(value) == str(PersonGeneroEnum.Female)):
+        return "Femenino"
+    return "Masculino"
+
+
+def str_to_genero(value: str):
+    if (value == "Femenino"):
+        return PersonGeneroEnum.Female
+    return PersonGeneroEnum.Male
+
 
 class Persona(Base):
     __tablename__ = 'personas'

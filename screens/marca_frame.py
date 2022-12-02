@@ -1,6 +1,6 @@
 from app import App
 from PyQt5.QtGui import QShowEvent
-from PyQt5.QtCore import QEvent, QPoint
+from PyQt5.QtCore import QEvent
 from PyQt5.QtWidgets import QPushButton, QFrame, QTableWidget, QTableWidgetItem
 from PyQt5 import uic
 from models.marca import Marca

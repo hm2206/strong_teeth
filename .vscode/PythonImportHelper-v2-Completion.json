@@ -984,6 +984,14 @@
         "documentation": {}
     },
     {
+        "label": "session",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "configs.db",
         "description": "configs.db",
@@ -1192,7 +1200,7 @@
         "documentation": {}
     },
     {
-        "label": "Persona",
+        "label": "genero_to_str",
         "importPath": "models.persona",
         "description": "models.persona",
         "isExtraImport": true,
@@ -1208,7 +1216,39 @@
         "documentation": {}
     },
     {
-        "label": "PersonGeneroEnum",
+        "label": "str_to_genero",
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "isExtraImport": true,
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "Persona",
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "isExtraImport": true,
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "genero_to_str",
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "isExtraImport": true,
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "Persona",
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "isExtraImport": true,
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "str_to_genero",
         "importPath": "models.persona",
         "description": "models.persona",
         "isExtraImport": true,
@@ -1488,11 +1528,11 @@
         "documentation": {}
     },
     {
-        "label": "QShowEvent",
-        "importPath": "PyQt5.QtGui",
-        "description": "PyQt5.QtGui",
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
         "isExtraImport": true,
-        "detail": "PyQt5.QtGui",
+        "detail": "app",
         "documentation": {}
     },
     {
@@ -1525,6 +1565,38 @@
         "description": "PyQt5.QtGui",
         "isExtraImport": true,
         "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
         "documentation": {}
     },
     {
@@ -1568,23 +1640,7 @@
         "documentation": {}
     },
     {
-        "label": "QPoint",
-        "importPath": "PyQt5.QtCore",
-        "description": "PyQt5.QtCore",
-        "isExtraImport": true,
-        "detail": "PyQt5.QtCore",
-        "documentation": {}
-    },
-    {
         "label": "QEvent",
-        "importPath": "PyQt5.QtCore",
-        "description": "PyQt5.QtCore",
-        "isExtraImport": true,
-        "detail": "PyQt5.QtCore",
-        "documentation": {}
-    },
-    {
-        "label": "QObject",
         "importPath": "PyQt5.QtCore",
         "description": "PyQt5.QtCore",
         "isExtraImport": true,
@@ -1625,6 +1681,54 @@
     },
     {
         "label": "QLineEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDateEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QComboBox",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
         "isExtraImport": true,
@@ -1784,7 +1888,7 @@
         "documentation": {}
     },
     {
-        "label": "QMainWindow",
+        "label": "QPushButton",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
         "isExtraImport": true,
@@ -1792,7 +1896,23 @@
         "documentation": {}
     },
     {
-        "label": "QPushButton",
+        "label": "QFrame",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTableWidget",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTableWidgetItem",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
         "isExtraImport": true,
@@ -1896,11 +2016,75 @@
         "documentation": {}
     },
     {
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtCore",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtGui",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
         "label": "QtWidgets",
         "importPath": "PyQt5",
         "description": "PyQt5",
         "isExtraImport": true,
         "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtCore",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtGui",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtWidgets",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtWidgets",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "CriticalMessageBox",
+        "importPath": "message_boxs.critical_message_box",
+        "description": "message_boxs.critical_message_box",
+        "isExtraImport": true,
+        "detail": "message_boxs.critical_message_box",
         "documentation": {}
     },
     {
@@ -1949,6 +2133,22 @@
         "description": "message_boxs.success_message_box",
         "isExtraImport": true,
         "detail": "message_boxs.success_message_box",
+        "documentation": {}
+    },
+    {
+        "label": "SuccessMessageBox",
+        "importPath": "message_boxs.success_message_box",
+        "description": "message_boxs.success_message_box",
+        "isExtraImport": true,
+        "detail": "message_boxs.success_message_box",
+        "documentation": {}
+    },
+    {
+        "label": "PersonaFrame",
+        "importPath": "screens.persona_frame",
+        "description": "screens.persona_frame",
+        "isExtraImport": true,
+        "detail": "screens.persona_frame",
         "documentation": {}
     },
     {
@@ -2139,6 +2339,15 @@
         "documentation": {}
     },
     {
+        "label": "PersonaDialog",
+        "kind": 6,
+        "importPath": "dialogs.persona_dialog",
+        "description": "dialogs.persona_dialog",
+        "peekOfCode": "class PersonaDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    input_nombres: QLineEdit\n    input_apellido_paterno: QLineEdit\n    input_apellido_materno: QLineEdit\n    input_numero_identidad: QLineEdit\n    date_fecha_nacimiento: QDateEdit\n    cmb_genero: QComboBox\n    def __init__(self, app: App, parent: PersonaFrame, title=\"\"):",
+        "detail": "dialogs.persona_dialog",
+        "documentation": {}
+    },
+    {
         "label": "ProveedorDialog",
         "kind": 6,
         "importPath": "dialogs.proveedor_dialog",
@@ -2323,7 +2532,7 @@
         "kind": 6,
         "importPath": "models.persona",
         "description": "models.persona",
-        "peekOfCode": "class PersonGeneroEnum(EnumLocal):\n    Male = \"M\"\n    Female = \"F\"\nclass Persona(Base):\n    __tablename__ = 'personas'\n    __table_args__ = (\n        UniqueConstraint('numero_identidad'),\n    )\n    id = Column(Integer, primary_key=True)\n    nombres = Column(String(40), nullable=False)",
+        "peekOfCode": "class PersonGeneroEnum(EnumLocal):\n    Male = \"M\"\n    Female = \"F\"\n    @staticmethod\n    def parseText(value: object):\n        return \"Femenino\"\ndef genero_to_str(value: PersonGeneroEnum):\n    if (str(value) == str(PersonGeneroEnum.Female)):\n        return \"Femenino\"\n    return \"Masculino\"",
         "detail": "models.persona",
         "documentation": {}
     },
@@ -2333,6 +2542,24 @@
         "importPath": "models.persona",
         "description": "models.persona",
         "peekOfCode": "class Persona(Base):\n    __tablename__ = 'personas'\n    __table_args__ = (\n        UniqueConstraint('numero_identidad'),\n    )\n    id = Column(Integer, primary_key=True)\n    nombres = Column(String(40), nullable=False)\n    apellido_paterno = Column(String(100), nullable=False)\n    apellido_materno = Column(String(100), nullable=True)\n    numero_identidad = Column(String(10), nullable=False)",
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "genero_to_str",
+        "kind": 2,
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "peekOfCode": "def genero_to_str(value: PersonGeneroEnum):\n    if (str(value) == str(PersonGeneroEnum.Female)):\n        return \"Femenino\"\n    return \"Masculino\"\ndef str_to_genero(value: str):\n    if (value == \"Femenino\"):\n        return PersonGeneroEnum.Female\n    return PersonGeneroEnum.Male\nclass Persona(Base):\n    __tablename__ = 'personas'",
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "str_to_genero",
+        "kind": 2,
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "peekOfCode": "def str_to_genero(value: str):\n    if (value == \"Femenino\"):\n        return PersonGeneroEnum.Female\n    return PersonGeneroEnum.Male\nclass Persona(Base):\n    __tablename__ = 'personas'\n    __table_args__ = (\n        UniqueConstraint('numero_identidad'),\n    )\n    id = Column(Integer, primary_key=True)",
         "detail": "models.persona",
         "documentation": {}
     },
@@ -2404,7 +2631,7 @@
         "kind": 6,
         "importPath": "screens.app",
         "description": "screens.app",
-        "peekOfCode": "class AppScreen(QMainWindow):\n    lbl_username: QLabel\n    btn_logout: QPushButton\n    frm_header: QFrame\n    frm_main: QFrame\n    frm_barra: QFrame\n    btn_marcas: QPushButton\n    btn_proveedores: QPushButton\n    def __init__(self, app: App):\n        super(AppScreen, self).__init__()",
+        "peekOfCode": "class AppScreen(QMainWindow):\n    lbl_username: QLabel\n    btn_logout: QPushButton\n    frm_header: QFrame\n    frm_main: QFrame\n    frm_barra: QFrame\n    btn_personas: QPushButton\n    btn_marcas: QPushButton\n    btn_proveedores: QPushButton\n    def __init__(self, app: App):",
         "detail": "screens.app",
         "documentation": {}
     },
@@ -2427,12 +2654,12 @@
         "documentation": {}
     },
     {
-        "label": "PersonScreen",
+        "label": "PersonaFrame",
         "kind": 6,
-        "importPath": "screens.persona",
-        "description": "screens.persona",
-        "peekOfCode": "class PersonScreen(QMainWindow):\n    btn_save: QPushButton\n    def __init__(self, app: App):\n        super(PersonScreen, self).__init__()\n        uic.loadUi(\"ui/persona.ui\", self)\n        self._app = app\n        self.btn_save.clicked.connect(self.btn_save_click)\n    def btn_save_click(self, evt: QEvent):\n        print(\"ok\")",
-        "detail": "screens.persona",
+        "importPath": "screens.persona_frame",
+        "description": "screens.persona_frame",
+        "peekOfCode": "class PersonaFrame(QFrame):\n    table: QTableWidget\n    btn_plus: QPushButton\n    def __init__(self, app: App, parent=None):\n        super(PersonaFrame, self).__init__(parent=parent)\n        uic.loadUi(\"ui/persona_frame.ui\", self)\n        self._app = app\n        self.btn_plus.clicked.connect(self.action_create)\n        self.table.doubleClicked.connect(self.action_edit)\n    def showEvent(self, evt: QShowEvent):",
+        "detail": "screens.persona_frame",
         "documentation": {}
     },
     {
@@ -2442,6 +2669,24 @@
         "description": "screens.proveedor_frame",
         "peekOfCode": "class ProveedorFrame(QFrame):\n    table: QTableWidget\n    btn_plus: QPushButton\n    def __init__(self, app: App, parent=None):\n        super(ProveedorFrame, self).__init__(parent=parent)\n        uic.loadUi(\"ui/proveedor_frame.ui\", self)\n        self._app = app\n        self.btn_plus.clicked.connect(self.action_create)\n        self.table.doubleClicked.connect(self.action_edit)\n    def showEvent(self, evt: QShowEvent):",
         "detail": "screens.proveedor_frame",
+        "documentation": {}
+    },
+    {
+        "label": "Ui_Dialog",
+        "kind": 6,
+        "importPath": "ui.ui_persona_dialog",
+        "description": "ui.ui_persona_dialog",
+        "peekOfCode": "class Ui_Dialog(object):\n    def setupUi(self, Dialog):\n        Dialog.setObjectName(\"Dialog\")\n        Dialog.setWindowModality(QtCore.Qt.NonModal)\n        Dialog.resize(400, 630)\n        Dialog.setMinimumSize(QtCore.QSize(400, 630))\n        Dialog.setMaximumSize(QtCore.QSize(400, 630))\n        Dialog.setStyleSheet(\"background-color: #263238;\")\n        Dialog.setModal(False)\n        self.horizontalLayout = QtWidgets.QHBoxLayout(Dialog)",
+        "detail": "ui.ui_persona_dialog",
+        "documentation": {}
+    },
+    {
+        "label": "Ui_Frame",
+        "kind": 6,
+        "importPath": "ui.ui_persona_frame",
+        "description": "ui.ui_persona_frame",
+        "peekOfCode": "class Ui_Frame(object):\n    def setupUi(self, Frame):\n        Frame.setObjectName(\"Frame\")\n        Frame.resize(751, 615)\n        Frame.setLineWidth(0)\n        self.vboxlayout = QtWidgets.QVBoxLayout(Frame)\n        self.vboxlayout.setContentsMargins(40, 0, 0, 0)\n        self.vboxlayout.setSpacing(10)\n        self.vboxlayout.setObjectName(\"vboxlayout\")\n        self.frame = QtWidgets.QFrame(Frame)",
+        "detail": "ui.ui_persona_frame",
         "documentation": {}
     },
     {
@@ -2458,7 +2703,7 @@
         "kind": 6,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "class App:\n    path_session = \"storage/session.json\"\n    auth: Usuario\n    def __init__(self):\n        self._app = QtWidgets.QApplication([])\n    def _imports(self):\n        from screens.app import AppScreen\n        from screens.login import LoginScreen\n        from screens.persona import PersonScreen\n        self.app_screen = AppScreen(self)",
+        "peekOfCode": "class App:\n    path_session = \"storage/session.json\"\n    auth: Usuario\n    def __init__(self):\n        self._app = QtWidgets.QApplication([])\n    def _imports(self):\n        from screens.app import AppScreen\n        from screens.login import LoginScreen\n        self.app_screen = AppScreen(self)\n        self.login_screen = LoginScreen(self)",
         "detail": "app",
         "documentation": {}
     },
