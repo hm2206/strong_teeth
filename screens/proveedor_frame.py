@@ -58,6 +58,7 @@ class ProveedorFrame(QFrame):
             persona = proveedor.representante
             txt_representante = self.display_representante(persona)
             self.table.setItem(index, 5, QTableWidgetItem(txt_representante))
+            self.table.resizeColumnsToContents()
 
     def display_representante(self, persona: Persona):
         return f"{persona.nombres} {persona.apellido_paterno} {persona.apellido_materno}"

@@ -1896,54 +1896,6 @@
         "documentation": {}
     },
     {
-        "label": "QtCore",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
-        "isExtraImport": true,
-        "detail": "PyQt5",
-        "documentation": {}
-    },
-    {
-        "label": "QtGui",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
-        "isExtraImport": true,
-        "detail": "PyQt5",
-        "documentation": {}
-    },
-    {
-        "label": "QtWidgets",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
-        "isExtraImport": true,
-        "detail": "PyQt5",
-        "documentation": {}
-    },
-    {
-        "label": "QtCore",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
-        "isExtraImport": true,
-        "detail": "PyQt5",
-        "documentation": {}
-    },
-    {
-        "label": "QtGui",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
-        "isExtraImport": true,
-        "detail": "PyQt5",
-        "documentation": {}
-    },
-    {
-        "label": "QtWidgets",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
-        "isExtraImport": true,
-        "detail": "PyQt5",
-        "documentation": {}
-    },
-    {
         "label": "QtWidgets",
         "importPath": "PyQt5",
         "description": "PyQt5",
@@ -2490,24 +2442,6 @@
         "description": "screens.proveedor_frame",
         "peekOfCode": "class ProveedorFrame(QFrame):\n    table: QTableWidget\n    btn_plus: QPushButton\n    def __init__(self, app: App, parent=None):\n        super(ProveedorFrame, self).__init__(parent=parent)\n        uic.loadUi(\"ui/proveedor_frame.ui\", self)\n        self._app = app\n        self.btn_plus.clicked.connect(self.action_create)\n        self.table.doubleClicked.connect(self.action_edit)\n    def showEvent(self, evt: QShowEvent):",
         "detail": "screens.proveedor_frame",
-        "documentation": {}
-    },
-    {
-        "label": "Ui_Dialog",
-        "kind": 6,
-        "importPath": "ui.ui_proveedor_dialog",
-        "description": "ui.ui_proveedor_dialog",
-        "peekOfCode": "class Ui_Dialog(object):\n    def setupUi(self, Dialog):\n        Dialog.setObjectName(\"Dialog\")\n        Dialog.setWindowModality(QtCore.Qt.NonModal)\n        Dialog.resize(400, 550)\n        Dialog.setMinimumSize(QtCore.QSize(400, 550))\n        Dialog.setMaximumSize(QtCore.QSize(700, 550))\n        Dialog.setStyleSheet(\"background-color: #263238;\")\n        Dialog.setModal(False)\n        self.horizontalLayout = QtWidgets.QHBoxLayout(Dialog)",
-        "detail": "ui.ui_proveedor_dialog",
-        "documentation": {}
-    },
-    {
-        "label": "Ui_Frame",
-        "kind": 6,
-        "importPath": "ui.ui_proveedor_frame",
-        "description": "ui.ui_proveedor_frame",
-        "peekOfCode": "class Ui_Frame(object):\n    def setupUi(self, Frame):\n        Frame.setObjectName(\"Frame\")\n        Frame.resize(751, 615)\n        Frame.setLineWidth(0)\n        self.vboxlayout = QtWidgets.QVBoxLayout(Frame)\n        self.vboxlayout.setContentsMargins(40, 0, 0, 0)\n        self.vboxlayout.setSpacing(10)\n        self.vboxlayout.setObjectName(\"vboxlayout\")\n        self.frame = QtWidgets.QFrame(Frame)",
-        "detail": "ui.ui_proveedor_frame",
         "documentation": {}
     },
     {

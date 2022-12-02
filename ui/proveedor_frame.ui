@@ -144,6 +144,9 @@
         <property name="editTriggers">
          <set>QAbstractItemView::NoEditTriggers</set>
         </property>
+        <property name="dragDropOverwriteMode">
+         <bool>false</bool>
+        </property>
         <property name="alternatingRowColors">
          <bool>false</bool>
         </property>
@@ -162,6 +165,9 @@
         <property name="sortingEnabled">
          <bool>true</bool>
         </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
         <property name="cornerButtonEnabled">
          <bool>false</bool>
         </property>
@@ -177,11 +183,20 @@
         <attribute name="horizontalHeaderCascadingSectionResizes">
          <bool>false</bool>
         </attribute>
+        <attribute name="horizontalHeaderMinimumSectionSize">
+         <number>108</number>
+        </attribute>
         <attribute name="horizontalHeaderDefaultSectionSize">
-         <number>237</number>
+         <number>108</number>
+        </attribute>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>false</bool>
         </attribute>
         <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
          <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>false</bool>
         </attribute>
         <attribute name="verticalHeaderVisible">
          <bool>true</bool>

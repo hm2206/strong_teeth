@@ -267,7 +267,12 @@
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true"/>
+             <string notr="true">QPushButton {
+    color:  white;
+	border-radius: 0px;
+	padding: 10px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
+}</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::NoFrame</enum>
@@ -276,14 +281,14 @@
              <enum>QFrame::Raised</enum>
             </property>
             <property name="lineWidth">
-             <number>0</number>
+             <number>1</number>
             </property>
             <widget class="QPushButton" name="btn_marcas">
              <property name="geometry">
               <rect>
-               <x>-10</x>
-               <y>40</y>
-               <width>180</width>
+               <x>0</x>
+               <y>120</y>
+               <width>171</width>
                <height>41</height>
               </rect>
              </property>
@@ -291,12 +296,7 @@
               <cursorShape>PointingHandCursor</cursorShape>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-    color:  white;
-	border-radius: 10px;
-	padding: 10px;
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>Marcas</string>
@@ -305,9 +305,9 @@
             <widget class="QPushButton" name="btn_proveedores">
              <property name="geometry">
               <rect>
-               <x>-10</x>
-               <y>100</y>
-               <width>180</width>
+               <x>0</x>
+               <y>180</y>
+               <width>171</width>
                <height>41</height>
               </rect>
              </property>
@@ -315,15 +315,42 @@
               <cursorShape>PointingHandCursor</cursorShape>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-    color:  white;
-	border-radius: 10px;
-	padding: 10px;
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>Proveedores</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="btn_personas">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>60</y>
+               <width>171</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Personas</string>
+             </property>
+            </widget>
+            <widget class="Line" name="line">
+             <property name="geometry">
+              <rect>
+               <x>170</x>
+               <y>0</y>
+               <width>20</width>
+               <height>651</height>
+              </rect>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
              </property>
             </widget>
            </widget>
