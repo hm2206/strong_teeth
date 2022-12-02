@@ -2,6 +2,7 @@ from configs.db import Base
 from enum import Enum as EnumLocal
 from sqlalchemy import Column, String, Integer, Boolean, ForeignKey, UniqueConstraint, Enum
 from sqlalchemy.orm import relationship
+import bcrypt
 
 
 class UsuarioRoleEnum(EnumLocal):
@@ -27,3 +28,8 @@ class Usuario(Base):
     persona_id = Column(Integer, ForeignKey("personas.id"), nullable=False)
 
     persona = relationship("Persona")
+
+    def set_password(self, password: str):
+        password_hashed = bcrypt.hashpw(
+            password.encode("utf-8"), bcrypt.gensalt(14))
+        self.password = password_hashed.decode("utf-8")

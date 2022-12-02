@@ -1216,6 +1216,14 @@
         "documentation": {}
     },
     {
+        "label": "session",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
         "label": "Persona",
         "importPath": "models.persona",
         "description": "models.persona",
@@ -1281,6 +1289,30 @@
     },
     {
         "label": "Persona",
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "isExtraImport": true,
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "Persona",
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "isExtraImport": true,
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "Persona",
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "isExtraImport": true,
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "PersonGeneroEnum",
         "importPath": "models.persona",
         "description": "models.persona",
         "isExtraImport": true,
@@ -1481,6 +1513,22 @@
     },
     {
         "label": "Usuario",
+        "importPath": "models.usuario",
+        "description": "models.usuario",
+        "isExtraImport": true,
+        "detail": "models.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "Usuario",
+        "importPath": "models.usuario",
+        "description": "models.usuario",
+        "isExtraImport": true,
+        "detail": "models.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "UsuarioRoleEnum",
         "importPath": "models.usuario",
         "description": "models.usuario",
         "isExtraImport": true,
@@ -2484,6 +2532,14 @@
         "documentation": {}
     },
     {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "setup",
         "importPath": "setuptools",
         "description": "setuptools",
@@ -2631,7 +2687,7 @@
         "kind": 6,
         "importPath": "models.asistencia",
         "description": "models.asistencia",
-        "peekOfCode": "class AsistenciaTipoEnum(EnumLocal):\n    Entrada = \"Entrada\"\n    Salida = \"Salida\"\nclass Asistencia(Base):\n    __tablename__ = 'asistencias'\n    id = Column(Integer, primary_key=True)\n    personal_id = Column(Integer, ForeignKey(\"personales.id\"), nullable=False)\n    horario_id = Column(Integer, ForeignKey(\"horarios.id\"), nullable=False)\n    tipo = Column(Enum(AsistenciaTipoEnum), nullable=False)\n    marcaje = Column(Time, nullable=False)",
+        "peekOfCode": "class AsistenciaTipoEnum(EnumLocal):\n    Entrada = \"Entrada\"\n    Salida = \"Salida\"\nclass Asistencia(Base):\n    __tablename__ = 'asistencias'\n    id = Column(Integer, primary_key=True)\n    trabajador_id = Column(Integer, ForeignKey(\n        \"trabajadores.id\"), nullable=False)\n    horario_id = Column(Integer, ForeignKey(\"horarios.id\"), nullable=False)\n    tipo = Column(Enum(AsistenciaTipoEnum), nullable=False)",
         "detail": "models.asistencia",
         "documentation": {}
     },
@@ -2640,7 +2696,7 @@
         "kind": 6,
         "importPath": "models.asistencia",
         "description": "models.asistencia",
-        "peekOfCode": "class Asistencia(Base):\n    __tablename__ = 'asistencias'\n    id = Column(Integer, primary_key=True)\n    personal_id = Column(Integer, ForeignKey(\"personales.id\"), nullable=False)\n    horario_id = Column(Integer, ForeignKey(\"horarios.id\"), nullable=False)\n    tipo = Column(Enum(AsistenciaTipoEnum), nullable=False)\n    marcaje = Column(Time, nullable=False)",
+        "peekOfCode": "class Asistencia(Base):\n    __tablename__ = 'asistencias'\n    id = Column(Integer, primary_key=True)\n    trabajador_id = Column(Integer, ForeignKey(\n        \"trabajadores.id\"), nullable=False)\n    horario_id = Column(Integer, ForeignKey(\"horarios.id\"), nullable=False)\n    tipo = Column(Enum(AsistenciaTipoEnum), nullable=False)\n    marcaje = Column(Time, nullable=False)",
         "detail": "models.asistencia",
         "documentation": {}
     },
@@ -2966,6 +3022,123 @@
         "description": "main",
         "peekOfCode": "app = App()\napp.configs()\napp.run()",
         "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "persona",
+        "kind": 5,
+        "importPath": "seeder",
+        "description": "seeder",
+        "peekOfCode": "persona = Persona()\npersona.id = 1\npersona.nombres = \"Dev\"\npersona.apellido_paterno = \"prueva\"\npersona.apellido_materno = \"prueva\"\npersona.numero_identidad = \"999999999\"\npersona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()",
+        "detail": "seeder",
+        "documentation": {}
+    },
+    {
+        "label": "persona.id",
+        "kind": 5,
+        "importPath": "seeder",
+        "description": "seeder",
+        "peekOfCode": "persona.id = 1\npersona.nombres = \"Dev\"\npersona.apellido_paterno = \"prueva\"\npersona.apellido_materno = \"prueva\"\npersona.numero_identidad = \"999999999\"\npersona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()\nusuario.email = \"dev@gmail.com\"",
+        "detail": "seeder",
+        "documentation": {}
+    },
+    {
+        "label": "persona.nombres",
+        "kind": 5,
+        "importPath": "seeder",
+        "description": "seeder",
+        "peekOfCode": "persona.nombres = \"Dev\"\npersona.apellido_paterno = \"prueva\"\npersona.apellido_materno = \"prueva\"\npersona.numero_identidad = \"999999999\"\npersona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()\nusuario.email = \"dev@gmail.com\"\nusuario.set_password(\"password123\")",
+        "detail": "seeder",
+        "documentation": {}
+    },
+    {
+        "label": "persona.apellido_paterno",
+        "kind": 5,
+        "importPath": "seeder",
+        "description": "seeder",
+        "peekOfCode": "persona.apellido_paterno = \"prueva\"\npersona.apellido_materno = \"prueva\"\npersona.numero_identidad = \"999999999\"\npersona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()\nusuario.email = \"dev@gmail.com\"\nusuario.set_password(\"password123\")\nusuario.persona_id = persona.id",
+        "detail": "seeder",
+        "documentation": {}
+    },
+    {
+        "label": "persona.apellido_materno",
+        "kind": 5,
+        "importPath": "seeder",
+        "description": "seeder",
+        "peekOfCode": "persona.apellido_materno = \"prueva\"\npersona.numero_identidad = \"999999999\"\npersona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()\nusuario.email = \"dev@gmail.com\"\nusuario.set_password(\"password123\")\nusuario.persona_id = persona.id\nusuario.role = UsuarioRoleEnum.ADMIN",
+        "detail": "seeder",
+        "documentation": {}
+    },
+    {
+        "label": "persona.numero_identidad",
+        "kind": 5,
+        "importPath": "seeder",
+        "description": "seeder",
+        "peekOfCode": "persona.numero_identidad = \"999999999\"\npersona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()\nusuario.email = \"dev@gmail.com\"\nusuario.set_password(\"password123\")\nusuario.persona_id = persona.id\nusuario.role = UsuarioRoleEnum.ADMIN\nusuario.estado = True",
+        "detail": "seeder",
+        "documentation": {}
+    },
+    {
+        "label": "persona.fecha_nacimiento",
+        "kind": 5,
+        "importPath": "seeder",
+        "description": "seeder",
+        "peekOfCode": "persona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()\nusuario.email = \"dev@gmail.com\"\nusuario.set_password(\"password123\")\nusuario.persona_id = persona.id\nusuario.role = UsuarioRoleEnum.ADMIN\nusuario.estado = True\nsession.add(usuario)",
+        "detail": "seeder",
+        "documentation": {}
+    },
+    {
+        "label": "persona.genero",
+        "kind": 5,
+        "importPath": "seeder",
+        "description": "seeder",
+        "peekOfCode": "persona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()\nusuario.email = \"dev@gmail.com\"\nusuario.set_password(\"password123\")\nusuario.persona_id = persona.id\nusuario.role = UsuarioRoleEnum.ADMIN\nusuario.estado = True\nsession.add(usuario)\nsession.commit()",
+        "detail": "seeder",
+        "documentation": {}
+    },
+    {
+        "label": "usuario",
+        "kind": 5,
+        "importPath": "seeder",
+        "description": "seeder",
+        "peekOfCode": "usuario = Usuario()\nusuario.email = \"dev@gmail.com\"\nusuario.set_password(\"password123\")\nusuario.persona_id = persona.id\nusuario.role = UsuarioRoleEnum.ADMIN\nusuario.estado = True\nsession.add(usuario)\nsession.commit()",
+        "detail": "seeder",
+        "documentation": {}
+    },
+    {
+        "label": "usuario.email",
+        "kind": 5,
+        "importPath": "seeder",
+        "description": "seeder",
+        "peekOfCode": "usuario.email = \"dev@gmail.com\"\nusuario.set_password(\"password123\")\nusuario.persona_id = persona.id\nusuario.role = UsuarioRoleEnum.ADMIN\nusuario.estado = True\nsession.add(usuario)\nsession.commit()",
+        "detail": "seeder",
+        "documentation": {}
+    },
+    {
+        "label": "usuario.persona_id",
+        "kind": 5,
+        "importPath": "seeder",
+        "description": "seeder",
+        "peekOfCode": "usuario.persona_id = persona.id\nusuario.role = UsuarioRoleEnum.ADMIN\nusuario.estado = True\nsession.add(usuario)\nsession.commit()",
+        "detail": "seeder",
+        "documentation": {}
+    },
+    {
+        "label": "usuario.role",
+        "kind": 5,
+        "importPath": "seeder",
+        "description": "seeder",
+        "peekOfCode": "usuario.role = UsuarioRoleEnum.ADMIN\nusuario.estado = True\nsession.add(usuario)\nsession.commit()",
+        "detail": "seeder",
+        "documentation": {}
+    },
+    {
+        "label": "usuario.estado",
+        "kind": 5,
+        "importPath": "seeder",
+        "description": "seeder",
+        "peekOfCode": "usuario.estado = True\nsession.add(usuario)\nsession.commit()",
+        "detail": "seeder",
         "documentation": {}
     }
 ]

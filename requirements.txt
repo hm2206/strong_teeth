@@ -3,3 +3,4 @@ SQLAlchemy==1.4.44
 dotenv==0.0.5
 donttrust==0.1.5
 PyMySQL==1.0.2
+cryptography==38.0.4
