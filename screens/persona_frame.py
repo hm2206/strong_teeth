@@ -4,7 +4,7 @@ from PyQt5.QtCore import QEvent
 from PyQt5.QtWidgets import QPushButton, QFrame, QTableWidget, QTableWidgetItem
 from PyQt5 import uic
 from configs.db import session
-from models.persona import genero_to_str, Persona, str_to_genero
+from models.persona import genero_to_str, Persona
 
 
 class PersonaFrame(QFrame):

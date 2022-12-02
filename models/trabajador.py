@@ -3,9 +3,9 @@ from sqlalchemy import Column, Integer, ForeignKey, String
 from sqlalchemy.orm import relationship
 
 
-class Personal(Base):
+class Trabajador(Base):
 
-    __tablename__ = 'personales'
+    __tablename__ = 'trabajadores'
 
     id = Column(Integer, primary_key=True)
     numero_essalud = Column(String(30), nullable=True)

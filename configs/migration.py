@@ -7,7 +7,7 @@ from models.tratamiento import Tratamiento
 from models.contacto import Contacto
 from models.turno import Turno
 from models.horario import Horario
-from models.personal import Personal
+from models.trabajador import Trabajador
 from models.doctor import Doctor
 from models.agenda import Agenda
 from models.alergia import Alergia

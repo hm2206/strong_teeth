@@ -592,38 +592,6 @@
         "documentation": {}
     },
     {
-        "label": "ForeignKey",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "String",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Column",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Integer",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
         "label": "String",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -712,6 +680,38 @@
         "documentation": {}
     },
     {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "String",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -753,6 +753,14 @@
     },
     {
         "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -1272,14 +1280,6 @@
         "documentation": {}
     },
     {
-        "label": "str_to_genero",
-        "importPath": "models.persona",
-        "description": "models.persona",
-        "isExtraImport": true,
-        "detail": "models.persona",
-        "documentation": {}
-    },
-    {
         "label": "Persona",
         "importPath": "models.persona",
         "description": "models.persona",
@@ -1384,11 +1384,11 @@
         "documentation": {}
     },
     {
-        "label": "Personal",
-        "importPath": "models.personal",
-        "description": "models.personal",
+        "label": "Trabajador",
+        "importPath": "models.trabajador",
+        "description": "models.trabajador",
         "isExtraImport": true,
-        "detail": "models.personal",
+        "detail": "models.trabajador",
         "documentation": {}
     },
     {
@@ -1992,14 +1992,6 @@
         "documentation": {}
     },
     {
-        "label": "QMessageBox",
-        "importPath": "PyQt5.QtWidgets",
-        "description": "PyQt5.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PyQt5.QtWidgets",
-        "documentation": {}
-    },
-    {
         "label": "QPushButton",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
@@ -2492,6 +2484,14 @@
         "documentation": {}
     },
     {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
         "label": "engine",
         "kind": 5,
         "importPath": "configs.db",
@@ -2676,7 +2676,7 @@
         "kind": 6,
         "importPath": "models.doctor",
         "description": "models.doctor",
-        "peekOfCode": "class Doctor(Base):\n    __tablename__ = 'doctores'\n    id = Column(Integer, primary_key=True)\n    cmp = Column(String(10), nullable=False)\n    personal_id = Column(Integer, ForeignKey(\"personales.id\"), nullable=False)\n    personal = relationship(\"Personal\")",
+        "peekOfCode": "class Doctor(Base):\n    __tablename__ = 'doctores'\n    id = Column(Integer, primary_key=True)\n    cmp = Column(String(10), nullable=False)\n    trabajador_id = Column(Integer, ForeignKey(\n        \"trabajadores.id\"), nullable=False)\n    trabajador = relationship(\"Trabajador\")",
         "detail": "models.doctor",
         "documentation": {}
     },
@@ -2789,15 +2789,6 @@
         "documentation": {}
     },
     {
-        "label": "Personal",
-        "kind": 6,
-        "importPath": "models.personal",
-        "description": "models.personal",
-        "peekOfCode": "class Personal(Base):\n    __tablename__ = 'personales'\n    id = Column(Integer, primary_key=True)\n    numero_essalud = Column(String(30), nullable=True)\n    turno_id = Column(Integer, ForeignKey(\"turnos.id\"), nullable=False)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    turno = relationship(\"Turno\")\n    persona = relationship(\"Persona\")",
-        "detail": "models.personal",
-        "documentation": {}
-    },
-    {
         "label": "Producto",
         "kind": 6,
         "importPath": "models.producto",
@@ -2816,6 +2807,15 @@
         "documentation": {}
     },
     {
+        "label": "Trabajador",
+        "kind": 6,
+        "importPath": "models.trabajador",
+        "description": "models.trabajador",
+        "peekOfCode": "class Trabajador(Base):\n    __tablename__ = 'trabajadores'\n    id = Column(Integer, primary_key=True)\n    numero_essalud = Column(String(30), nullable=True)\n    turno_id = Column(Integer, ForeignKey(\"turnos.id\"), nullable=False)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    turno = relationship(\"Turno\")\n    persona = relationship(\"Persona\")",
+        "detail": "models.trabajador",
+        "documentation": {}
+    },
+    {
         "label": "Tratamiento",
         "kind": 6,
         "importPath": "models.tratamiento",
@@ -2829,7 +2829,7 @@
         "kind": 6,
         "importPath": "models.turno",
         "description": "models.turno",
-        "peekOfCode": "class Turno(Base):\n    __tablename__ = \"turnos\"\n    id = Column(Integer, primary_key=True)\n    nombre = Column(String(40), nullable=False)",
+        "peekOfCode": "class Turno(Base):\n    __tablename__ = \"turnos\"\n    id = Column(Integer, primary_key=True)\n    nombre = Column(String(40), nullable=False)\n    descripcion = Column(Text, nullable=True)",
         "detail": "models.turno",
         "documentation": {}
     },

@@ -5,7 +5,6 @@ import json
 from validations.login_validator import login_validator
 from app import App
 import bcrypt
-from PyQt5.QtWidgets import QMessageBox
 import json
 from configs.db import session
 from models.usuario import Usuario

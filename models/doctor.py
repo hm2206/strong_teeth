@@ -9,6 +9,7 @@ class Doctor(Base):
 
     id = Column(Integer, primary_key=True)
     cmp = Column(String(10), nullable=False)
-    personal_id = Column(Integer, ForeignKey("personales.id"), nullable=False)
+    trabajador_id = Column(Integer, ForeignKey(
+        "trabajadores.id"), nullable=False)
 
-    personal = relationship("Personal")
+    trabajador = relationship("Trabajador")
