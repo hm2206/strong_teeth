@@ -992,7 +992,7 @@
         "documentation": {}
     },
     {
-        "label": "Base",
+        "label": "session",
         "importPath": "configs.db",
         "description": "configs.db",
         "isExtraImport": true,
@@ -1145,6 +1145,22 @@
     },
     {
         "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "session",
         "importPath": "configs.db",
         "description": "configs.db",
         "isExtraImport": true,
@@ -1232,6 +1248,14 @@
         "documentation": {}
     },
     {
+        "label": "Persona",
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "isExtraImport": true,
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
         "label": "genero_to_str",
         "importPath": "models.persona",
         "description": "models.persona",
@@ -1249,6 +1273,14 @@
     },
     {
         "label": "str_to_genero",
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "isExtraImport": true,
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "Persona",
         "importPath": "models.persona",
         "description": "models.persona",
         "isExtraImport": true,
@@ -1432,6 +1464,30 @@
         "documentation": {}
     },
     {
+        "label": "Usuario",
+        "importPath": "models.usuario",
+        "description": "models.usuario",
+        "isExtraImport": true,
+        "detail": "models.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "UsuarioRoleEnum",
+        "importPath": "models.usuario",
+        "description": "models.usuario",
+        "isExtraImport": true,
+        "detail": "models.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "Usuario",
+        "importPath": "models.usuario",
+        "description": "models.usuario",
+        "isExtraImport": true,
+        "detail": "models.usuario",
+        "documentation": {}
+    },
+    {
         "label": "Historia",
         "importPath": "models.historia",
         "description": "models.historia",
@@ -1536,6 +1592,38 @@
         "documentation": {}
     },
     {
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
         "label": "QShowEvent",
         "importPath": "PyQt5.QtGui",
         "description": "PyQt5.QtGui",
@@ -1617,6 +1705,22 @@
     },
     {
         "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QEvent",
         "importPath": "PyQt5.QtCore",
         "description": "PyQt5.QtCore",
         "isExtraImport": true,
@@ -1776,6 +1880,46 @@
         "documentation": {}
     },
     {
+        "label": "QDialog",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QComboBox",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QMessageBox",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
@@ -1952,6 +2096,38 @@
         "documentation": {}
     },
     {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFrame",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTableWidget",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTableWidgetItem",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QMessageBox",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
@@ -2024,7 +2200,7 @@
         "documentation": {}
     },
     {
-        "label": "QtCore",
+        "label": "uic",
         "importPath": "PyQt5",
         "description": "PyQt5",
         "isExtraImport": true,
@@ -2032,31 +2208,7 @@
         "documentation": {}
     },
     {
-        "label": "QtGui",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
-        "isExtraImport": true,
-        "detail": "PyQt5",
-        "documentation": {}
-    },
-    {
-        "label": "QtWidgets",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
-        "isExtraImport": true,
-        "detail": "PyQt5",
-        "documentation": {}
-    },
-    {
-        "label": "QtCore",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
-        "isExtraImport": true,
-        "detail": "PyQt5",
-        "documentation": {}
-    },
-    {
-        "label": "QtGui",
+        "label": "uic",
         "importPath": "PyQt5",
         "description": "PyQt5",
         "isExtraImport": true,
@@ -2072,11 +2224,11 @@
         "documentation": {}
     },
     {
-        "label": "QtWidgets",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
+        "label": "CriticalMessageBox",
+        "importPath": "message_boxs.critical_message_box",
+        "description": "message_boxs.critical_message_box",
         "isExtraImport": true,
-        "detail": "PyQt5",
+        "detail": "message_boxs.critical_message_box",
         "documentation": {}
     },
     {
@@ -2144,6 +2296,22 @@
         "documentation": {}
     },
     {
+        "label": "SuccessMessageBox",
+        "importPath": "message_boxs.success_message_box",
+        "description": "message_boxs.success_message_box",
+        "isExtraImport": true,
+        "detail": "message_boxs.success_message_box",
+        "documentation": {}
+    },
+    {
+        "label": "PersonaFrame",
+        "importPath": "screens.persona_frame",
+        "description": "screens.persona_frame",
+        "isExtraImport": true,
+        "detail": "screens.persona_frame",
+        "documentation": {}
+    },
+    {
         "label": "PersonaFrame",
         "importPath": "screens.persona_frame",
         "description": "screens.persona_frame",
@@ -2157,6 +2325,63 @@
         "description": "screens.proveedor_frame",
         "isExtraImport": true,
         "detail": "screens.proveedor_frame",
+        "documentation": {}
+    },
+    {
+        "label": "bcrypt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "bcrypt",
+        "description": "bcrypt",
+        "detail": "bcrypt",
+        "documentation": {}
+    },
+    {
+        "label": "estado_to_str",
+        "importPath": "utils.usuario_util",
+        "description": "utils.usuario_util",
+        "isExtraImport": true,
+        "detail": "utils.usuario_util",
+        "documentation": {}
+    },
+    {
+        "label": "role_to_str",
+        "importPath": "utils.usuario_util",
+        "description": "utils.usuario_util",
+        "isExtraImport": true,
+        "detail": "utils.usuario_util",
+        "documentation": {}
+    },
+    {
+        "label": "str_to_estado",
+        "importPath": "utils.usuario_util",
+        "description": "utils.usuario_util",
+        "isExtraImport": true,
+        "detail": "utils.usuario_util",
+        "documentation": {}
+    },
+    {
+        "label": "str_to_role",
+        "importPath": "utils.usuario_util",
+        "description": "utils.usuario_util",
+        "isExtraImport": true,
+        "detail": "utils.usuario_util",
+        "documentation": {}
+    },
+    {
+        "label": "role_to_str",
+        "importPath": "utils.usuario_util",
+        "description": "utils.usuario_util",
+        "isExtraImport": true,
+        "detail": "utils.usuario_util",
+        "documentation": {}
+    },
+    {
+        "label": "estado_to_str",
+        "importPath": "utils.usuario_util",
+        "description": "utils.usuario_util",
+        "isExtraImport": true,
+        "detail": "utils.usuario_util",
         "documentation": {}
     },
     {
@@ -2222,15 +2447,6 @@
         "description": "validations.login_validator",
         "isExtraImport": true,
         "detail": "validations.login_validator",
-        "documentation": {}
-    },
-    {
-        "label": "bcrypt",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "bcrypt",
-        "description": "bcrypt",
-        "detail": "bcrypt",
         "documentation": {}
     },
     {
@@ -2354,6 +2570,15 @@
         "description": "dialogs.proveedor_dialog",
         "peekOfCode": "class ProveedorDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    input_razon_social: QLineEdit\n    input_ruc: QLineEdit\n    input_direccion: QLineEdit\n    input_telefono: QLineEdit\n    cmb_representante: QComboBox\n    def __init__(self, app: App, parent: ProveedorFrame, title=\"\"):\n        super(ProveedorDialog, self).__init__(parent=parent)",
         "detail": "dialogs.proveedor_dialog",
+        "documentation": {}
+    },
+    {
+        "label": "UsuarioDialog",
+        "kind": 6,
+        "importPath": "dialogs.usuario_dialog",
+        "description": "dialogs.usuario_dialog",
+        "peekOfCode": "class UsuarioDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    input_email: QLineEdit\n    input_password: QLineEdit\n    cmb_estado: QComboBox\n    cmb_role: QComboBox\n    cmb_persona: QComboBox\n    def __init__(self, app: App, parent: PersonaFrame, title=\"\"):\n        super(UsuarioDialog, self).__init__(parent=parent)",
+        "detail": "dialogs.usuario_dialog",
         "documentation": {}
     },
     {
@@ -2631,7 +2856,7 @@
         "kind": 6,
         "importPath": "screens.app",
         "description": "screens.app",
-        "peekOfCode": "class AppScreen(QMainWindow):\n    lbl_username: QLabel\n    btn_logout: QPushButton\n    frm_header: QFrame\n    frm_main: QFrame\n    frm_barra: QFrame\n    btn_personas: QPushButton\n    btn_marcas: QPushButton\n    btn_proveedores: QPushButton\n    def __init__(self, app: App):",
+        "peekOfCode": "class AppScreen(QMainWindow):\n    lbl_username: QLabel\n    btn_logout: QPushButton\n    frm_header: QFrame\n    frm_main: QFrame\n    frm_barra: QFrame\n    btn_personas: QPushButton\n    btn_usuarios: QPushButton\n    btn_marcas: QPushButton\n    btn_proveedores: QPushButton",
         "detail": "screens.app",
         "documentation": {}
     },
@@ -2672,21 +2897,48 @@
         "documentation": {}
     },
     {
-        "label": "Ui_Dialog",
+        "label": "UsuarioFrame",
         "kind": 6,
-        "importPath": "ui.ui_persona_dialog",
-        "description": "ui.ui_persona_dialog",
-        "peekOfCode": "class Ui_Dialog(object):\n    def setupUi(self, Dialog):\n        Dialog.setObjectName(\"Dialog\")\n        Dialog.setWindowModality(QtCore.Qt.NonModal)\n        Dialog.resize(400, 630)\n        Dialog.setMinimumSize(QtCore.QSize(400, 630))\n        Dialog.setMaximumSize(QtCore.QSize(400, 630))\n        Dialog.setStyleSheet(\"background-color: #263238;\")\n        Dialog.setModal(False)\n        self.horizontalLayout = QtWidgets.QHBoxLayout(Dialog)",
-        "detail": "ui.ui_persona_dialog",
+        "importPath": "screens.usuario_frame",
+        "description": "screens.usuario_frame",
+        "peekOfCode": "class UsuarioFrame(QFrame):\n    table: QTableWidget\n    btn_plus: QPushButton\n    def __init__(self, app: App, parent=None):\n        super(UsuarioFrame, self).__init__(parent=parent)\n        uic.loadUi(\"ui/usuario_frame.ui\", self)\n        self._app = app\n        self.btn_plus.clicked.connect(self.action_create)\n        self.table.doubleClicked.connect(self.action_edit)\n    def showEvent(self, evt: QShowEvent):",
+        "detail": "screens.usuario_frame",
         "documentation": {}
     },
     {
-        "label": "Ui_Frame",
-        "kind": 6,
-        "importPath": "ui.ui_persona_frame",
-        "description": "ui.ui_persona_frame",
-        "peekOfCode": "class Ui_Frame(object):\n    def setupUi(self, Frame):\n        Frame.setObjectName(\"Frame\")\n        Frame.resize(751, 615)\n        Frame.setLineWidth(0)\n        self.vboxlayout = QtWidgets.QVBoxLayout(Frame)\n        self.vboxlayout.setContentsMargins(40, 0, 0, 0)\n        self.vboxlayout.setSpacing(10)\n        self.vboxlayout.setObjectName(\"vboxlayout\")\n        self.frame = QtWidgets.QFrame(Frame)",
-        "detail": "ui.ui_persona_frame",
+        "label": "role_to_str",
+        "kind": 2,
+        "importPath": "utils.usuario_util",
+        "description": "utils.usuario_util",
+        "peekOfCode": "def role_to_str(value: UsuarioRoleEnum):\n    data = {\n        UsuarioRoleEnum.ADMIN: \"Admin\",\n        UsuarioRoleEnum.DOCTOR: \"Doctor\",\n        UsuarioRoleEnum.PACIENTE: \"Paciente\",\n        UsuarioRoleEnum.BASICO: \"Basico\"\n    }\n    return data[value]\ndef str_to_role(value: str):\n    data = {",
+        "detail": "utils.usuario_util",
+        "documentation": {}
+    },
+    {
+        "label": "str_to_role",
+        "kind": 2,
+        "importPath": "utils.usuario_util",
+        "description": "utils.usuario_util",
+        "peekOfCode": "def str_to_role(value: str):\n    data = {\n        \"Admin\": UsuarioRoleEnum.ADMIN,\n        \"Doctor\": UsuarioRoleEnum.DOCTOR,\n        \"Paciente\": UsuarioRoleEnum.PACIENTE,\n        \"Basico\": UsuarioRoleEnum.BASICO\n    }\n    return data[value]\ndef estado_to_str(value: bool):\n    return \"Activo\" if value else \"Inactivo\"",
+        "detail": "utils.usuario_util",
+        "documentation": {}
+    },
+    {
+        "label": "estado_to_str",
+        "kind": 2,
+        "importPath": "utils.usuario_util",
+        "description": "utils.usuario_util",
+        "peekOfCode": "def estado_to_str(value: bool):\n    return \"Activo\" if value else \"Inactivo\"\ndef str_to_estado(value: str):\n    return value == \"Activo\"",
+        "detail": "utils.usuario_util",
+        "documentation": {}
+    },
+    {
+        "label": "str_to_estado",
+        "kind": 2,
+        "importPath": "utils.usuario_util",
+        "description": "utils.usuario_util",
+        "peekOfCode": "def str_to_estado(value: str):\n    return value == \"Activo\"",
+        "detail": "utils.usuario_util",
         "documentation": {}
     },
     {

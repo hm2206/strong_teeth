@@ -287,7 +287,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>120</y>
+               <y>180</y>
                <width>171</width>
                <height>41</height>
               </rect>
@@ -306,7 +306,7 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>180</y>
+               <y>240</y>
                <width>171</width>
                <height>41</height>
               </rect>
@@ -351,6 +351,25 @@
              </property>
              <property name="orientation">
               <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="btn_usuarios">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>120</y>
+               <width>171</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Usuarios</string>
              </property>
             </widget>
            </widget>

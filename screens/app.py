@@ -15,6 +15,7 @@ class AppScreen(QMainWindow):
     frm_barra: QFrame
 
     btn_personas: QPushButton
+    btn_usuarios: QPushButton
     btn_marcas: QPushButton
     btn_proveedores: QPushButton
 
@@ -38,11 +39,14 @@ class AppScreen(QMainWindow):
 
     def event_module(self):
         from screens.persona_frame import PersonaFrame
+        from screens.usuario_frame import UsuarioFrame
         from screens.marca_frame import MarcaFrame
         from screens.proveedor_frame import ProveedorFrame
 
         self.btn_personas.clicked.connect(
             lambda evt: self.open_module(evt, PersonaFrame(self._app, parent=self.frm_main)))
+        self.btn_usuarios.clicked.connect(
+            lambda evt: self.open_module(evt, UsuarioFrame(self._app, parent=self.frm_main)))
         self.btn_marcas.clicked.connect(
             lambda evt: self.open_module(evt, MarcaFrame(self._app, parent=self.frm_main)))
         self.btn_proveedores.clicked.connect(

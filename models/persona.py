@@ -38,3 +38,9 @@ class Persona(Base):
     numero_identidad = Column(String(10), nullable=False)
     fecha_nacimiento = Column(Date, nullable=False)
     genero = Column(Enum(PersonGeneroEnum), nullable=False)
+
+    def display_nombre(self):
+        return f"{self.nombres} {self.apellido_paterno} {self.apellido_materno}"
+
+    def display_info(self):
+        return f"{self.numero_identidad}: {self.display_nombre()}"

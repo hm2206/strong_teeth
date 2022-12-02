@@ -62,6 +62,5 @@ class PersonaDialog(QDialog):
             self._frm_parent.load()
             self.close()
         except Exception as e:
-            print(e)
             session.rollback()
             CriticalMessageBox(text="No se pudo guardar los datos").exec()
