@@ -63,7 +63,7 @@ class UsuarioDialog(QDialog):
         if (password_tmp != self.entity.password):
             password_hashed = bcrypt.hashpw(
                 password_tmp.encode("utf-8"), bcrypt.gensalt(14))
-            self.entity.password = str(password_hashed)
+            self.entity.password = password_hashed.decode("utf-8")
 
         self.entity.persona_id = persona.id
         self.entity.role = str_to_role(self.cmb_role.currentText())

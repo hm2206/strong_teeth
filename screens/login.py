@@ -96,7 +96,7 @@ class LoginScreen(QMainWindow):
                 self._app.auth = user
 
             return is_valid
-        except Exception as e:
+        except Exception:
             return False
 
     def save_session(self):
