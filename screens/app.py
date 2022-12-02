@@ -8,12 +8,14 @@ from app import App
 class AppScreen(QMainWindow):
 
     lbl_username: QLabel
-    btn_personas: QPushButton
     btn_logout: QPushButton
 
     frm_header: QFrame
     frm_main: QFrame
     frm_barra: QFrame
+
+    btn_marcas: QPushButton
+    btn_proveedores: QPushButton
 
     def __init__(self, app: App):
         super(AppScreen, self).__init__()
@@ -34,10 +36,13 @@ class AppScreen(QMainWindow):
         self._app.login_screen.show()
 
     def event_module(self):
-        from screens.marca import MarcaFrame
+        from screens.marca_frame import MarcaFrame
+        from screens.proveedor_frame import ProveedorFrame
 
-        self.btn_personas.clicked.connect(
+        self.btn_marcas.clicked.connect(
             lambda evt: self.open_module(evt, MarcaFrame(self._app, parent=self.frm_main)))
+        self.btn_proveedores.clicked.connect(
+            lambda evt: self.open_module(evt, ProveedorFrame(self._app, parent=self.frm_main)))
 
     def open_module(self, evt: QObject, frame: QFrame):
         frame.setFrameRect(self.frm_main.frameRect())

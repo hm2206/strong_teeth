@@ -278,103 +278,7 @@
             <property name="lineWidth">
              <number>0</number>
             </property>
-            <widget class="QPushButton" name="btn_tratamientos">
-             <property name="geometry">
-              <rect>
-               <x>-10</x>
-               <y>290</y>
-               <width>180</width>
-               <height>41</height>
-              </rect>
-             </property>
-             <property name="cursor">
-              <cursorShape>PointingHandCursor</cursorShape>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QPushButton {
-    color:  white;
-	border-radius: 10px;
-	padding: 10px;
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
-}</string>
-             </property>
-             <property name="text">
-              <string>Tratamientos</string>
-             </property>
-            </widget>
-            <widget class="QPushButton" name="btn_proveedores">
-             <property name="geometry">
-              <rect>
-               <x>-10</x>
-               <y>340</y>
-               <width>180</width>
-               <height>41</height>
-              </rect>
-             </property>
-             <property name="cursor">
-              <cursorShape>PointingHandCursor</cursorShape>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QPushButton {
-    color:  white;
-	border-radius: 10px;
-	padding: 10px;
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
-}</string>
-             </property>
-             <property name="text">
-              <string>Proveedores</string>
-             </property>
-            </widget>
-            <widget class="QPushButton" name="btn_usuarios">
-             <property name="geometry">
-              <rect>
-               <x>-10</x>
-               <y>90</y>
-               <width>180</width>
-               <height>41</height>
-              </rect>
-             </property>
-             <property name="cursor">
-              <cursorShape>PointingHandCursor</cursorShape>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QPushButton {
-    color:  white;
-	border-radius: 10px;
-	padding: 10px;
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
-}</string>
-             </property>
-             <property name="text">
-              <string>Usuarios</string>
-             </property>
-            </widget>
-            <widget class="QPushButton" name="btn_personal">
-             <property name="geometry">
-              <rect>
-               <x>-10</x>
-               <y>190</y>
-               <width>180</width>
-               <height>41</height>
-              </rect>
-             </property>
-             <property name="cursor">
-              <cursorShape>PointingHandCursor</cursorShape>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QPushButton {
-    color:  white;
-	border-radius: 10px;
-	padding: 10px;
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
-}</string>
-             </property>
-             <property name="text">
-              <string>Personal</string>
-             </property>
-            </widget>
-            <widget class="QPushButton" name="btn_personas">
+            <widget class="QPushButton" name="btn_marcas">
              <property name="geometry">
               <rect>
                <x>-10</x>
@@ -395,14 +299,14 @@
 }</string>
              </property>
              <property name="text">
-              <string>Personas</string>
+              <string>Marcas</string>
              </property>
             </widget>
-            <widget class="QPushButton" name="btn_pacientes">
+            <widget class="QPushButton" name="btn_proveedores">
              <property name="geometry">
               <rect>
                <x>-10</x>
-               <y>240</y>
+               <y>100</y>
                <width>180</width>
                <height>41</height>
               </rect>
@@ -419,55 +323,7 @@
 }</string>
              </property>
              <property name="text">
-              <string>Pacientes</string>
-             </property>
-            </widget>
-            <widget class="QPushButton" name="btn_horarios">
-             <property name="geometry">
-              <rect>
-               <x>-10</x>
-               <y>140</y>
-               <width>180</width>
-               <height>41</height>
-              </rect>
-             </property>
-             <property name="cursor">
-              <cursorShape>PointingHandCursor</cursorShape>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QPushButton {
-    color:  white;
-	border-radius: 10px;
-	padding: 10px;
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
-}</string>
-             </property>
-             <property name="text">
-              <string>Horarios</string>
-             </property>
-            </widget>
-            <widget class="QPushButton" name="btn_productos">
-             <property name="geometry">
-              <rect>
-               <x>-10</x>
-               <y>390</y>
-               <width>180</width>
-               <height>41</height>
-              </rect>
-             </property>
-             <property name="cursor">
-              <cursorShape>PointingHandCursor</cursorShape>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QPushButton {
-    color:  white;
-	border-radius: 10px;
-	padding: 10px;
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));
-}</string>
-             </property>
-             <property name="text">
-              <string>Productos</string>
+              <string>Proveedores</string>
              </property>
             </widget>
            </widget>

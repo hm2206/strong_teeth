@@ -4,11 +4,10 @@ from PyQt5.QtCore import QObject
 from PyQt5.QtWidgets import QDialog, QLabel, QPushButton, QLineEdit
 from PyQt5 import uic
 from message_boxs.critical_message_box import CriticalMessageBox
-from screens.marca import MarcaFrame
+from screens.marca_frame import MarcaFrame
 from models.marca import Marca
 from configs.db import session
 from message_boxs.success_message_box import SuccessMessageBox
-import sqlalchemy
 
 
 class MarcaDialog(QDialog):

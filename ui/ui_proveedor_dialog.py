@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/hans/Documentos/eva/dental/ui/marca_dialog.ui'
+# Form implementation generated from reading ui file '/home/hans/Documentos/eva/dental/ui/proveedor_dialog.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.7
 #
@@ -15,9 +15,9 @@ class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.setWindowModality(QtCore.Qt.NonModal)
-        Dialog.resize(400, 260)
-        Dialog.setMinimumSize(QtCore.QSize(400, 260))
-        Dialog.setMaximumSize(QtCore.QSize(400, 260))
+        Dialog.resize(400, 550)
+        Dialog.setMinimumSize(QtCore.QSize(400, 550))
+        Dialog.setMaximumSize(QtCore.QSize(700, 550))
         Dialog.setStyleSheet("background-color: #263238;")
         Dialog.setModal(False)
         self.horizontalLayout = QtWidgets.QHBoxLayout(Dialog)
@@ -25,7 +25,23 @@ class Ui_Dialog(object):
         self.horizontalLayout.setSpacing(0)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.widget = QtWidgets.QWidget(Dialog)
-        self.widget.setStyleSheet("")
+        self.widget.setStyleSheet("QLineEdit {\n"
+"    color:  white;\n"
+"    border-style:  solid;\n"
+"    border-width: 1.5px;\n"
+"    border-color: #0097a7;\n"
+"    border-radius: 10px;\n"
+"    padding: 10px;\n"
+"}\n"
+"\n"
+"QComboBox {\n"
+"    color:  white;\n"
+"    border-style:  solid;\n"
+"    border-width: 1.5px;\n"
+"    border-color: #0097a7;\n"
+"    border-radius: 10px;\n"
+"    padding: 10px;\n"
+"}")
         self.widget.setObjectName("widget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.widget)
         self.verticalLayout.setContentsMargins(0, -1, 0, -1)
@@ -62,8 +78,8 @@ class Ui_Dialog(object):
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.frame_2)
         self.verticalLayout_3.setContentsMargins(20, -1, 20, -1)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
-        self.input_nombre = QtWidgets.QLineEdit(self.frame_2)
-        self.input_nombre.setStyleSheet("QLineEdit {\n"
+        self.input_razon_social = QtWidgets.QLineEdit(self.frame_2)
+        self.input_razon_social.setStyleSheet("QLineEdit {\n"
 "    color:  white;\n"
 "    border-style:  solid;\n"
 "    border-width: 1.5px;\n"
@@ -71,10 +87,10 @@ class Ui_Dialog(object):
 "    border-radius: 10px;\n"
 "    padding: 10px;\n"
 "}")
-        self.input_nombre.setObjectName("input_nombre")
-        self.verticalLayout_3.addWidget(self.input_nombre)
-        self.input_descripcion = QtWidgets.QLineEdit(self.frame_2)
-        self.input_descripcion.setStyleSheet("QLineEdit {\n"
+        self.input_razon_social.setObjectName("input_razon_social")
+        self.verticalLayout_3.addWidget(self.input_razon_social)
+        self.input_ruc = QtWidgets.QLineEdit(self.frame_2)
+        self.input_ruc.setStyleSheet("QLineEdit {\n"
 "    color:  white;\n"
 "    border-style:  solid;\n"
 "    border-width: 1.5px;\n"
@@ -82,8 +98,20 @@ class Ui_Dialog(object):
 "    border-radius: 10px;\n"
 "    padding: 10px;\n"
 "}")
-        self.input_descripcion.setObjectName("input_descripcion")
-        self.verticalLayout_3.addWidget(self.input_descripcion)
+        self.input_ruc.setObjectName("input_ruc")
+        self.verticalLayout_3.addWidget(self.input_ruc)
+        self.input_direccion = QtWidgets.QLineEdit(self.frame_2)
+        self.input_direccion.setObjectName("input_direccion")
+        self.verticalLayout_3.addWidget(self.input_direccion)
+        self.input_telefono = QtWidgets.QLineEdit(self.frame_2)
+        self.input_telefono.setObjectName("input_telefono")
+        self.verticalLayout_3.addWidget(self.input_telefono)
+        self.cmb_representante = QtWidgets.QComboBox(self.frame_2)
+        self.cmb_representante.setEditable(False)
+        self.cmb_representante.setDuplicatesEnabled(False)
+        self.cmb_representante.setFrame(True)
+        self.cmb_representante.setObjectName("cmb_representante")
+        self.verticalLayout_3.addWidget(self.cmb_representante)
         self.btn_save = QtWidgets.QPushButton(self.frame_2)
         self.btn_save.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_save.setStyleSheet("QPushButton {\n"
@@ -104,8 +132,11 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Marca"))
-        self.lbl_title.setText(_translate("Dialog", "Crear Marca"))
-        self.input_nombre.setPlaceholderText(_translate("Dialog", "Nombre"))
-        self.input_descripcion.setPlaceholderText(_translate("Dialog", "Descripción"))
+        Dialog.setWindowTitle(_translate("Dialog", "Proveedor"))
+        self.lbl_title.setText(_translate("Dialog", "Crear Proveedor"))
+        self.input_razon_social.setPlaceholderText(_translate("Dialog", "Razón Social"))
+        self.input_ruc.setPlaceholderText(_translate("Dialog", "Ruc"))
+        self.input_direccion.setPlaceholderText(_translate("Dialog", "Dirección"))
+        self.input_telefono.setPlaceholderText(_translate("Dialog", "Teléfono"))
+        self.cmb_representante.setPlaceholderText(_translate("Dialog", "Representante"))
         self.btn_save.setText(_translate("Dialog", "Guardar"))

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/hans/Documentos/eva/dental/ui/marca_frame.ui'
+# Form implementation generated from reading ui file '/home/hans/Documentos/eva/dental/ui/proveedor_frame.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.7
 #
@@ -61,9 +61,10 @@ class Ui_Frame(object):
         self.frame_2.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_2.setObjectName("frame_2")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.frame_2)
+        self.verticalLayout.setObjectName("verticalLayout")
         self.table = QtWidgets.QTableWidget(self.frame_2)
         self.table.setEnabled(True)
-        self.table.setGeometry(QtCore.QRect(0, 0, 741, 541))
         self.table.setStyleSheet("color: #cfd8dc;")
         self.table.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.table.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAsNeeded)
@@ -76,7 +77,7 @@ class Ui_Frame(object):
         self.table.setGridStyle(QtCore.Qt.SolidLine)
         self.table.setCornerButtonEnabled(False)
         self.table.setRowCount(0)
-        self.table.setColumnCount(3)
+        self.table.setColumnCount(6)
         self.table.setObjectName("table")
         item = QtWidgets.QTableWidgetItem()
         self.table.setHorizontalHeaderItem(0, item)
@@ -84,6 +85,12 @@ class Ui_Frame(object):
         self.table.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
         self.table.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.table.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.table.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.table.setHorizontalHeaderItem(5, item)
         self.table.horizontalHeader().setVisible(True)
         self.table.horizontalHeader().setCascadingSectionResizes(False)
         self.table.horizontalHeader().setDefaultSectionSize(237)
@@ -91,6 +98,7 @@ class Ui_Frame(object):
         self.table.verticalHeader().setVisible(True)
         self.table.verticalHeader().setHighlightSections(True)
         self.table.verticalHeader().setSortIndicatorShown(True)
+        self.verticalLayout.addWidget(self.table)
         self.vboxlayout.addWidget(self.frame_2)
         self.vboxlayout.setStretch(0, 1)
         self.vboxlayout.setStretch(1, 8)
@@ -101,11 +109,17 @@ class Ui_Frame(object):
     def retranslateUi(self, Frame):
         _translate = QtCore.QCoreApplication.translate
         Frame.setWindowTitle(_translate("Frame", "Frame"))
-        self.label.setText(_translate("Frame", "Marcas"))
+        self.label.setText(_translate("Frame", "Proveedor"))
         self.table.setSortingEnabled(True)
         item = self.table.horizontalHeaderItem(0)
         item.setText(_translate("Frame", "#ID"))
         item = self.table.horizontalHeaderItem(1)
-        item.setText(_translate("Frame", "Nombre"))
+        item.setText(_translate("Frame", "Razon Social"))
         item = self.table.horizontalHeaderItem(2)
-        item.setText(_translate("Frame", "Descripción"))
+        item.setText(_translate("Frame", "Ruc"))
+        item = self.table.horizontalHeaderItem(3)
+        item.setText(_translate("Frame", "Dirección"))
+        item = self.table.horizontalHeaderItem(4)
+        item.setText(_translate("Frame", "Teléfono"))
+        item = self.table.horizontalHeaderItem(5)
+        item.setText(_translate("Frame", "Representante"))
