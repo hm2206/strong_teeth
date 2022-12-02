@@ -1,5 +1,6 @@
 from PyQt5 import uic
-from PyQt5.QtWidgets import QMainWindow, QPushButton, QLabel
+from PyQt5.QtCore import QObject
+from PyQt5.QtWidgets import QMainWindow, QPushButton, QLabel, QFrame
 from PyQt5.QtGui import QShowEvent
 from app import App
 
@@ -7,7 +8,12 @@ from app import App
 class AppScreen(QMainWindow):
 
     lbl_username: QLabel
+    btn_personas: QPushButton
     btn_logout: QPushButton
+
+    frm_header: QFrame
+    frm_main: QFrame
+    frm_barra: QFrame
 
     def __init__(self, app: App):
         super(AppScreen, self).__init__()
@@ -17,11 +23,27 @@ class AppScreen(QMainWindow):
         self.btn_logout.clicked.connect(self.logout)
 
     def showEvent(self, evt: QShowEvent):
+        self.event_module()
         self.auth = self._app.auth
         self.lbl_username.setText(self.auth.email)
         return super().showEvent(evt)
 
     def logout(self):
-        self.close()
+        self.hide()
         self._app.distroy_session()
         self._app.login_screen.show()
+
+    def event_module(self):
+        from screens.marca import MarcaFrame
+
+        self.btn_personas.clicked.connect(
+            lambda evt: self.open_module(evt, MarcaFrame(self._app, parent=self.frm_main)))
+
+    def open_module(self, evt: QObject, frame: QFrame):
+        frame.setFrameRect(self.frm_main.frameRect())
+        frame.show()
+
+    def set_enabled_window(self, value: bool):
+        self.frm_main.setEnabled(value)
+        self.frm_barra.setEnabled(value)
+        self.btn_logout.setEnabled(value)

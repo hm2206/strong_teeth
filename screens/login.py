@@ -1,7 +1,6 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow, QLineEdit, QPushButton
-from PyQt5.QtCore import QEvent, QObject
-from PyQt5.QtGui import QCloseEvent
+from PyQt5.QtCore import QEvent
 import json
 from validations.login_validator import login_validator
 from app import App
@@ -10,6 +9,7 @@ from PyQt5.QtWidgets import QMessageBox
 import json
 from configs.db import session
 from models.usuario import Usuario
+from message_boxs.critical_message_box import CriticalMessageBox
 
 
 class LoginScreen(QMainWindow):
@@ -48,7 +48,8 @@ class LoginScreen(QMainWindow):
             return None
 
         self.save_session()
-        self.hide()
+        self.close()
+        self.clear_submit()
         self._app.app_screen.show()
 
     def change_username(self, evt: QEvent):
@@ -117,12 +118,10 @@ class LoginScreen(QMainWindow):
         self.btn_save.setText("Entrar")
 
     def error_credential(self):
-        msg = QMessageBox()
-        msg.setIcon(QMessageBox.Critical)
-        msg.setWindowTitle("No autorizado")
-        msg.setText("Las credenciales de accesso son invalidas!!!")
-        msg.exec_()
-        self.clear_password()
+        msg = CriticalMessageBox(
+            title="No autorizado",
+            text="Las credenciales de accesso son invalidas!!!"
+        )
 
-    def closeEvent(self, evt: QCloseEvent):
-        self._app.exit()
+        msg.exec()
+        self.clear_password()

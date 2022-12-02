@@ -1,5 +1,14 @@
 [
     {
+        "label": "sqlalchemy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "create_engine",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -952,7 +961,7 @@
         "documentation": {}
     },
     {
-        "label": "Base",
+        "label": "session",
         "importPath": "configs.db",
         "description": "configs.db",
         "isExtraImport": true,
@@ -1105,6 +1114,22 @@
     },
     {
         "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "session",
         "importPath": "configs.db",
         "description": "configs.db",
         "isExtraImport": true,
@@ -1157,6 +1182,22 @@
         "description": "models.persona",
         "isExtraImport": true,
         "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "Marca",
+        "importPath": "models.marca",
+        "description": "models.marca",
+        "isExtraImport": true,
+        "detail": "models.marca",
+        "documentation": {}
+    },
+    {
+        "label": "Marca",
+        "importPath": "models.marca",
+        "description": "models.marca",
+        "isExtraImport": true,
+        "detail": "models.marca",
         "documentation": {}
     },
     {
@@ -1328,131 +1369,179 @@
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
         "isExtraImport": true,
-        "detail": "enum",
+        "detail": "app",
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
         "isExtraImport": true,
-        "detail": "enum",
+        "detail": "app",
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
         "isExtraImport": true,
-        "detail": "enum",
+        "detail": "app",
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
         "isExtraImport": true,
-        "detail": "enum",
+        "detail": "app",
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
         "isExtraImport": true,
-        "detail": "enum",
+        "detail": "app",
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
         "isExtraImport": true,
-        "detail": "enum",
+        "detail": "app",
         "documentation": {}
     },
     {
-        "label": "uic",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
         "isExtraImport": true,
-        "detail": "PyQt5",
+        "detail": "PyQt5.QtGui",
         "documentation": {}
     },
     {
-        "label": "uic",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
         "isExtraImport": true,
-        "detail": "PyQt5",
+        "detail": "PyQt5.QtGui",
         "documentation": {}
     },
     {
-        "label": "uic",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
         "isExtraImport": true,
-        "detail": "PyQt5",
+        "detail": "PyQt5.QtGui",
         "documentation": {}
     },
     {
-        "label": "QtCore",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
+        "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
         "isExtraImport": true,
-        "detail": "PyQt5",
+        "detail": "PyQt5.QtCore",
         "documentation": {}
     },
     {
-        "label": "QtGui",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
+        "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
         "isExtraImport": true,
-        "detail": "PyQt5",
+        "detail": "PyQt5.QtCore",
         "documentation": {}
     },
     {
-        "label": "QtWidgets",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
+        "label": "QEvent",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
         "isExtraImport": true,
-        "detail": "PyQt5",
+        "detail": "PyQt5.QtCore",
         "documentation": {}
     },
     {
-        "label": "QtCore",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
+        "label": "QEvent",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
         "isExtraImport": true,
-        "detail": "PyQt5",
+        "detail": "PyQt5.QtCore",
         "documentation": {}
     },
     {
-        "label": "QtGui",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
+        "label": "QPoint",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
         "isExtraImport": true,
-        "detail": "PyQt5",
+        "detail": "PyQt5.QtCore",
         "documentation": {}
     },
     {
-        "label": "QtWidgets",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
+        "label": "QEvent",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
         "isExtraImport": true,
-        "detail": "PyQt5",
+        "detail": "PyQt5.QtCore",
         "documentation": {}
     },
     {
-        "label": "QtWidgets",
-        "importPath": "PyQt5",
-        "description": "PyQt5",
+        "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
         "isExtraImport": true,
-        "detail": "PyQt5",
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
         "documentation": {}
     },
     {
@@ -1473,6 +1562,14 @@
     },
     {
         "label": "QLabel",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFrame",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
         "isExtraImport": true,
@@ -1512,6 +1609,38 @@
         "documentation": {}
     },
     {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFrame",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTableWidget",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTableWidgetItem",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QMainWindow",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
@@ -1536,83 +1665,299 @@
         "documentation": {}
     },
     {
-        "label": "QShowEvent",
-        "importPath": "PyQt5.QtGui",
-        "description": "PyQt5.QtGui",
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
         "isExtraImport": true,
-        "detail": "PyQt5.QtGui",
+        "detail": "PyQt5",
         "documentation": {}
     },
     {
-        "label": "QCloseEvent",
-        "importPath": "PyQt5.QtGui",
-        "description": "PyQt5.QtGui",
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
         "isExtraImport": true,
-        "detail": "PyQt5.QtGui",
+        "detail": "PyQt5",
         "documentation": {}
     },
     {
-        "label": "App",
-        "importPath": "app",
-        "description": "app",
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
         "isExtraImport": true,
-        "detail": "app",
+        "detail": "PyQt5",
         "documentation": {}
     },
     {
-        "label": "App",
-        "importPath": "app",
-        "description": "app",
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
         "isExtraImport": true,
-        "detail": "app",
+        "detail": "PyQt5",
         "documentation": {}
     },
     {
-        "label": "App",
-        "importPath": "app",
-        "description": "app",
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
         "isExtraImport": true,
-        "detail": "app",
+        "detail": "PyQt5",
         "documentation": {}
     },
     {
-        "label": "App",
-        "importPath": "app",
-        "description": "app",
+        "label": "QtCore",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
         "isExtraImport": true,
-        "detail": "app",
+        "detail": "PyQt5",
         "documentation": {}
     },
     {
-        "label": "QEvent",
-        "importPath": "PyQt5.QtCore",
-        "description": "PyQt5.QtCore",
+        "label": "QtGui",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
         "isExtraImport": true,
-        "detail": "PyQt5.QtCore",
+        "detail": "PyQt5",
         "documentation": {}
     },
     {
-        "label": "QObject",
-        "importPath": "PyQt5.QtCore",
-        "description": "PyQt5.QtCore",
+        "label": "QtWidgets",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
         "isExtraImport": true,
-        "detail": "PyQt5.QtCore",
+        "detail": "PyQt5",
         "documentation": {}
     },
     {
-        "label": "QEvent",
-        "importPath": "PyQt5.QtCore",
-        "description": "PyQt5.QtCore",
+        "label": "QtCore",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
         "isExtraImport": true,
-        "detail": "PyQt5.QtCore",
+        "detail": "PyQt5",
         "documentation": {}
     },
     {
-        "label": "QObject",
-        "importPath": "PyQt5.QtCore",
-        "description": "PyQt5.QtCore",
+        "label": "QtGui",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
         "isExtraImport": true,
-        "detail": "PyQt5.QtCore",
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtWidgets",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtCore",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtGui",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtWidgets",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtCore",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtGui",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtWidgets",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtCore",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtGui",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtWidgets",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtCore",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtGui",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtWidgets",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtCore",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtGui",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtWidgets",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "QtWidgets",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "CriticalMessageBox",
+        "importPath": "message_boxs.critical_message_box",
+        "description": "message_boxs.critical_message_box",
+        "isExtraImport": true,
+        "detail": "message_boxs.critical_message_box",
+        "documentation": {}
+    },
+    {
+        "label": "CriticalMessageBox",
+        "importPath": "message_boxs.critical_message_box",
+        "description": "message_boxs.critical_message_box",
+        "isExtraImport": true,
+        "detail": "message_boxs.critical_message_box",
+        "documentation": {}
+    },
+    {
+        "label": "MarcaFrame",
+        "importPath": "screens.marca",
+        "description": "screens.marca",
+        "isExtraImport": true,
+        "detail": "screens.marca",
+        "documentation": {}
+    },
+    {
+        "label": "SuccessMessageBox",
+        "importPath": "message_boxs.success_message_box",
+        "description": "message_boxs.success_message_box",
+        "isExtraImport": true,
+        "detail": "message_boxs.success_message_box",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
         "documentation": {}
     },
     {
@@ -1735,6 +2080,33 @@
         "description": "configs.migration",
         "peekOfCode": "class Migration:\n    def run(self):\n        Base.metadata.create_all(engine)",
         "detail": "configs.migration",
+        "documentation": {}
+    },
+    {
+        "label": "MarcaDialog",
+        "kind": 6,
+        "importPath": "dialogs.marca_dialog",
+        "description": "dialogs.marca_dialog",
+        "peekOfCode": "class MarcaDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    input_nombre: QLineEdit\n    input_descripcion: QLineEdit\n    def __init__(self, app: App, parent: MarcaFrame, title=\"\"):\n        super(MarcaDialog, self).__init__(parent=parent)\n        uic.loadUi(\"ui/marca_dialog.ui\", self)\n        self._app = app\n        self._frm_parent = parent",
+        "detail": "dialogs.marca_dialog",
+        "documentation": {}
+    },
+    {
+        "label": "CriticalMessageBox",
+        "kind": 6,
+        "importPath": "message_boxs.critical_message_box",
+        "description": "message_boxs.critical_message_box",
+        "peekOfCode": "class CriticalMessageBox(QMessageBox):\n    def __init__(self, title=\"Error\", text=\"Algo salió mal\"):\n        super(CriticalMessageBox, self).__init__()\n        self.setIcon(QMessageBox.Critical)\n        self.setWindowTitle(title)\n        self.setText(text)",
+        "detail": "message_boxs.critical_message_box",
+        "documentation": {}
+    },
+    {
+        "label": "SuccessMessageBox",
+        "kind": 6,
+        "importPath": "message_boxs.success_message_box",
+        "description": "message_boxs.success_message_box",
+        "peekOfCode": "class SuccessMessageBox(QMessageBox):\n    def __init__(self, title=\"Informacion\", text=\"Todo salio bien!!!\"):\n        super(SuccessMessageBox, self).__init__()\n        self.setIcon(QMessageBox.Information)\n        self.setWindowTitle(title)\n        self.setText(text)",
+        "detail": "message_boxs.success_message_box",
         "documentation": {}
     },
     {
@@ -1976,7 +2348,7 @@
         "kind": 6,
         "importPath": "screens.app",
         "description": "screens.app",
-        "peekOfCode": "class AppScreen(QMainWindow):\n    lbl_username: QLabel\n    btn_logout: QPushButton\n    def __init__(self, app: App):\n        super(AppScreen, self).__init__()\n        uic.loadUi(\"ui/app.ui\", self)\n        self._app = app\n        self.btn_logout.clicked.connect(self.logout)\n    def showEvent(self, evt: QShowEvent):\n        self.auth = self._app.auth",
+        "peekOfCode": "class AppScreen(QMainWindow):\n    lbl_username: QLabel\n    btn_personas: QPushButton\n    btn_logout: QPushButton\n    frm_header: QFrame\n    frm_main: QFrame\n    frm_barra: QFrame\n    def __init__(self, app: App):\n        super(AppScreen, self).__init__()\n        uic.loadUi(\"ui/app.ui\", self)",
         "detail": "screens.app",
         "documentation": {}
     },
@@ -1987,6 +2359,15 @@
         "description": "screens.login",
         "peekOfCode": "class LoginScreen(QMainWindow):\n    input_username: QLineEdit\n    input_password: QLineEdit\n    btn_save: QPushButton\n    def __init__(self, app: App):\n        super(LoginScreen, self).__init__()\n        uic.loadUi(\"ui/login.ui\", self)\n        self._app = app\n        self.input_username.textChanged.connect(self.change_username)\n        self.input_password.textChanged.connect(self.change_password)",
         "detail": "screens.login",
+        "documentation": {}
+    },
+    {
+        "label": "MarcaFrame",
+        "kind": 6,
+        "importPath": "screens.marca",
+        "description": "screens.marca",
+        "peekOfCode": "class MarcaFrame(QFrame):\n    table: QTableWidget\n    btn_plus: QPushButton\n    def __init__(self, app: App, parent=None):\n        super(MarcaFrame, self).__init__(parent=parent)\n        uic.loadUi(\"ui/marca_frame.ui\", self)\n        self._app = app\n        self.btn_plus.clicked.connect(self.action_create)\n        self.table.doubleClicked.connect(self.action_edit)\n    def showEvent(self, evt: QShowEvent):",
+        "detail": "screens.marca",
         "documentation": {}
     },
     {
@@ -2003,7 +2384,7 @@
         "kind": 6,
         "importPath": "ui.ui_app",
         "description": "ui.ui_app",
-        "peekOfCode": "class Ui_MainWindow(object):\n    def setupUi(self, MainWindow):\n        MainWindow.setObjectName(\"MainWindow\")\n        MainWindow.setWindowModality(QtCore.Qt.ApplicationModal)\n        MainWindow.resize(964, 724)\n        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)\n        sizePolicy.setHorizontalStretch(0)\n        sizePolicy.setVerticalStretch(0)\n        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())\n        MainWindow.setSizePolicy(sizePolicy)",
+        "peekOfCode": "class Ui_MainWindow(object):\n    def setupUi(self, MainWindow):\n        MainWindow.setObjectName(\"MainWindow\")\n        MainWindow.setWindowModality(QtCore.Qt.ApplicationModal)\n        MainWindow.resize(951, 730)\n        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)\n        sizePolicy.setHorizontalStretch(0)\n        sizePolicy.setVerticalStretch(0)\n        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())\n        MainWindow.setSizePolicy(sizePolicy)",
         "detail": "ui.ui_app",
         "documentation": {}
     },
@@ -2014,6 +2395,51 @@
         "description": "ui.ui_login copy",
         "peekOfCode": "class Ui_MainWindow(object):\n    def setupUi(self, MainWindow):\n        MainWindow.setObjectName(\"MainWindow\")\n        MainWindow.setWindowModality(QtCore.Qt.ApplicationModal)\n        MainWindow.resize(291, 290)\n        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)\n        sizePolicy.setHorizontalStretch(0)\n        sizePolicy.setVerticalStretch(0)\n        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())\n        MainWindow.setSizePolicy(sizePolicy)",
         "detail": "ui.ui_login copy",
+        "documentation": {}
+    },
+    {
+        "label": "Ui_MainWindow",
+        "kind": 6,
+        "importPath": "ui.ui_login",
+        "description": "ui.ui_login",
+        "peekOfCode": "class Ui_MainWindow(object):\n    def setupUi(self, MainWindow):\n        MainWindow.setObjectName(\"MainWindow\")\n        MainWindow.setWindowModality(QtCore.Qt.ApplicationModal)\n        MainWindow.resize(300, 420)\n        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)\n        sizePolicy.setHorizontalStretch(0)\n        sizePolicy.setVerticalStretch(0)\n        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())\n        MainWindow.setSizePolicy(sizePolicy)",
+        "detail": "ui.ui_login",
+        "documentation": {}
+    },
+    {
+        "label": "Ui_w_persona",
+        "kind": 6,
+        "importPath": "ui.ui_marca",
+        "description": "ui.ui_marca",
+        "peekOfCode": "class Ui_w_persona(object):\n    def setupUi(self, w_persona):\n        w_persona.setObjectName(\"w_persona\")\n        w_persona.setWindowModality(QtCore.Qt.WindowModal)\n        w_persona.setEnabled(True)\n        w_persona.resize(380, 522)\n        w_persona.setUnifiedTitleAndToolBarOnMac(False)\n        self.centralwidget = QtWidgets.QWidget(w_persona)\n        self.centralwidget.setObjectName(\"centralwidget\")\n        self.persona_tabla = QtWidgets.QTableWidget(self.centralwidget)",
+        "detail": "ui.ui_marca",
+        "documentation": {}
+    },
+    {
+        "label": "Ui_Dialog",
+        "kind": 6,
+        "importPath": "ui.ui_marca_dialog",
+        "description": "ui.ui_marca_dialog",
+        "peekOfCode": "class Ui_Dialog(object):\n    def setupUi(self, Dialog):\n        Dialog.setObjectName(\"Dialog\")\n        Dialog.setWindowModality(QtCore.Qt.NonModal)\n        Dialog.resize(400, 260)\n        Dialog.setMinimumSize(QtCore.QSize(400, 260))\n        Dialog.setMaximumSize(QtCore.QSize(400, 260))\n        Dialog.setStyleSheet(\"background-color: #263238;\")\n        Dialog.setModal(False)\n        self.horizontalLayout = QtWidgets.QHBoxLayout(Dialog)",
+        "detail": "ui.ui_marca_dialog",
+        "documentation": {}
+    },
+    {
+        "label": "Ui_Frame",
+        "kind": 6,
+        "importPath": "ui.ui_marca_frame",
+        "description": "ui.ui_marca_frame",
+        "peekOfCode": "class Ui_Frame(object):\n    def setupUi(self, Frame):\n        Frame.setObjectName(\"Frame\")\n        Frame.resize(751, 615)\n        Frame.setLineWidth(0)\n        self.vboxlayout = QtWidgets.QVBoxLayout(Frame)\n        self.vboxlayout.setContentsMargins(40, 0, 0, 0)\n        self.vboxlayout.setSpacing(10)\n        self.vboxlayout.setObjectName(\"vboxlayout\")\n        self.frame = QtWidgets.QFrame(Frame)",
+        "detail": "ui.ui_marca_frame",
+        "documentation": {}
+    },
+    {
+        "label": "Ui_w_persona",
+        "kind": 6,
+        "importPath": "ui.ui_persona",
+        "description": "ui.ui_persona",
+        "peekOfCode": "class Ui_w_persona(object):\n    def setupUi(self, w_persona):\n        w_persona.setObjectName(\"w_persona\")\n        w_persona.setWindowModality(QtCore.Qt.WindowModal)\n        w_persona.setEnabled(True)\n        w_persona.resize(938, 698)\n        w_persona.setStyleSheet(\"background-color: #37474f;\")\n        w_persona.setToolButtonStyle(QtCore.Qt.ToolButtonFollowStyle)\n        w_persona.setTabShape(QtWidgets.QTabWidget.Triangular)\n        w_persona.setDockNestingEnabled(False)",
+        "detail": "ui.ui_persona",
         "documentation": {}
     },
     {

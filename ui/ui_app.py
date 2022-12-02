@@ -15,21 +15,44 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setWindowModality(QtCore.Qt.ApplicationModal)
-        MainWindow.resize(964, 724)
+        MainWindow.resize(951, 730)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
         MainWindow.setSizePolicy(sizePolicy)
+        MainWindow.setMinimumSize(QtCore.QSize(951, 730))
+        MainWindow.setMaximumSize(QtCore.QSize(951, 730))
+        MainWindow.setSizeIncrement(QtCore.QSize(951, 730))
         MainWindow.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
         MainWindow.setLayoutDirection(QtCore.Qt.LeftToRight)
         MainWindow.setAutoFillBackground(False)
         MainWindow.setStyleSheet("background-color: #263238;")
-        MainWindow.setAnimated(True)
-        self.centralwidget = QtWidgets.QWidget(MainWindow)
-        self.centralwidget.setObjectName("centralwidget")
-        self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(180, 30, 221, 41))
+        MainWindow.setAnimated(False)
+        self.frm_root = QtWidgets.QWidget(MainWindow)
+        self.frm_root.setObjectName("frm_root")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.frm_root)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setSpacing(0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.frm_container = QtWidgets.QFrame(self.frm_root)
+        self.frm_container.setMinimumSize(QtCore.QSize(951, 730))
+        self.frm_container.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.frm_container.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.frm_container.setLineWidth(0)
+        self.frm_container.setObjectName("frm_container")
+        self.vboxlayout = QtWidgets.QVBoxLayout(self.frm_container)
+        self.vboxlayout.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
+        self.vboxlayout.setContentsMargins(0, 0, 0, 0)
+        self.vboxlayout.setSpacing(0)
+        self.vboxlayout.setObjectName("vboxlayout")
+        self.frm_header = QtWidgets.QFrame(self.frm_container)
+        self.frm_header.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frm_header.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frm_header.setLineWidth(0)
+        self.frm_header.setObjectName("frm_header")
+        self.label = QtWidgets.QLabel(self.frm_header)
+        self.label.setGeometry(QtCore.QRect(80, 10, 191, 31))
         font = QtGui.QFont()
         font.setPointSize(20)
         font.setBold(True)
@@ -40,102 +63,22 @@ class Ui_MainWindow(object):
         self.label.setLineWidth(1)
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
-        self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(30, 80, 521, 531))
+        self.label_2 = QtWidgets.QLabel(self.frm_header)
+        self.label_2.setGeometry(QtCore.QRect(20, 10, 51, 51))
         self.label_2.setText("")
         self.label_2.setPixmap(QtGui.QPixmap("/home/hans/Documentos/eva/dental/ui/../assets/images/logo.png"))
+        self.label_2.setScaledContents(True)
         self.label_2.setAlignment(QtCore.Qt.AlignCenter)
         self.label_2.setObjectName("label_2")
-        self.btn_save = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_save.setGeometry(QtCore.QRect(670, 110, 191, 41))
-        self.btn_save.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.btn_save.setStyleSheet("QPushButton {\n"
-"    color:  white;\n"
-"    border-radius: 10px;\n"
-"    padding: 10px;\n"
-"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));\n"
-"}")
-        self.btn_save.setObjectName("btn_save")
-        self.btn_save_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_save_2.setGeometry(QtCore.QRect(670, 170, 191, 41))
-        self.btn_save_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.btn_save_2.setStyleSheet("QPushButton {\n"
-"    color:  white;\n"
-"    border-radius: 10px;\n"
-"    padding: 10px;\n"
-"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));\n"
-"}")
-        self.btn_save_2.setObjectName("btn_save_2")
-        self.btn_save_3 = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_save_3.setGeometry(QtCore.QRect(670, 230, 191, 41))
-        self.btn_save_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.btn_save_3.setStyleSheet("QPushButton {\n"
-"    color:  white;\n"
-"    border-radius: 10px;\n"
-"    padding: 10px;\n"
-"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));\n"
-"}")
-        self.btn_save_3.setObjectName("btn_save_3")
-        self.btn_save_4 = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_save_4.setGeometry(QtCore.QRect(670, 350, 191, 41))
-        self.btn_save_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.btn_save_4.setStyleSheet("QPushButton {\n"
-"    color:  white;\n"
-"    border-radius: 10px;\n"
-"    padding: 10px;\n"
-"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));\n"
-"}")
-        self.btn_save_4.setObjectName("btn_save_4")
-        self.btn_save_5 = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_save_5.setGeometry(QtCore.QRect(670, 290, 191, 41))
-        self.btn_save_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.btn_save_5.setStyleSheet("QPushButton {\n"
-"    color:  white;\n"
-"    border-radius: 10px;\n"
-"    padding: 10px;\n"
-"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));\n"
-"}")
-        self.btn_save_5.setObjectName("btn_save_5")
-        self.btn_save_6 = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_save_6.setGeometry(QtCore.QRect(670, 410, 191, 41))
-        self.btn_save_6.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.btn_save_6.setStyleSheet("QPushButton {\n"
-"    color:  white;\n"
-"    border-radius: 10px;\n"
-"    padding: 10px;\n"
-"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));\n"
-"}")
-        self.btn_save_6.setObjectName("btn_save_6")
-        self.btn_save_7 = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_save_7.setGeometry(QtCore.QRect(670, 470, 191, 41))
-        self.btn_save_7.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.btn_save_7.setStyleSheet("QPushButton {\n"
-"    color:  white;\n"
-"    border-radius: 10px;\n"
-"    padding: 10px;\n"
-"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));\n"
-"}")
-        self.btn_save_7.setObjectName("btn_save_7")
-        self.btn_save_8 = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_save_8.setGeometry(QtCore.QRect(670, 530, 191, 41))
-        self.btn_save_8.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.btn_save_8.setStyleSheet("QPushButton {\n"
-"    color:  white;\n"
-"    border-radius: 10px;\n"
-"    padding: 10px;\n"
-"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));\n"
-"}")
-        self.btn_save_8.setObjectName("btn_save_8")
-        self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(20, 680, 67, 17))
-        self.label_3.setStyleSheet("color: rgb(255, 255, 255);")
-        self.label_3.setObjectName("label_3")
-        self.lbl_username = QtWidgets.QLabel(self.centralwidget)
-        self.lbl_username.setGeometry(QtCore.QRect(80, 680, 241, 17))
+        self.lbl_username = QtWidgets.QLabel(self.frm_header)
+        self.lbl_username.setGeometry(QtCore.QRect(90, 40, 241, 17))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.lbl_username.setFont(font)
         self.lbl_username.setStyleSheet("color: rgb(255, 255, 255);")
         self.lbl_username.setObjectName("lbl_username")
-        self.btn_logout = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_logout.setGeometry(QtCore.QRect(910, 670, 41, 31))
+        self.btn_logout = QtWidgets.QPushButton(self.frm_header)
+        self.btn_logout.setGeometry(QtCore.QRect(900, 20, 41, 31))
         self.btn_logout.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_logout.setText("")
         icon = QtGui.QIcon()
@@ -144,11 +87,126 @@ class Ui_MainWindow(object):
         self.btn_logout.setIconSize(QtCore.QSize(30, 30))
         self.btn_logout.setFlat(True)
         self.btn_logout.setObjectName("btn_logout")
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
-        self.statusbar.setSizeGripEnabled(False)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+        self.vboxlayout.addWidget(self.frm_header)
+        self.frm_body = QtWidgets.QFrame(self.frm_container)
+        self.frm_body.setMinimumSize(QtCore.QSize(0, 100))
+        self.frm_body.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.frm_body.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.frm_body.setLineWidth(0)
+        self.frm_body.setObjectName("frm_body")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.frm_body)
+        self.horizontalLayout_2.setContentsMargins(0, 0, 9, 0)
+        self.horizontalLayout_2.setSpacing(0)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.frm_barra = QtWidgets.QFrame(self.frm_body)
+        self.frm_barra.setMinimumSize(QtCore.QSize(50, 1))
+        self.frm_barra.setStyleSheet("")
+        self.frm_barra.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.frm_barra.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frm_barra.setLineWidth(0)
+        self.frm_barra.setObjectName("frm_barra")
+        self.btn_tratamientos = QtWidgets.QPushButton(self.frm_barra)
+        self.btn_tratamientos.setGeometry(QtCore.QRect(-10, 290, 180, 41))
+        self.btn_tratamientos.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_tratamientos.setStyleSheet("QPushButton {\n"
+"    color:  white;\n"
+"    border-radius: 10px;\n"
+"    padding: 10px;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));\n"
+"}")
+        self.btn_tratamientos.setObjectName("btn_tratamientos")
+        self.btn_proveedores = QtWidgets.QPushButton(self.frm_barra)
+        self.btn_proveedores.setGeometry(QtCore.QRect(-10, 340, 180, 41))
+        self.btn_proveedores.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_proveedores.setStyleSheet("QPushButton {\n"
+"    color:  white;\n"
+"    border-radius: 10px;\n"
+"    padding: 10px;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));\n"
+"}")
+        self.btn_proveedores.setObjectName("btn_proveedores")
+        self.btn_usuarios = QtWidgets.QPushButton(self.frm_barra)
+        self.btn_usuarios.setGeometry(QtCore.QRect(-10, 90, 180, 41))
+        self.btn_usuarios.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_usuarios.setStyleSheet("QPushButton {\n"
+"    color:  white;\n"
+"    border-radius: 10px;\n"
+"    padding: 10px;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));\n"
+"}")
+        self.btn_usuarios.setObjectName("btn_usuarios")
+        self.btn_personal = QtWidgets.QPushButton(self.frm_barra)
+        self.btn_personal.setGeometry(QtCore.QRect(-10, 190, 180, 41))
+        self.btn_personal.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_personal.setStyleSheet("QPushButton {\n"
+"    color:  white;\n"
+"    border-radius: 10px;\n"
+"    padding: 10px;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));\n"
+"}")
+        self.btn_personal.setObjectName("btn_personal")
+        self.btn_personas = QtWidgets.QPushButton(self.frm_barra)
+        self.btn_personas.setGeometry(QtCore.QRect(-10, 40, 180, 41))
+        self.btn_personas.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_personas.setStyleSheet("QPushButton {\n"
+"    color:  white;\n"
+"    border-radius: 10px;\n"
+"    padding: 10px;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));\n"
+"}")
+        self.btn_personas.setObjectName("btn_personas")
+        self.btn_pacientes = QtWidgets.QPushButton(self.frm_barra)
+        self.btn_pacientes.setGeometry(QtCore.QRect(-10, 240, 180, 41))
+        self.btn_pacientes.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_pacientes.setStyleSheet("QPushButton {\n"
+"    color:  white;\n"
+"    border-radius: 10px;\n"
+"    padding: 10px;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));\n"
+"}")
+        self.btn_pacientes.setObjectName("btn_pacientes")
+        self.btn_horarios = QtWidgets.QPushButton(self.frm_barra)
+        self.btn_horarios.setGeometry(QtCore.QRect(-10, 140, 180, 41))
+        self.btn_horarios.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_horarios.setStyleSheet("QPushButton {\n"
+"    color:  white;\n"
+"    border-radius: 10px;\n"
+"    padding: 10px;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));\n"
+"}")
+        self.btn_horarios.setObjectName("btn_horarios")
+        self.btn_productos = QtWidgets.QPushButton(self.frm_barra)
+        self.btn_productos.setGeometry(QtCore.QRect(-10, 390, 180, 41))
+        self.btn_productos.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_productos.setStyleSheet("QPushButton {\n"
+"    color:  white;\n"
+"    border-radius: 10px;\n"
+"    padding: 10px;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.975124, y2:1, stop:0 rgba(170, 4, 176, 255), stop:1 rgba(69, 137, 158, 255));\n"
+"}")
+        self.btn_productos.setObjectName("btn_productos")
+        self.horizontalLayout_2.addWidget(self.frm_barra)
+        self.frm_main = QtWidgets.QFrame(self.frm_body)
+        self.frm_main.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.frm_main.setAutoFillBackground(False)
+        self.frm_main.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.frm_main.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frm_main.setLineWidth(1)
+        self.frm_main.setObjectName("frm_main")
+        self.label_3 = QtWidgets.QLabel(self.frm_main)
+        self.label_3.setGeometry(QtCore.QRect(210, 130, 231, 201))
+        self.label_3.setText("")
+        self.label_3.setPixmap(QtGui.QPixmap("/home/hans/Documentos/eva/dental/ui/../assets/images/empty.png"))
+        self.label_3.setScaledContents(True)
+        self.label_3.setObjectName("label_3")
+        self.horizontalLayout_2.addWidget(self.frm_main)
+        self.horizontalLayout_2.setStretch(0, 1)
+        self.horizontalLayout_2.setStretch(1, 4)
+        self.vboxlayout.addWidget(self.frm_body)
+        self.vboxlayout.setStretch(0, 1)
+        self.vboxlayout.setStretch(1, 9)
+        self.horizontalLayout.addWidget(self.frm_container)
+        MainWindow.setCentralWidget(self.frm_root)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -157,13 +215,12 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Strong Teeth"))
         self.label.setText(_translate("MainWindow", "Strong Teeth"))
-        self.btn_save.setText(_translate("MainWindow", "Personas"))
-        self.btn_save_2.setText(_translate("MainWindow", "Usuarios"))
-        self.btn_save_3.setText(_translate("MainWindow", "Horarios"))
-        self.btn_save_4.setText(_translate("MainWindow", "Pacientes"))
-        self.btn_save_5.setText(_translate("MainWindow", "Personal"))
-        self.btn_save_6.setText(_translate("MainWindow", "Tratamientos"))
-        self.btn_save_7.setText(_translate("MainWindow", "Proveedores"))
-        self.btn_save_8.setText(_translate("MainWindow", "Productos"))
-        self.label_3.setText(_translate("MainWindow", "Usuario:"))
         self.lbl_username.setText(_translate("MainWindow", "N/A"))
+        self.btn_tratamientos.setText(_translate("MainWindow", "Tratamientos"))
+        self.btn_proveedores.setText(_translate("MainWindow", "Proveedores"))
+        self.btn_usuarios.setText(_translate("MainWindow", "Usuarios"))
+        self.btn_personal.setText(_translate("MainWindow", "Personal"))
+        self.btn_personas.setText(_translate("MainWindow", "Personas"))
+        self.btn_pacientes.setText(_translate("MainWindow", "Pacientes"))
+        self.btn_horarios.setText(_translate("MainWindow", "Horarios"))
+        self.btn_productos.setText(_translate("MainWindow", "Productos"))
