@@ -1,7 +1,7 @@
 from app import App
 from PyQt5.QtGui import QShowEvent
 from PyQt5.QtCore import QEvent
-from PyQt5.QtWidgets import QPushButton, QFrame, QTableWidget, QTableWidgetItem
+from PyQt5.QtWidgets import QPushButton, QFrame, QTableWidget, QTableWidgetItem, QLabel, QTableWidgetItem
 from PyQt5 import uic
 from configs.db import session
 from models.paciente import Paciente
@@ -15,16 +15,28 @@ class PacienteFrame(QFrame):
     btn_plus: QPushButton
     frm_footer: QFrame
 
+    lbl_selected: QLabel
+
+    btn_alergia: QPushButton
+    btn_cita: QPushButton
+    btn_contacto: QPushButton
+    btn_historia: QPushButton
+    btn_odontograma: QPushButton
+    btn_tratamiento: QPushButton
+
     def __init__(self, app: App, parent=None):
         super(PacienteFrame, self).__init__(parent=parent)
         uic.loadUi("ui/paciente_frame.ui", self)
         self._app = app
+        self.entity = Paciente()
 
         self.btn_plus.clicked.connect(self.action_create)
         self.table.doubleClicked.connect(self.action_edit)
+        self.table.itemClicked.connect(self.action_item)
 
     def showEvent(self, evt: QShowEvent):
         self.load()
+        self.frm_footer.setEnabled(False)
         return super().showEvent(evt)
 
     def action_create(self, evt: QEvent):
@@ -39,11 +51,19 @@ class PacienteFrame(QFrame):
         self._app.app_screen.set_enabled_window(False)
         row = self.table.selectionModel().currentIndex().row()
         id = self.table.item(row, 0).text()
-        entity = session.query(Paciente).get(id)
+        self.entity = session.query(Paciente).get(id)
         self.msg = PacienteDialog(
             self._app, self, title="Editar Paciente")
         self.msg.show()
-        self.msg.load(entity)
+        self.msg.load(self.entity)
+
+    def action_item(self, evt: QEvent):
+        row = self.table.currentRow()
+        id = self.table.item(row, 0).text()
+        self.entity: Paciente = session.query(Paciente).get(id)
+        persona: Persona = self.entity.persona
+        self.frm_footer.setEnabled(True)
+        self.lbl_selected.setText(persona.display_info())
 
     def load(self):
         self.data = session.query(Paciente).all()
@@ -53,8 +73,10 @@ class PacienteFrame(QFrame):
             persona: Persona = entity.persona
 
             self.table.setItem(index, 0, QTableWidgetItem(str(entity.id)))
-            self.table.setItem(
-                index, 1, QTableWidgetItem(persona.display_info()))
+            self.table.setItem(index, 1, QTableWidgetItem(
+                persona.display_nombre()))
             self.table.setItem(index, 2, QTableWidgetItem(
+                persona.numero_identidad))
+            self.table.setItem(index, 3, QTableWidgetItem(
                 condicion_to_str(entity.condicion)))
             self.table.resizeColumnsToContents()

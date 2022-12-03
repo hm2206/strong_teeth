@@ -70,7 +70,8 @@ class AppScreen(QMainWindow):
 
     def open_module(self, evt: QObject, frame: QFrame):
         frame.setFrameRect(self.frm_main.frameRect())
-        frame.show()
+        self.frm_main = frame
+        self.frm_main.show()
 
     def set_enabled_window(self, value: bool):
         self.frm_main.setEnabled(value)

@@ -2656,6 +2656,22 @@
         "documentation": {}
     },
     {
+        "label": "QLabel",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTableWidgetItem",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QPushButton",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
@@ -3823,7 +3839,7 @@
         "kind": 6,
         "importPath": "screens.paciente_frame",
         "description": "screens.paciente_frame",
-        "peekOfCode": "class PacienteFrame(QFrame):\n    table: QTableWidget\n    btn_plus: QPushButton\n    frm_footer: QFrame\n    def __init__(self, app: App, parent=None):\n        super(PacienteFrame, self).__init__(parent=parent)\n        uic.loadUi(\"ui/paciente_frame.ui\", self)\n        self._app = app\n        self.btn_plus.clicked.connect(self.action_create)\n        self.table.doubleClicked.connect(self.action_edit)",
+        "peekOfCode": "class PacienteFrame(QFrame):\n    table: QTableWidget\n    btn_plus: QPushButton\n    frm_footer: QFrame\n    lbl_selected: QLabel\n    btn_alergia: QPushButton\n    btn_cita: QPushButton\n    btn_contacto: QPushButton\n    btn_historia: QPushButton\n    btn_odontograma: QPushButton",
         "detail": "screens.paciente_frame",
         "documentation": {}
     },
