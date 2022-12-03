@@ -19,6 +19,7 @@ class AppScreen(QMainWindow):
     btn_marcas: QPushButton
     btn_proveedores: QPushButton
     btn_turno: QPushButton
+    btn_trabajadores: QPushButton
 
     def __init__(self, app: App):
         super(AppScreen, self).__init__()
@@ -44,6 +45,7 @@ class AppScreen(QMainWindow):
         from screens.marca_frame import MarcaFrame
         from screens.proveedor_frame import ProveedorFrame
         from screens.turno_frame import TurnoFrame
+        from screens.trabajador_frame import TrabajadorFrame
 
         self.btn_personas.clicked.connect(
             lambda evt: self.open_module(evt, PersonaFrame(self._app, parent=self.frm_main)))
@@ -55,6 +57,8 @@ class AppScreen(QMainWindow):
             lambda evt: self.open_module(evt, ProveedorFrame(self._app, parent=self.frm_main)))
         self.btn_turno.clicked.connect(
             lambda evt: self.open_module(evt, TurnoFrame(self._app, parent=self.frm_main)))
+        self.btn_trabajadores.clicked.connect(
+            lambda evt: self.open_module(evt, TrabajadorFrame(self._app, parent=self.frm_main)))
 
     def open_module(self, evt: QObject, frame: QFrame):
         frame.setFrameRect(self.frm_main.frameRect())
