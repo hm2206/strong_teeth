@@ -122,9 +122,9 @@
          <widget class="QLabel" name="label">
           <property name="geometry">
            <rect>
-            <x>80</x>
+            <x>90</x>
             <y>0</y>
-            <width>171</width>
+            <width>311</width>
             <height>41</height>
            </rect>
           </property>
@@ -133,6 +133,7 @@
             <pointsize>18</pointsize>
             <weight>75</weight>
             <bold>true</bold>
+            <kerning>true</kerning>
            </font>
           </property>
           <property name="layoutDirection">
@@ -154,7 +155,7 @@
            <bool>false</bool>
           </property>
           <property name="alignment">
-           <set>Qt::AlignCenter</set>
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
           </property>
          </widget>
          <widget class="QLabel" name="label_2">

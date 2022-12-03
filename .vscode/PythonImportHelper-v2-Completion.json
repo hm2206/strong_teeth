@@ -1024,7 +1024,7 @@
         "documentation": {}
     },
     {
-        "label": "Base",
+        "label": "session",
         "importPath": "configs.db",
         "description": "configs.db",
         "isExtraImport": true,
@@ -1177,6 +1177,22 @@
     },
     {
         "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "session",
         "importPath": "configs.db",
         "description": "configs.db",
         "isExtraImport": true,
@@ -1440,11 +1456,35 @@
         "documentation": {}
     },
     {
+        "label": "Tratamiento",
+        "importPath": "models.tratamiento",
+        "description": "models.tratamiento",
+        "isExtraImport": true,
+        "detail": "models.tratamiento",
+        "documentation": {}
+    },
+    {
+        "label": "Tratamiento",
+        "importPath": "models.tratamiento",
+        "description": "models.tratamiento",
+        "isExtraImport": true,
+        "detail": "models.tratamiento",
+        "documentation": {}
+    },
+    {
         "label": "Contacto",
         "importPath": "models.contacto",
         "description": "models.contacto",
         "isExtraImport": true,
         "detail": "models.contacto",
+        "documentation": {}
+    },
+    {
+        "label": "Turno",
+        "importPath": "models.turno",
+        "description": "models.turno",
+        "isExtraImport": true,
+        "detail": "models.turno",
         "documentation": {}
     },
     {
@@ -1784,6 +1824,38 @@
         "documentation": {}
     },
     {
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
         "label": "QShowEvent",
         "importPath": "PyQt5.QtGui",
         "description": "PyQt5.QtGui",
@@ -1937,6 +2009,22 @@
     },
     {
         "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QEvent",
         "importPath": "PyQt5.QtCore",
         "description": "PyQt5.QtCore",
         "isExtraImport": true,
@@ -2192,6 +2280,54 @@
         "documentation": {}
     },
     {
+        "label": "QPlainTextEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDoubleSpinBox",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QDialog",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
@@ -2496,11 +2632,59 @@
         "documentation": {}
     },
     {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFrame",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTableWidget",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTableWidgetItem",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QMessageBox",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
         "isExtraImport": true,
         "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
         "documentation": {}
     },
     {
@@ -2680,11 +2864,27 @@
         "documentation": {}
     },
     {
+        "label": "CriticalMessageBox",
+        "importPath": "message_boxs.critical_message_box",
+        "description": "message_boxs.critical_message_box",
+        "isExtraImport": true,
+        "detail": "message_boxs.critical_message_box",
+        "documentation": {}
+    },
+    {
         "label": "MarcaFrame",
         "importPath": "screens.marca_frame",
         "description": "screens.marca_frame",
         "isExtraImport": true,
         "detail": "screens.marca_frame",
+        "documentation": {}
+    },
+    {
+        "label": "SuccessMessageBox",
+        "importPath": "message_boxs.success_message_box",
+        "description": "message_boxs.success_message_box",
+        "isExtraImport": true,
+        "detail": "message_boxs.success_message_box",
         "documentation": {}
     },
     {
@@ -2765,6 +2965,14 @@
         "description": "screens.proveedor_frame",
         "isExtraImport": true,
         "detail": "screens.proveedor_frame",
+        "documentation": {}
+    },
+    {
+        "label": "TratamientoFrame",
+        "importPath": "screens.tratamiento_frame",
+        "description": "screens.tratamiento_frame",
+        "isExtraImport": true,
+        "detail": "screens.tratamiento_frame",
         "documentation": {}
     },
     {
@@ -3043,6 +3251,15 @@
         "description": "dialogs.trabajo_dialog",
         "peekOfCode": "class TrabajoDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    input_numero_essalud: QLineEdit\n    cmb_persona: QComboBox\n    cmb_turno: QComboBox\n    def __init__(self, app: App, parent: PersonaFrame, title=\"\"):\n        super(TrabajoDialog, self).__init__(parent=parent)\n        uic.loadUi(\"ui/trabajador_dialog.ui\", self)\n        self._app = app",
         "detail": "dialogs.trabajo_dialog",
+        "documentation": {}
+    },
+    {
+        "label": "TratamientoDialog",
+        "kind": 6,
+        "importPath": "dialogs.tratamiento_dialog",
+        "description": "dialogs.tratamiento_dialog",
+        "peekOfCode": "class TratamientoDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    input_nombre: QLineEdit\n    txt_descripcion: QPlainTextEdit\n    dbl_precio: QDoubleSpinBox\n    def __init__(self, app: App, parent: TratamientoFrame, title=\"\"):\n        super(TratamientoDialog, self).__init__(parent=parent)\n        uic.loadUi(\"ui/tratamiento_dialog.ui\", self)\n        self._app = app",
+        "detail": "dialogs.tratamiento_dialog",
         "documentation": {}
     },
     {
@@ -3385,6 +3602,15 @@
         "description": "screens.trabajador_frame",
         "peekOfCode": "class TrabajadorFrame(QFrame):\n    table: QTableWidget\n    btn_plus: QPushButton\n    def __init__(self, app: App, parent=None):\n        super(TrabajadorFrame, self).__init__(parent=parent)\n        uic.loadUi(\"ui/trabajador_frame.ui\", self)\n        self._app = app\n        self.btn_plus.clicked.connect(self.action_create)\n        self.table.doubleClicked.connect(self.action_edit)\n    def showEvent(self, evt: QShowEvent):",
         "detail": "screens.trabajador_frame",
+        "documentation": {}
+    },
+    {
+        "label": "TratamientoFrame",
+        "kind": 6,
+        "importPath": "screens.tratamiento_frame",
+        "description": "screens.tratamiento_frame",
+        "peekOfCode": "class TratamientoFrame(QFrame):\n    table: QTableWidget\n    btn_plus: QPushButton\n    def __init__(self, app: App, parent=None):\n        super(TratamientoFrame, self).__init__(parent=parent)\n        uic.loadUi(\"ui/tratamiento_frame.ui\", self)\n        self._app = app\n        self.btn_plus.clicked.connect(self.action_create)\n        self.table.doubleClicked.connect(self.action_edit)\n    def showEvent(self, evt: QShowEvent):",
+        "detail": "screens.tratamiento_frame",
         "documentation": {}
     },
     {
