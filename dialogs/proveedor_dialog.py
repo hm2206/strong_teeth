@@ -51,12 +51,7 @@ class ProveedorDialog(QDialog):
         datos = session.query(Persona).all()
         for item in datos:
             persona: Persona = item
-            text_display = self.display_representante(persona)
-            self.cmb_representante.addItem(text_display, persona)
-
-    def display_representante(self, persona: Persona):
-        fullname = f"{persona.nombres} {persona.apellido_paterno} {persona.apellido_materno}"
-        return f"{persona.numero_identidad}: {fullname}"
+            self.cmb_representante.addItem(persona.display_info(), persona)
 
     def save(self, evt: QObject):
         persona: Persona = self.cmb_representante.currentData()
