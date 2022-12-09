@@ -52,23 +52,24 @@ class AppScreen(QMainWindow):
         from screens.paciente_frame import PacienteFrame
 
         self.btn_personas.clicked.connect(
-            lambda evt: self.open_module(evt, PersonaFrame(self._app, parent=self.frm_main)))
+            lambda evt: self.open_module(evt, PersonaFrame))
         self.btn_usuarios.clicked.connect(
-            lambda evt: self.open_module(evt, UsuarioFrame(self._app, parent=self.frm_main)))
+            lambda evt: self.open_module(evt, UsuarioFrame))
         self.btn_marcas.clicked.connect(
-            lambda evt: self.open_module(evt, MarcaFrame(self._app, parent=self.frm_main)))
+            lambda evt: self.open_module(evt, MarcaFrame))
         self.btn_proveedores.clicked.connect(
-            lambda evt: self.open_module(evt, ProveedorFrame(self._app, parent=self.frm_main)))
+            lambda evt: self.open_module(evt, ProveedorFrame))
         self.btn_turno.clicked.connect(
-            lambda evt: self.open_module(evt, TurnoFrame(self._app, parent=self.frm_main)))
+            lambda evt: self.open_module(evt, TurnoFrame))
         self.btn_trabajadores.clicked.connect(
-            lambda evt: self.open_module(evt, TrabajadorFrame(self._app, parent=self.frm_main)))
+            lambda evt: self.open_module(evt, TrabajadorFrame))
         self.btn_tratamiento.clicked.connect(
-            lambda evt: self.open_module(evt, TratamientoFrame(self._app, parent=self.frm_main)))
+            lambda evt: self.open_module(evt, TratamientoFrame))
         self.btn_pacientes.clicked.connect(
-            lambda evt: self.open_module(evt, PacienteFrame(self._app, parent=self.frm_main)))
+            lambda evt: self.open_module(evt, PacienteFrame))
 
-    def open_module(self, evt: QObject, frame: QFrame):
+    def open_module(self, evt: QObject, Frame: QFrame):
+        frame = Frame(self._app, parent=self.frm_main)
         frame.setFrameRect(self.frm_main.frameRect())
         self.frm_main = frame
         self.frm_main.show()

@@ -7,8 +7,8 @@ from datetime import date
 persona = Persona()
 persona.id = 1
 persona.nombres = "Dev"
-persona.apellido_paterno = "prueva"
-persona.apellido_materno = "prueva"
+persona.apellido_paterno = "prueba 1"
+persona.apellido_materno = "prueba 2"
 persona.numero_identidad = "999999999"
 persona.fecha_nacimiento = date(1999, 6, 22)
 persona.genero = PersonGeneroEnum.Male

@@ -43,4 +43,4 @@ class Persona(Base):
         return f"{self.nombres} {self.apellido_paterno} {self.apellido_materno}"
 
     def display_info(self):
-        return f"{self.numero_identidad}: {self.display_nombre()}"
+        return f"{self.numero_identidad} - {self.display_nombre()}"

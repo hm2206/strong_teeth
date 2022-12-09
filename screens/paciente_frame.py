@@ -1,7 +1,7 @@
 from app import App
 from PyQt5.QtGui import QShowEvent
 from PyQt5.QtCore import QEvent
-from PyQt5.QtWidgets import QPushButton, QFrame, QTableWidget, QTableWidgetItem, QLabel, QTableWidgetItem
+from PyQt5.QtWidgets import QPushButton, QFrame, QTableWidget, QDialog, QTableWidgetItem, QLabel, QTableWidgetItem
 from PyQt5 import uic
 from configs.db import session
 from models.paciente import Paciente
@@ -24,6 +24,8 @@ class PacienteFrame(QFrame):
     btn_odontograma: QPushButton
     btn_tratamiento: QPushButton
 
+    current_pacient: Paciente
+
     def __init__(self, app: App, parent=None):
         super(PacienteFrame, self).__init__(parent=parent)
         uic.loadUi("ui/paciente_frame.ui", self)
@@ -33,6 +35,12 @@ class PacienteFrame(QFrame):
         self.btn_plus.clicked.connect(self.action_create)
         self.table.doubleClicked.connect(self.action_edit)
         self.table.itemClicked.connect(self.action_item)
+        self.dispatch_dialogs()
+
+    def dispatch_dialogs(self):
+        from dialogs.paciente_odontograma_dialog import PacienteOdontogramaDialog
+        self.btn_odontograma.clicked.connect(
+            lambda x: self.action_dialog(PacienteOdontogramaDialog))
 
     def showEvent(self, evt: QShowEvent):
         self.load()
@@ -64,6 +72,12 @@ class PacienteFrame(QFrame):
         persona: Persona = self.entity.persona
         self.frm_footer.setEnabled(True)
         self.lbl_selected.setText(persona.display_info())
+
+    def action_dialog(self, Dialog: QDialog):
+        self._app.app_screen.set_enabled_window(False)
+        msg: QDialog = Dialog(self._app, self)
+        msg.setEnabled(True)
+        msg.show()
 
     def load(self):
         self.data = session.query(Paciente).all()

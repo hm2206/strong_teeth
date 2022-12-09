@@ -216,6 +216,30 @@
         "documentation": {}
     },
     {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "Enum",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -1040,6 +1064,30 @@
         "documentation": {}
     },
     {
+        "label": "session",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "configs.db",
         "description": "configs.db",
@@ -1321,6 +1369,14 @@
     },
     {
         "label": "str_to_genero",
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "isExtraImport": true,
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "Persona",
         "importPath": "models.persona",
         "description": "models.persona",
         "isExtraImport": true,
@@ -1648,11 +1704,35 @@
         "documentation": {}
     },
     {
+        "label": "Paciente",
+        "importPath": "models.paciente",
+        "description": "models.paciente",
+        "isExtraImport": true,
+        "detail": "models.paciente",
+        "documentation": {}
+    },
+    {
         "label": "PacienteCondicionEnum",
         "importPath": "models.paciente",
         "description": "models.paciente",
         "isExtraImport": true,
         "detail": "models.paciente",
+        "documentation": {}
+    },
+    {
+        "label": "Odontograma",
+        "importPath": "models.odontograma",
+        "description": "models.odontograma",
+        "isExtraImport": true,
+        "detail": "models.odontograma",
+        "documentation": {}
+    },
+    {
+        "label": "Odontograma",
+        "importPath": "models.odontograma",
+        "description": "models.odontograma",
+        "isExtraImport": true,
+        "detail": "models.odontograma",
         "documentation": {}
     },
     {
@@ -1920,11 +2000,19 @@
         "documentation": {}
     },
     {
-        "label": "QShowEvent",
-        "importPath": "PyQt5.QtGui",
-        "description": "PyQt5.QtGui",
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
         "isExtraImport": true,
-        "detail": "PyQt5.QtGui",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
         "documentation": {}
     },
     {
@@ -2053,6 +2141,38 @@
         "description": "PyQt5.QtGui",
         "isExtraImport": true,
         "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
         "documentation": {}
     },
     {
@@ -2256,6 +2376,54 @@
         "documentation": {}
     },
     {
+        "label": "QPlainTextEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSpinBox",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QComboBox",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QComboBox",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
@@ -2265,6 +2433,38 @@
     },
     {
         "label": "QRadioButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFrame",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
         "isExtraImport": true,
@@ -2648,6 +2848,14 @@
         "documentation": {}
     },
     {
+        "label": "QDialog",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QTableWidgetItem",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
@@ -3016,11 +3224,35 @@
         "documentation": {}
     },
     {
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
         "label": "QtWidgets",
         "importPath": "PyQt5",
         "description": "PyQt5",
         "isExtraImport": true,
         "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "CriticalMessageBox",
+        "importPath": "message_boxs.critical_message_box",
+        "description": "message_boxs.critical_message_box",
+        "isExtraImport": true,
+        "detail": "message_boxs.critical_message_box",
         "documentation": {}
     },
     {
@@ -3165,6 +3397,54 @@
         "description": "message_boxs.success_message_box",
         "isExtraImport": true,
         "detail": "message_boxs.success_message_box",
+        "documentation": {}
+    },
+    {
+        "label": "SuccessMessageBox",
+        "importPath": "message_boxs.success_message_box",
+        "description": "message_boxs.success_message_box",
+        "isExtraImport": true,
+        "detail": "message_boxs.success_message_box",
+        "documentation": {}
+    },
+    {
+        "label": "PacienteOdontogramaDialog",
+        "importPath": "dialogs.paciente_odontograma_dialog",
+        "description": "dialogs.paciente_odontograma_dialog",
+        "isExtraImport": true,
+        "detail": "dialogs.paciente_odontograma_dialog",
+        "documentation": {}
+    },
+    {
+        "label": "CondicionDental",
+        "importPath": "models.condicion_dental",
+        "description": "models.condicion_dental",
+        "isExtraImport": true,
+        "detail": "models.condicion_dental",
+        "documentation": {}
+    },
+    {
+        "label": "CondicionDental",
+        "importPath": "models.condicion_dental",
+        "description": "models.condicion_dental",
+        "isExtraImport": true,
+        "detail": "models.condicion_dental",
+        "documentation": {}
+    },
+    {
+        "label": "CondicionDental",
+        "importPath": "models.condicion_dental",
+        "description": "models.condicion_dental",
+        "isExtraImport": true,
+        "detail": "models.condicion_dental",
+        "documentation": {}
+    },
+    {
+        "label": "PacienteFrame",
+        "importPath": "screens.paciente_frame",
+        "description": "screens.paciente_frame",
+        "isExtraImport": true,
+        "detail": "screens.paciente_frame",
         "documentation": {}
     },
     {
@@ -3475,12 +3755,30 @@
         "documentation": {}
     },
     {
+        "label": "OdontogramaDialog",
+        "kind": 6,
+        "importPath": "dialogs.odontograma_dialog",
+        "description": "dialogs.odontograma_dialog",
+        "peekOfCode": "class OdontogramaDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    spn_diente: QSpinBox\n    cmb_condicion: QComboBox\n    txt_observacion: QPlainTextEdit\n    def __init__(self, app: App, parent: PacienteOdontogramaDialog, title=\"\"):\n        super(OdontogramaDialog, self).__init__(parent=parent)\n        uic.loadUi(\"ui/odontograma_dialog.ui\", self)\n        self._app = app",
+        "detail": "dialogs.odontograma_dialog",
+        "documentation": {}
+    },
+    {
         "label": "PacienteDialog",
         "kind": 6,
         "importPath": "dialogs.paciente_dialog",
         "description": "dialogs.paciente_dialog",
         "peekOfCode": "class PacienteDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    cmb_persona: QComboBox\n    radio_null: QRadioButton\n    radio_embarazo: QRadioButton\n    radio_lactancia: QRadioButton\n    def __init__(self, app: App, parent: PacienteFrame, title=\"\"):\n        super(PacienteDialog, self).__init__(parent=parent)\n        uic.loadUi(\"ui/paciente_dialog.ui\", self)",
         "detail": "dialogs.paciente_dialog",
+        "documentation": {}
+    },
+    {
+        "label": "PacienteOdontogramaDialog",
+        "kind": 6,
+        "importPath": "dialogs.paciente_odontograma_dialog",
+        "description": "dialogs.paciente_odontograma_dialog",
+        "peekOfCode": "class PacienteOdontogramaDialog(QDialog):\n    lbl_title: QLabel\n    frm_odontograma: QFrame\n    btn_11: QPushButton\n    btn_12: QPushButton\n    btn_13: QPushButton\n    btn_14: QPushButton\n    btn_15: QPushButton\n    btn_16: QPushButton\n    btn_17: QPushButton",
+        "detail": "dialogs.paciente_odontograma_dialog",
         "documentation": {}
     },
     {
@@ -3610,6 +3908,15 @@
         "documentation": {}
     },
     {
+        "label": "CondicionDental",
+        "kind": 6,
+        "importPath": "models.condicion_dental",
+        "description": "models.condicion_dental",
+        "peekOfCode": "class CondicionDental(Base):\n    __tablename__ = 'condicion_dentales'\n    id = Column(Integer, primary_key=True)\n    nombre = Column(String(20), nullable=False)",
+        "detail": "models.condicion_dental",
+        "documentation": {}
+    },
+    {
         "label": "ContactoTipoEnum",
         "kind": 6,
         "importPath": "models.contacto",
@@ -3668,7 +3975,7 @@
         "kind": 6,
         "importPath": "models.odontograma",
         "description": "models.odontograma",
-        "peekOfCode": "class Odontograma(Base):\n    __tablename__ = 'odontogramas'\n    __table_args__ = (\n        UniqueConstraint('paciente_id', 'numero_diente', name=\"u_odontograma\"),\n    )\n    id = Column(Integer, primary_key=True)\n    numero_diente = Column(Integer, nullable=False)\n    observacion = Column(Text, nullable=True)\n    paciente_id = Column(Integer, ForeignKey(\"pacientes.id\"), nullable=False)\n    paciente = relationship(\"Paciente\")",
+        "peekOfCode": "class Odontograma(Base):\n    __tablename__ = 'odontogramas'\n    __table_args__ = (\n        UniqueConstraint('paciente_id', 'numero_diente', name=\"u_odontograma\"),\n    )\n    id = Column(Integer, primary_key=True)\n    numero_diente = Column(Integer, nullable=False)\n    observacion = Column(Text, nullable=True)\n    paciente_id = Column(Integer, ForeignKey(\"pacientes.id\"), nullable=False)\n    condicion_id = Column(Integer, ForeignKey(",
         "detail": "models.odontograma",
         "documentation": {}
     },
@@ -3677,7 +3984,7 @@
         "kind": 6,
         "importPath": "models.paciente",
         "description": "models.paciente",
-        "peekOfCode": "class PacienteCondicionEnum(EnumLocal):\n    Embarazo = \"Embarazo\"\n    Lactancia = \"Lactancia\"\nclass Paciente(Base):\n    __tablename__ = 'pacientes'\n    id = Column(Integer, primary_key=True)\n    condicion = Column(Enum(PacienteCondicionEnum), nullable=True)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    persona = relationship(\"Persona\")",
+        "peekOfCode": "class PacienteCondicionEnum(EnumLocal):\n    Embarazo = \"Embarazo\"\n    Lactancia = \"Lactancia\"\nclass Paciente(Base):\n    __tablename__ = 'pacientes'\n    id = Column(Integer, primary_key=True)\n    condicion = Column(Enum(PacienteCondicionEnum), nullable=True)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    persona: Persona = relationship(\"Persona\")",
         "detail": "models.paciente",
         "documentation": {}
     },
@@ -3686,7 +3993,7 @@
         "kind": 6,
         "importPath": "models.paciente",
         "description": "models.paciente",
-        "peekOfCode": "class Paciente(Base):\n    __tablename__ = 'pacientes'\n    id = Column(Integer, primary_key=True)\n    condicion = Column(Enum(PacienteCondicionEnum), nullable=True)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    persona = relationship(\"Persona\")",
+        "peekOfCode": "class Paciente(Base):\n    __tablename__ = 'pacientes'\n    id = Column(Integer, primary_key=True)\n    condicion = Column(Enum(PacienteCondicionEnum), nullable=True)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    persona: Persona = relationship(\"Persona\")",
         "detail": "models.paciente",
         "documentation": {}
     },
@@ -3974,7 +4281,7 @@
         "kind": 5,
         "importPath": "seeder",
         "description": "seeder",
-        "peekOfCode": "persona = Persona()\npersona.id = 1\npersona.nombres = \"Dev\"\npersona.apellido_paterno = \"prueva\"\npersona.apellido_materno = \"prueva\"\npersona.numero_identidad = \"999999999\"\npersona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()",
+        "peekOfCode": "persona = Persona()\npersona.id = 1\npersona.nombres = \"Dev\"\npersona.apellido_paterno = \"prueba 1\"\npersona.apellido_materno = \"prueba 2\"\npersona.numero_identidad = \"999999999\"\npersona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()",
         "detail": "seeder",
         "documentation": {}
     },
@@ -3983,7 +4290,7 @@
         "kind": 5,
         "importPath": "seeder",
         "description": "seeder",
-        "peekOfCode": "persona.id = 1\npersona.nombres = \"Dev\"\npersona.apellido_paterno = \"prueva\"\npersona.apellido_materno = \"prueva\"\npersona.numero_identidad = \"999999999\"\npersona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()\nusuario.email = \"dev@gmail.com\"",
+        "peekOfCode": "persona.id = 1\npersona.nombres = \"Dev\"\npersona.apellido_paterno = \"prueba 1\"\npersona.apellido_materno = \"prueba 2\"\npersona.numero_identidad = \"999999999\"\npersona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()\nusuario.email = \"dev@gmail.com\"",
         "detail": "seeder",
         "documentation": {}
     },
@@ -3992,7 +4299,7 @@
         "kind": 5,
         "importPath": "seeder",
         "description": "seeder",
-        "peekOfCode": "persona.nombres = \"Dev\"\npersona.apellido_paterno = \"prueva\"\npersona.apellido_materno = \"prueva\"\npersona.numero_identidad = \"999999999\"\npersona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()\nusuario.email = \"dev@gmail.com\"\nusuario.set_password(\"password123\")",
+        "peekOfCode": "persona.nombres = \"Dev\"\npersona.apellido_paterno = \"prueba 1\"\npersona.apellido_materno = \"prueba 2\"\npersona.numero_identidad = \"999999999\"\npersona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()\nusuario.email = \"dev@gmail.com\"\nusuario.set_password(\"password123\")",
         "detail": "seeder",
         "documentation": {}
     },
@@ -4001,7 +4308,7 @@
         "kind": 5,
         "importPath": "seeder",
         "description": "seeder",
-        "peekOfCode": "persona.apellido_paterno = \"prueva\"\npersona.apellido_materno = \"prueva\"\npersona.numero_identidad = \"999999999\"\npersona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()\nusuario.email = \"dev@gmail.com\"\nusuario.set_password(\"password123\")\nusuario.persona_id = persona.id",
+        "peekOfCode": "persona.apellido_paterno = \"prueba 1\"\npersona.apellido_materno = \"prueba 2\"\npersona.numero_identidad = \"999999999\"\npersona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()\nusuario.email = \"dev@gmail.com\"\nusuario.set_password(\"password123\")\nusuario.persona_id = persona.id",
         "detail": "seeder",
         "documentation": {}
     },
@@ -4010,7 +4317,7 @@
         "kind": 5,
         "importPath": "seeder",
         "description": "seeder",
-        "peekOfCode": "persona.apellido_materno = \"prueva\"\npersona.numero_identidad = \"999999999\"\npersona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()\nusuario.email = \"dev@gmail.com\"\nusuario.set_password(\"password123\")\nusuario.persona_id = persona.id\nusuario.role = UsuarioRoleEnum.ADMIN",
+        "peekOfCode": "persona.apellido_materno = \"prueba 2\"\npersona.numero_identidad = \"999999999\"\npersona.fecha_nacimiento = date(1999, 6, 22)\npersona.genero = PersonGeneroEnum.Male\nsession.add(persona)\nusuario = Usuario()\nusuario.email = \"dev@gmail.com\"\nusuario.set_password(\"password123\")\nusuario.persona_id = persona.id\nusuario.role = UsuarioRoleEnum.ADMIN",
         "detail": "seeder",
         "documentation": {}
     },
