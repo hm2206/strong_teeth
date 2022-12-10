@@ -1080,6 +1080,22 @@
         "documentation": {}
     },
     {
+        "label": "session",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "configs.db",
         "description": "configs.db",
@@ -1333,6 +1349,22 @@
         "description": "configs.db",
         "isExtraImport": true,
         "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "Persona",
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "isExtraImport": true,
+        "detail": "models.persona",
         "documentation": {}
     },
     {
@@ -1369,6 +1401,14 @@
     },
     {
         "label": "str_to_genero",
+        "importPath": "models.persona",
+        "description": "models.persona",
+        "isExtraImport": true,
+        "detail": "models.persona",
+        "documentation": {}
+    },
+    {
+        "label": "Persona",
         "importPath": "models.persona",
         "description": "models.persona",
         "isExtraImport": true,
@@ -1504,6 +1544,30 @@
         "documentation": {}
     },
     {
+        "label": "Marca",
+        "importPath": "models.marca",
+        "description": "models.marca",
+        "isExtraImport": true,
+        "detail": "models.marca",
+        "documentation": {}
+    },
+    {
+        "label": "Marca",
+        "importPath": "models.marca",
+        "description": "models.marca",
+        "isExtraImport": true,
+        "detail": "models.marca",
+        "documentation": {}
+    },
+    {
+        "label": "Proveedor",
+        "importPath": "models.proveedor",
+        "description": "models.proveedor",
+        "isExtraImport": true,
+        "detail": "models.proveedor",
+        "documentation": {}
+    },
+    {
         "label": "Proveedor",
         "importPath": "models.proveedor",
         "description": "models.proveedor",
@@ -1525,6 +1589,38 @@
         "description": "models.proveedor",
         "isExtraImport": true,
         "detail": "models.proveedor",
+        "documentation": {}
+    },
+    {
+        "label": "Proveedor",
+        "importPath": "models.proveedor",
+        "description": "models.proveedor",
+        "isExtraImport": true,
+        "detail": "models.proveedor",
+        "documentation": {}
+    },
+    {
+        "label": "Proveedor",
+        "importPath": "models.proveedor",
+        "description": "models.proveedor",
+        "isExtraImport": true,
+        "detail": "models.proveedor",
+        "documentation": {}
+    },
+    {
+        "label": "Producto",
+        "importPath": "models.producto",
+        "description": "models.producto",
+        "isExtraImport": true,
+        "detail": "models.producto",
+        "documentation": {}
+    },
+    {
+        "label": "Producto",
+        "importPath": "models.producto",
+        "description": "models.producto",
+        "isExtraImport": true,
+        "detail": "models.producto",
         "documentation": {}
     },
     {
@@ -1561,6 +1657,22 @@
     },
     {
         "label": "Contacto",
+        "importPath": "models.contacto",
+        "description": "models.contacto",
+        "isExtraImport": true,
+        "detail": "models.contacto",
+        "documentation": {}
+    },
+    {
+        "label": "Contacto",
+        "importPath": "models.contacto",
+        "description": "models.contacto",
+        "isExtraImport": true,
+        "detail": "models.contacto",
+        "documentation": {}
+    },
+    {
+        "label": "ContactoTipoEnum",
         "importPath": "models.contacto",
         "description": "models.contacto",
         "isExtraImport": true,
@@ -1661,6 +1773,14 @@
         "description": "models.agenda",
         "isExtraImport": true,
         "detail": "models.agenda",
+        "documentation": {}
+    },
+    {
+        "label": "Alergia",
+        "importPath": "models.alergia",
+        "description": "models.alergia",
+        "isExtraImport": true,
+        "detail": "models.alergia",
         "documentation": {}
     },
     {
@@ -2016,6 +2136,54 @@
         "documentation": {}
     },
     {
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
         "label": "QShowEvent",
         "importPath": "PyQt5.QtGui",
         "description": "PyQt5.QtGui",
@@ -2241,6 +2409,30 @@
     },
     {
         "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QEvent",
         "importPath": "PyQt5.QtCore",
         "description": "PyQt5.QtCore",
         "isExtraImport": true,
@@ -2424,6 +2616,46 @@
         "documentation": {}
     },
     {
+        "label": "QLineEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QComboBox",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QComboBox",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
@@ -2433,6 +2665,30 @@
     },
     {
         "label": "QRadioButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QListWidget",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QListWidgetItem",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
         "isExtraImport": true,
@@ -2513,6 +2769,62 @@
     },
     {
         "label": "QComboBox",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QComboBox",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPlainTextEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDoubleSpinBox",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
         "isExtraImport": true,
@@ -3072,11 +3384,67 @@
         "documentation": {}
     },
     {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFrame",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTableWidget",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTableWidgetItem",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QMessageBox",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
         "isExtraImport": true,
         "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
         "documentation": {}
     },
     {
@@ -3328,11 +3696,43 @@
         "documentation": {}
     },
     {
+        "label": "CriticalMessageBox",
+        "importPath": "message_boxs.critical_message_box",
+        "description": "message_boxs.critical_message_box",
+        "isExtraImport": true,
+        "detail": "message_boxs.critical_message_box",
+        "documentation": {}
+    },
+    {
+        "label": "CriticalMessageBox",
+        "importPath": "message_boxs.critical_message_box",
+        "description": "message_boxs.critical_message_box",
+        "isExtraImport": true,
+        "detail": "message_boxs.critical_message_box",
+        "documentation": {}
+    },
+    {
         "label": "MarcaFrame",
         "importPath": "screens.marca_frame",
         "description": "screens.marca_frame",
         "isExtraImport": true,
         "detail": "screens.marca_frame",
+        "documentation": {}
+    },
+    {
+        "label": "SuccessMessageBox",
+        "importPath": "message_boxs.success_message_box",
+        "description": "message_boxs.success_message_box",
+        "isExtraImport": true,
+        "detail": "message_boxs.success_message_box",
+        "documentation": {}
+    },
+    {
+        "label": "SuccessMessageBox",
+        "importPath": "message_boxs.success_message_box",
+        "description": "message_boxs.success_message_box",
+        "isExtraImport": true,
+        "detail": "message_boxs.success_message_box",
         "documentation": {}
     },
     {
@@ -3440,43 +3840,11 @@
         "documentation": {}
     },
     {
-        "label": "PacienteFrame",
-        "importPath": "screens.paciente_frame",
-        "description": "screens.paciente_frame",
+        "label": "ProveedorFrame",
+        "importPath": "screens.proveedor_frame",
+        "description": "screens.proveedor_frame",
         "isExtraImport": true,
-        "detail": "screens.paciente_frame",
-        "documentation": {}
-    },
-    {
-        "label": "PacienteFrame",
-        "importPath": "screens.paciente_frame",
-        "description": "screens.paciente_frame",
-        "isExtraImport": true,
-        "detail": "screens.paciente_frame",
-        "documentation": {}
-    },
-    {
-        "label": "PersonaFrame",
-        "importPath": "screens.persona_frame",
-        "description": "screens.persona_frame",
-        "isExtraImport": true,
-        "detail": "screens.persona_frame",
-        "documentation": {}
-    },
-    {
-        "label": "PersonaFrame",
-        "importPath": "screens.persona_frame",
-        "description": "screens.persona_frame",
-        "isExtraImport": true,
-        "detail": "screens.persona_frame",
-        "documentation": {}
-    },
-    {
-        "label": "PersonaFrame",
-        "importPath": "screens.persona_frame",
-        "description": "screens.persona_frame",
-        "isExtraImport": true,
-        "detail": "screens.persona_frame",
+        "detail": "screens.proveedor_frame",
         "documentation": {}
     },
     {
@@ -3485,6 +3853,54 @@
         "description": "screens.proveedor_frame",
         "isExtraImport": true,
         "detail": "screens.proveedor_frame",
+        "documentation": {}
+    },
+    {
+        "label": "PacienteFrame",
+        "importPath": "screens.paciente_frame",
+        "description": "screens.paciente_frame",
+        "isExtraImport": true,
+        "detail": "screens.paciente_frame",
+        "documentation": {}
+    },
+    {
+        "label": "PacienteFrame",
+        "importPath": "screens.paciente_frame",
+        "description": "screens.paciente_frame",
+        "isExtraImport": true,
+        "detail": "screens.paciente_frame",
+        "documentation": {}
+    },
+    {
+        "label": "PersonaFrame",
+        "importPath": "screens.persona_frame",
+        "description": "screens.persona_frame",
+        "isExtraImport": true,
+        "detail": "screens.persona_frame",
+        "documentation": {}
+    },
+    {
+        "label": "PersonaFrame",
+        "importPath": "screens.persona_frame",
+        "description": "screens.persona_frame",
+        "isExtraImport": true,
+        "detail": "screens.persona_frame",
+        "documentation": {}
+    },
+    {
+        "label": "PersonaFrame",
+        "importPath": "screens.persona_frame",
+        "description": "screens.persona_frame",
+        "isExtraImport": true,
+        "detail": "screens.persona_frame",
+        "documentation": {}
+    },
+    {
+        "label": "ProductoFrame",
+        "importPath": "screens.producto_frame",
+        "description": "screens.producto_frame",
+        "isExtraImport": true,
+        "detail": "screens.producto_frame",
         "documentation": {}
     },
     {
@@ -3764,11 +4180,20 @@
         "documentation": {}
     },
     {
+        "label": "PacienteCitaDialog",
+        "kind": 6,
+        "importPath": "dialogs.paciente_cita_dialog",
+        "description": "dialogs.paciente_cita_dialog",
+        "peekOfCode": "class PacienteCitaDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    def __init__(self, app: App, parent: ProveedorFrame, title=\"\"):\n        super(PacienteCitaDialog, self).__init__(parent=parent)\n        uic.loadUi(\"ui/paciente_cita_dialog.ui\", self)\n        self._app = app\n        self._frm_parent = parent\n        self.entity = Proveedor()\n        self.lbl_title.setText(title)",
+        "detail": "dialogs.paciente_cita_dialog",
+        "documentation": {}
+    },
+    {
         "label": "PacienteDialog",
         "kind": 6,
         "importPath": "dialogs.paciente_dialog",
         "description": "dialogs.paciente_dialog",
-        "peekOfCode": "class PacienteDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    cmb_persona: QComboBox\n    radio_null: QRadioButton\n    radio_embarazo: QRadioButton\n    radio_lactancia: QRadioButton\n    def __init__(self, app: App, parent: PacienteFrame, title=\"\"):\n        super(PacienteDialog, self).__init__(parent=parent)\n        uic.loadUi(\"ui/paciente_dialog.ui\", self)",
+        "peekOfCode": "class PacienteDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    cmb_persona: QComboBox\n    radio_null: QRadioButton\n    radio_embarazo: QRadioButton\n    radio_lactancia: QRadioButton\n    cmb_contacto: QComboBox\n    input_contacto: QLineEdit\n    btn_contacto: QPushButton",
         "detail": "dialogs.paciente_dialog",
         "documentation": {}
     },
@@ -3788,6 +4213,15 @@
         "description": "dialogs.persona_dialog",
         "peekOfCode": "class PersonaDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    input_nombres: QLineEdit\n    input_apellido_paterno: QLineEdit\n    input_apellido_materno: QLineEdit\n    input_numero_identidad: QLineEdit\n    date_fecha_nacimiento: QDateEdit\n    cmb_genero: QComboBox\n    def __init__(self, app: App, parent: PersonaFrame, title=\"\"):",
         "detail": "dialogs.persona_dialog",
+        "documentation": {}
+    },
+    {
+        "label": "ProductoDialog",
+        "kind": 6,
+        "importPath": "dialogs.producto_dialog",
+        "description": "dialogs.producto_dialog",
+        "peekOfCode": "class ProductoDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    cmb_proveedor: QComboBox\n    cmb_marca: QComboBox\n    input_nombre: QLineEdit\n    txt_descripcion: QPlainTextEdit\n    dbl_stock: QDoubleSpinBox\n    dbl_precio_compra: QDoubleSpinBox\n    dbl_precio_venta: QDoubleSpinBox",
+        "detail": "dialogs.producto_dialog",
         "documentation": {}
     },
     {
@@ -4146,7 +4580,7 @@
         "kind": 6,
         "importPath": "screens.paciente_frame",
         "description": "screens.paciente_frame",
-        "peekOfCode": "class PacienteFrame(QFrame):\n    table: QTableWidget\n    btn_plus: QPushButton\n    frm_footer: QFrame\n    lbl_selected: QLabel\n    btn_alergia: QPushButton\n    btn_cita: QPushButton\n    btn_contacto: QPushButton\n    btn_historia: QPushButton\n    btn_odontograma: QPushButton",
+        "peekOfCode": "class PacienteFrame(QFrame):\n    table: QTableWidget\n    btn_plus: QPushButton\n    frm_footer: QFrame\n    lbl_selected: QLabel\n    btn_cita: QPushButton\n    btn_historia: QPushButton\n    btn_odontograma: QPushButton\n    btn_tratamiento: QPushButton\n    current_pacient: Paciente",
         "detail": "screens.paciente_frame",
         "documentation": {}
     },
@@ -4157,6 +4591,15 @@
         "description": "screens.persona_frame",
         "peekOfCode": "class PersonaFrame(QFrame):\n    table: QTableWidget\n    btn_plus: QPushButton\n    def __init__(self, app: App, parent=None):\n        super(PersonaFrame, self).__init__(parent=parent)\n        uic.loadUi(\"ui/persona_frame.ui\", self)\n        self._app = app\n        self.btn_plus.clicked.connect(self.action_create)\n        self.table.doubleClicked.connect(self.action_edit)\n    def showEvent(self, evt: QShowEvent):",
         "detail": "screens.persona_frame",
+        "documentation": {}
+    },
+    {
+        "label": "ProductoFrame",
+        "kind": 6,
+        "importPath": "screens.producto_frame",
+        "description": "screens.producto_frame",
+        "peekOfCode": "class ProductoFrame(QFrame):\n    table: QTableWidget\n    btn_plus: QPushButton\n    def __init__(self, app: App, parent=None):\n        super(ProductoFrame, self).__init__(parent=parent)\n        uic.loadUi(\"ui/producto_frame.ui\", self)\n        self._app = app\n        self.btn_plus.clicked.connect(self.action_create)\n        self.table.doubleClicked.connect(self.action_edit)\n    def showEvent(self, evt: QShowEvent):",
+        "detail": "screens.producto_frame",
         "documentation": {}
     },
     {

@@ -34,7 +34,7 @@ class ProveedorFrame(QFrame):
     def action_edit(self, evt: QEvent):
         from dialogs.proveedor_dialog import ProveedorDialog
         self._app.app_screen.set_enabled_window(False)
-        row = self.table.selectionModel().currentIndex().row()
+        row = self.table.currentRow()
         id = self.table.item(row, 0).text()
         proveedor = session.query(Proveedor).get(id)
         self.msg = ProveedorDialog(self._app, self, title="Editar Proveedor")

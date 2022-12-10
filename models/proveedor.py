@@ -1,6 +1,7 @@
 from configs.db import Base
 from sqlalchemy import Column, Integer, String, UniqueConstraint, ForeignKey
 from sqlalchemy.orm import relationship
+from models.persona import Persona
 
 
 class Proveedor(Base):
@@ -18,4 +19,4 @@ class Proveedor(Base):
     representante_id = Column(
         Integer, ForeignKey("personas.id"), nullable=False)
 
-    representante = relationship("Persona")
+    representante: Persona = relationship("Persona")

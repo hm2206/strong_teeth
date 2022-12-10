@@ -17,9 +17,7 @@ class PacienteFrame(QFrame):
 
     lbl_selected: QLabel
 
-    btn_alergia: QPushButton
     btn_cita: QPushButton
-    btn_contacto: QPushButton
     btn_historia: QPushButton
     btn_odontograma: QPushButton
     btn_tratamiento: QPushButton
