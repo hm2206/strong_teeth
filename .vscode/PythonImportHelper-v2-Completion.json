@@ -8,6 +8,14 @@
         "documentation": {}
     },
     {
+        "label": "desc",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "Column",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -329,6 +337,14 @@
     },
     {
         "label": "Time",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -1009,6 +1025,14 @@
     },
     {
         "label": "engine",
+        "importPath": "configs.db",
+        "description": "configs.db",
+        "isExtraImport": true,
+        "detail": "configs.db",
+        "documentation": {}
+    },
+    {
+        "label": "session",
         "importPath": "configs.db",
         "description": "configs.db",
         "isExtraImport": true,
@@ -1800,6 +1824,14 @@
         "documentation": {}
     },
     {
+        "label": "Paciente",
+        "importPath": "models.paciente",
+        "description": "models.paciente",
+        "isExtraImport": true,
+        "detail": "models.paciente",
+        "documentation": {}
+    },
+    {
         "label": "PacienteCondicionEnum",
         "importPath": "models.paciente",
         "description": "models.paciente",
@@ -1901,6 +1933,22 @@
         "description": "models.usuario",
         "isExtraImport": true,
         "detail": "models.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "Historia",
+        "importPath": "models.historia",
+        "description": "models.historia",
+        "isExtraImport": true,
+        "detail": "models.historia",
+        "documentation": {}
+    },
+    {
+        "label": "Historia",
+        "importPath": "models.historia",
+        "description": "models.historia",
+        "isExtraImport": true,
+        "detail": "models.historia",
         "documentation": {}
     },
     {
@@ -2128,11 +2176,11 @@
         "documentation": {}
     },
     {
-        "label": "QShowEvent",
-        "importPath": "PyQt5.QtGui",
-        "description": "PyQt5.QtGui",
+        "label": "App",
+        "importPath": "app",
+        "description": "app",
         "isExtraImport": true,
-        "detail": "PyQt5.QtGui",
+        "detail": "app",
         "documentation": {}
     },
     {
@@ -2161,6 +2209,38 @@
     },
     {
         "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QShowEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QStandardItemModel",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QStandardItem",
         "importPath": "PyQt5.QtGui",
         "description": "PyQt5.QtGui",
         "isExtraImport": true,
@@ -2329,6 +2409,22 @@
     },
     {
         "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QObject",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QEvent",
         "importPath": "PyQt5.QtCore",
         "description": "PyQt5.QtCore",
         "isExtraImport": true,
@@ -2485,6 +2581,54 @@
         "description": "PyQt5.QtCore",
         "isExtraImport": true,
         "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPlainTextEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDateEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTimeEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
         "documentation": {}
     },
     {
@@ -2697,6 +2841,30 @@
     },
     {
         "label": "QFrame",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QComboBox",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTimeEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPlainTextEdit",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
         "isExtraImport": true,
@@ -3584,6 +3752,14 @@
         "documentation": {}
     },
     {
+        "label": "uic",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
         "label": "QtWidgets",
         "importPath": "PyQt5",
         "description": "PyQt5",
@@ -3688,11 +3864,19 @@
         "documentation": {}
     },
     {
-        "label": "MarcaFrame",
-        "importPath": "screens.marca_frame",
-        "description": "screens.marca_frame",
+        "label": "CriticalMessageBox",
+        "importPath": "message_boxs.critical_message_box",
+        "description": "message_boxs.critical_message_box",
         "isExtraImport": true,
-        "detail": "screens.marca_frame",
+        "detail": "message_boxs.critical_message_box",
+        "documentation": {}
+    },
+    {
+        "label": "SuccessMessageBox",
+        "importPath": "message_boxs.success_message_box",
+        "description": "message_boxs.success_message_box",
+        "isExtraImport": true,
+        "detail": "message_boxs.success_message_box",
         "documentation": {}
     },
     {
@@ -3789,6 +3973,38 @@
         "description": "dialogs.paciente_odontograma_dialog",
         "isExtraImport": true,
         "detail": "dialogs.paciente_odontograma_dialog",
+        "documentation": {}
+    },
+    {
+        "label": "PacienteOdontogramaDialog",
+        "importPath": "dialogs.paciente_odontograma_dialog",
+        "description": "dialogs.paciente_odontograma_dialog",
+        "isExtraImport": true,
+        "detail": "dialogs.paciente_odontograma_dialog",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "MarcaFrame",
+        "importPath": "screens.marca_frame",
+        "description": "screens.marca_frame",
+        "isExtraImport": true,
+        "detail": "screens.marca_frame",
         "documentation": {}
     },
     {
@@ -4060,14 +4276,6 @@
         "documentation": {}
     },
     {
-        "label": "date",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
         "label": "setup",
         "importPath": "setuptools",
         "description": "setuptools",
@@ -4130,6 +4338,15 @@
         "documentation": {}
     },
     {
+        "label": "HistoriaDialog",
+        "kind": 6,
+        "importPath": "dialogs.historia_dialog",
+        "description": "dialogs.historia_dialog",
+        "peekOfCode": "class HistoriaDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    date_fecha: QDateEdit\n    time_hora: QTimeEdit\n    txt_observacion: QPlainTextEdit\n    def __init__(self, app: App, parent: PacienteOdontogramaDialog, title=\"\"):\n        super(HistoriaDialog, self).__init__(parent=parent)\n        uic.loadUi(\"ui/historia_dialog.ui\", self)\n        self._app = app",
+        "detail": "dialogs.historia_dialog",
+        "documentation": {}
+    },
+    {
         "label": "MarcaDialog",
         "kind": 6,
         "importPath": "dialogs.marca_dialog",
@@ -4170,7 +4387,7 @@
         "kind": 6,
         "importPath": "dialogs.paciente_odontograma_dialog",
         "description": "dialogs.paciente_odontograma_dialog",
-        "peekOfCode": "class PacienteOdontogramaDialog(QDialog):\n    lbl_title: QLabel\n    frm_odontograma: QFrame\n    btn_11: QPushButton\n    btn_12: QPushButton\n    btn_13: QPushButton\n    btn_14: QPushButton\n    btn_15: QPushButton\n    btn_16: QPushButton\n    btn_17: QPushButton",
+        "peekOfCode": "class PacienteOdontogramaDialog(QDialog):\n    lbl_title: QLabel\n    frm_odontograma: QFrame\n    cmb_fecha: QComboBox\n    time_hora: QTimeEdit\n    txt_observacion: QPlainTextEdit\n    btn_nuevo: QPushButton\n    btn_editar: QPushButton\n    btn_11: QPushButton\n    btn_12: QPushButton",
         "detail": "dialogs.paciente_odontograma_dialog",
         "documentation": {}
     },
@@ -4314,7 +4531,7 @@
         "kind": 6,
         "importPath": "models.condicion_dental",
         "description": "models.condicion_dental",
-        "peekOfCode": "class CondicionDental(Base):\n    __tablename__ = 'condicion_dentales'\n    id = Column(Integer, primary_key=True)\n    nombre = Column(String(20), nullable=False)\n    odontogramas = relationship(\n        \"Odontograma\", back_populates=\"condicion\")",
+        "peekOfCode": "class CondicionDental(Base):\n    __tablename__ = 'condicion_dentales'\n    id = Column(Integer, primary_key=True)\n    nombre = Column(String(20), nullable=False)\n    color_fondo = Column(String(10), nullable=False)\n    color_texto = Column(String(10), nullable=False)\n    odontogramas = relationship(\n        \"Odontograma\", back_populates=\"condicion\")",
         "detail": "models.condicion_dental",
         "documentation": {}
     },
@@ -4350,7 +4567,7 @@
         "kind": 6,
         "importPath": "models.historia",
         "description": "models.historia",
-        "peekOfCode": "class Historia(Base):\n    __tablename__ = 'historias'\n    id = Column(Integer, primary_key=True)\n    fecha_inicio = Column(Date, nullable=False)\n    hora_inicio = Column(Time, nullable=False)\n    observacion = Column(Text, nullable=True)\n    paciente_id = Column(Integer, ForeignKey(\n        \"pacientes.id\"), nullable=False, unique=True)\n    paciente = relationship(\"Paciente\")",
+        "peekOfCode": "class Historia(Base):\n    __tablename__ = 'historias'\n    __table_args__ = (\n        UniqueConstraint('fecha_inicio', 'hora_inicio',\n                         'paciente_id', name=\"u_historia\"),\n    )\n    id = Column(Integer, primary_key=True)\n    fecha_inicio = Column(Date, nullable=False)\n    hora_inicio = Column(Time, nullable=False)\n    observacion = Column(Text, nullable=True)",
         "detail": "models.historia",
         "documentation": {}
     },
@@ -4377,7 +4594,7 @@
         "kind": 6,
         "importPath": "models.odontograma",
         "description": "models.odontograma",
-        "peekOfCode": "class Odontograma(Base):\n    from models.condicion_dental import CondicionDental\n    __tablename__ = 'odontogramas'\n    __table_args__ = (\n        UniqueConstraint('paciente_id', 'numero_diente', name=\"u_odontograma\"),\n    )\n    id = Column(Integer, primary_key=True)\n    numero_diente = Column(Integer, nullable=False)\n    observacion = Column(Text, nullable=True)\n    paciente_id = Column(Integer, ForeignKey(\"pacientes.id\"), nullable=False)",
+        "peekOfCode": "class Odontograma(Base):\n    from models.condicion_dental import CondicionDental\n    __tablename__ = 'odontogramas'\n    __table_args__ = (\n        UniqueConstraint('historia_id', 'numero_diente', name=\"u_odontograma\"),\n    )\n    id = Column(Integer, primary_key=True)\n    numero_diente = Column(Integer, nullable=False)\n    observacion = Column(Text, nullable=True)\n    historia_id = Column(Integer, ForeignKey(\"historias.id\"))",
         "detail": "models.odontograma",
         "documentation": {}
     },

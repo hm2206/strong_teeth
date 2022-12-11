@@ -1,17 +1,26 @@
 from app import App
-from PyQt5.QtGui import QShowEvent
-from PyQt5.QtWidgets import QDialog, QLabel, QPushButton, QFrame
+from PyQt5.QtGui import QShowEvent, QStandardItemModel, QStandardItem
+from PyQt5.QtCore import QEvent
+from PyQt5.QtWidgets import QDialog, QLabel, QPushButton, QFrame, QComboBox, QTimeEdit, QPlainTextEdit
 from PyQt5 import uic
 from configs.db import session
+from sqlalchemy import desc
 from screens.paciente_frame import PacienteFrame
 from models.odontograma import Odontograma
 from models.condicion_dental import CondicionDental
+from models.historia import Historia
+from models.paciente import Paciente
 
 
 class PacienteOdontogramaDialog(QDialog):
 
     lbl_title: QLabel
     frm_odontograma: QFrame
+    cmb_fecha: QComboBox
+    time_hora: QTimeEdit
+    txt_observacion: QPlainTextEdit
+    btn_nuevo: QPushButton
+    btn_editar: QPushButton
 
     btn_11: QPushButton
     btn_12: QPushButton
@@ -73,8 +82,10 @@ class PacienteOdontogramaDialog(QDialog):
         self._app = app
         self._frm_parent = parent
         self.entity = Odontograma()
+        self.historia = Historia()
+        self.paciente: Paciente = parent.entity
         self.lbl_title.setText(
-            f"Odontograma: {parent.entity.persona.display_nombre()}")
+            f"Historia Dental: {parent.entity.persona.display_nombre()}")
         self.dispatch_events()
 
     def dispatch_events(self):
@@ -130,8 +141,14 @@ class PacienteOdontogramaDialog(QDialog):
         self.btn_83.clicked.connect(self.toggle_odontograma)
         self.btn_84.clicked.connect(self.toggle_odontograma)
         self.btn_85.clicked.connect(self.toggle_odontograma)
+        self.btn_nuevo.clicked.connect(self.nueva_historia)
+        self.btn_editar.clicked.connect(self.editar_historia)
+        self.cmb_fecha.currentIndexChanged.connect(self.change_fecha)
 
     def showEvent(self, evt: QShowEvent):
+        self.cmb_fecha.setEnabled(False)
+        self.btn_editar.setEnabled(False)
+        self.load_historial()
         self.load_data()
         return super().showEvent(evt)
 
@@ -139,19 +156,58 @@ class PacienteOdontogramaDialog(QDialog):
         self._app.app_screen.set_enabled_window(True)
         return super().closeEvent(evt)
 
+    def load_historial(self):
+        paciente: Paciente = self._frm_parent.entity
+        items = session.query(Historia).filter(
+            Historia.paciente_id == paciente.id).order_by(
+                desc(Historia.fecha_inicio), desc(Historia.hora_inicio)
+        ).all()
+
+        model = QStandardItemModel(0, 1)
+        self.cmb_fecha.setModel(model)
+
+        for item in items:
+            historia: Historia = item
+            self.cmb_fecha.addItem(historia.display_info(), historia)
+
+        if (len(items) > 0):
+            self.historia: Historia = items[0]
+
     def load_data(self):
+        self.validate_historia()
+
+    def load_odontogramas(self):
         self.frm_odontograma.setEnabled(False)
         self.datos = session.query(Odontograma).filter(
-            Odontograma.paciente_id == self._frm_parent.entity.id).all()
-        self.draw_teeth("background-color: #29b6f6;")
+            Odontograma.historia_id == self.historia.id).all()
+        self.clear_teeth()
+        self.draw_teeth()
         self.frm_odontograma.setEnabled(True)
 
-    def draw_teeth(self, styles: str):
+    def validate_historia(self):
+        if (self.historia.id):
+            self.draw_historia()
+        else:
+            self.btn_editar.setEnabled(False)
+            self.cmb_fecha.setEnabled(False)
+            self.frm_odontograma.setEnabled(False)
+
+    def draw_historia(self):
+        self.cmb_fecha.setEnabled(True)
+        self.cmb_fecha.setCurrentText(self.historia.display_info())
+        self.txt_observacion.setPlainText(self.historia.observacion)
+        self.load_odontogramas()
+        self.btn_editar.setEnabled(True)
+
+    def draw_teeth(self, ):
         for data in self.datos:
             item: Odontograma = data
             object_name = f"btn_{item.numero_diente}"
             btn: QPushButton = self.__getattribute__(object_name)
-            btn.setStyleSheet(styles)
+            color_fondo = item.condicion.color_fondo
+            color_texto = item.condicion.color_texto
+            btn.setStyleSheet(
+                f"background-color: {color_fondo}; color: {color_texto}")
 
     def toggle_odontograma(self):
         from dialogs.odontograma_dialog import OdontogramaDialog
@@ -169,12 +225,51 @@ class PacienteOdontogramaDialog(QDialog):
         else:
             dialog = OdontogramaDialog(self._app, self, "Crear Odontograma")
             self.entity = Odontograma()
-            condicion = CondicionDental()
+            self.entity.condicion = session.query(CondicionDental).first()
             self.entity.numero_diente = numero_diente
-            self.entity.condicion = condicion
-            self.entity.paciente = self._frm_parent.entity
+            self.entity.historia = self.historia
 
         # cargar datos
         dialog.setEnabled(True)
         dialog.show()
         dialog.load(self.entity)
+
+    def change_fecha(self, evt: QEvent):
+        obj: QComboBox = self.sender()
+        self.historia: Historia = obj.currentData()
+        if (self.historia and self.historia.id):
+            self.load_data()
+
+    def clear_teeth(self):
+        collects = [
+            range(11, 19),
+            range(21, 29),
+            range(31, 39),
+            range(41, 49),
+            range(51, 56),
+            range(61, 66),
+            range(71, 76),
+            range(81, 86)
+        ]
+
+        for teeths in collects:
+            for teeth in teeths:
+                object_name = f"btn_{teeth}"
+                btn: QPushButton = self.__getattribute__(object_name)
+                color_fondo = "white"
+                color_texto = "gray"
+                btn.setStyleSheet(
+                    f"background-color: {color_fondo}; color: {color_texto}"
+                )
+
+    def nueva_historia(self):
+        from dialogs.historia_dialog import HistoriaDialog
+        dialog = HistoriaDialog(self._app, self, title="Crear Historia Dental")
+        dialog.show()
+
+    def editar_historia(self):
+        from dialogs.historia_dialog import HistoriaDialog
+        dialog = HistoriaDialog(
+            self._app, self, title="Editar Historia Dental")
+        dialog.show()
+        dialog.load(self.historia)
