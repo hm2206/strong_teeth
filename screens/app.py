@@ -1,5 +1,5 @@
 from PyQt5 import uic
-from PyQt5.QtCore import QObject
+from PyQt5.QtCore import QObject, QRect
 from PyQt5.QtWidgets import QMainWindow, QPushButton, QLabel, QFrame
 from PyQt5.QtGui import QShowEvent
 from app import App
@@ -53,6 +53,8 @@ class AppScreen(QMainWindow):
         from screens.paciente_frame import PacienteFrame
         from screens.producto_frame import ProductoFrame
 
+        self.rect: QRect = self.frm_main.frameRect()
+
         self.btn_personas.clicked.connect(
             lambda evt: self.open_module(evt, PersonaFrame))
         self.btn_usuarios.clicked.connect(
@@ -73,10 +75,22 @@ class AppScreen(QMainWindow):
             lambda evt: self.open_module(evt, ProductoFrame))
 
     def open_module(self, evt: QObject, Frame: QFrame):
-        frame = Frame(self._app, parent=self.frm_main)
-        frame.setFrameRect(self.frm_main.frameRect())
-        self.frm_main = frame
-        self.frm_main.show()
+        children = self.frm_main.children()
+        frame: QFrame = Frame(self._app)
+        frame.setFrameRect(self.rect)
+
+        exists_frame = False
+
+        for child in children:
+            if (type(child) == type(frame)):
+                child.show()
+                exists_frame = True
+            else:
+                child.close()
+
+        if (not exists_frame):
+            frame.setParent(self.frm_main)
+            frame.show()
 
     def set_enabled_window(self, value: bool):
         self.frm_main.setEnabled(value)

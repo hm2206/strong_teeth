@@ -2432,6 +2432,14 @@
         "documentation": {}
     },
     {
+        "label": "QRect",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
         "label": "QEvent",
         "importPath": "PyQt5.QtCore",
         "description": "PyQt5.QtCore",
