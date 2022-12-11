@@ -1736,6 +1736,14 @@
         "documentation": {}
     },
     {
+        "label": "Doctor",
+        "importPath": "models.doctor",
+        "description": "models.doctor",
+        "isExtraImport": true,
+        "detail": "models.doctor",
+        "documentation": {}
+    },
+    {
         "label": "Agenda",
         "importPath": "models.agenda",
         "description": "models.agenda",
@@ -4194,12 +4202,12 @@
         "documentation": {}
     },
     {
-        "label": "TrabajoDialog",
+        "label": "TrabajadorDialog",
         "kind": 6,
-        "importPath": "dialogs.trabajo_dialog",
-        "description": "dialogs.trabajo_dialog",
-        "peekOfCode": "class TrabajoDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    input_numero_essalud: QLineEdit\n    input_cmp: QLineEdit\n    cmb_persona: QComboBox\n    cmb_turno: QComboBox\n    def __init__(self, app: App, parent: PersonaFrame, title=\"\"):\n        super(TrabajoDialog, self).__init__(parent=parent)\n        uic.loadUi(\"ui/trabajador_dialog.ui\", self)",
-        "detail": "dialogs.trabajo_dialog",
+        "importPath": "dialogs.trabajador_dialog",
+        "description": "dialogs.trabajador_dialog",
+        "peekOfCode": "class TrabajadorDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    input_numero_essalud: QLineEdit\n    input_cmp: QLineEdit\n    cmb_persona: QComboBox\n    cmb_turno: QComboBox\n    def __init__(self, app: App, parent: PersonaFrame, title=\"\"):\n        super(TrabajadorDialog, self).__init__(parent=parent)\n        uic.loadUi(\"ui/trabajador_dialog.ui\", self)",
+        "detail": "dialogs.trabajador_dialog",
         "documentation": {}
     },
     {

@@ -10,9 +10,10 @@ from message_boxs.success_message_box import SuccessMessageBox
 from screens.persona_frame import PersonaFrame
 from models.trabajador import Trabajador
 from models.turno import Turno
+from models.doctor import Doctor
 
 
-class TrabajoDialog(QDialog):
+class TrabajadorDialog(QDialog):
 
     lbl_title: QLabel
     btn_save: QPushButton
@@ -22,7 +23,7 @@ class TrabajoDialog(QDialog):
     cmb_turno: QComboBox
 
     def __init__(self, app: App, parent: PersonaFrame, title=""):
-        super(TrabajoDialog, self).__init__(parent=parent)
+        super(TrabajadorDialog, self).__init__(parent=parent)
         uic.loadUi("ui/trabajador_dialog.ui", self)
         self._app = app
         self._frm_parent = parent
@@ -43,9 +44,13 @@ class TrabajoDialog(QDialog):
         self.entity = entity
         persona: Persona = entity.persona
         turno: Turno = entity.turno
+        doctor: Doctor = entity.doctor
         self.input_numero_essalud.setText(entity.numero_essalud)
         self.cmb_persona.setCurrentText(persona.display_info())
         self.cmb_turno.setCurrentText(turno.nombre)
+
+        if (doctor):
+            self.input_cmp.setText(doctor.cmp)
 
     def load_personas(self):
         datos = session.query(Persona).all()
@@ -62,13 +67,29 @@ class TrabajoDialog(QDialog):
     def save(self, evt: QObject):
         persona: Persona = self.cmb_persona.currentData()
         turno: Turno = self.cmb_turno.currentData()
+        doctor: Doctor = self.entity.doctor
+
+        cmp = self.input_cmp.text()
 
         self.entity.numero_essalud = self.input_numero_essalud.text()
         self.entity.persona_id = persona.id
         self.entity.turno_id = turno.id
-        session.add(self.entity)
 
         try:
+            if (doctor and cmp):
+                doctor.cmp = cmp
+            elif (doctor and not cmp):
+                session.delete(doctor)
+            elif (not doctor and cmp):
+                doctor = Doctor()
+                doctor.cmp = cmp
+                session.add(doctor)
+            else:
+                doctor = None
+
+            self.entity.doctor = doctor
+            session.add(self.entity)
+
             session.commit()
             SuccessMessageBox(text="Los datos se guardaron").exec()
             self._frm_parent.load()
