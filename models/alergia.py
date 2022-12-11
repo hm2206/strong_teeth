@@ -1,5 +1,6 @@
 from configs.db import Base
 from sqlalchemy import Column, Integer, String, UniqueConstraint, Text
+from sqlalchemy.orm import relationship
 
 
 class Alergia(Base):
@@ -13,3 +14,6 @@ class Alergia(Base):
     id = Column(Integer, primary_key=True)
     nombre = Column(String(100), nullable=False)
     descripcion = Column(Text, nullable=True)
+
+    pacientes = relationship(
+        "Paciente", secondary="paciente_alergias", back_populates="alergias")

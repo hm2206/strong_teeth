@@ -528,22 +528,6 @@
         "documentation": {}
     },
     {
-        "label": "UniqueConstraint",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Enum",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
         "label": "Column",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -1664,22 +1648,6 @@
         "documentation": {}
     },
     {
-        "label": "Contacto",
-        "importPath": "models.contacto",
-        "description": "models.contacto",
-        "isExtraImport": true,
-        "detail": "models.contacto",
-        "documentation": {}
-    },
-    {
-        "label": "ContactoTipoEnum",
-        "importPath": "models.contacto",
-        "description": "models.contacto",
-        "isExtraImport": true,
-        "detail": "models.contacto",
-        "documentation": {}
-    },
-    {
         "label": "Turno",
         "importPath": "models.turno",
         "description": "models.turno",
@@ -1861,6 +1829,14 @@
         "description": "models.odontograma",
         "isExtraImport": true,
         "detail": "models.odontograma",
+        "documentation": {}
+    },
+    {
+        "label": "PacienteAlergia",
+        "importPath": "models.paciente_alergia",
+        "description": "models.paciente_alergia",
+        "isExtraImport": true,
+        "detail": "models.paciente_alergia",
         "documentation": {}
     },
     {
@@ -2785,14 +2761,6 @@
     },
     {
         "label": "QRadioButton",
-        "importPath": "PyQt5.QtWidgets",
-        "description": "PyQt5.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PyQt5.QtWidgets",
-        "documentation": {}
-    },
-    {
-        "label": "QLineEdit",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
         "isExtraImport": true,
@@ -4056,6 +4024,14 @@
         "documentation": {}
     },
     {
+        "label": "InstrumentedList",
+        "importPath": "sqlalchemy.orm.collections",
+        "description": "sqlalchemy.orm.collections",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm.collections",
+        "documentation": {}
+    },
+    {
         "label": "PersonaFrame",
         "importPath": "screens.persona_frame",
         "description": "screens.persona_frame",
@@ -4378,7 +4354,7 @@
         "kind": 6,
         "importPath": "dialogs.paciente_dialog",
         "description": "dialogs.paciente_dialog",
-        "peekOfCode": "class PacienteDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    cmb_persona: QComboBox\n    radio_null: QRadioButton\n    radio_embarazo: QRadioButton\n    radio_lactancia: QRadioButton\n    cmb_contacto: QComboBox\n    input_contacto: QLineEdit\n    btn_contacto: QPushButton",
+        "peekOfCode": "class PacienteDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    cmb_persona: QComboBox\n    radio_null: QRadioButton\n    radio_embarazo: QRadioButton\n    radio_lactancia: QRadioButton\n    cmb_alergias: QComboBox\n    btn_alergias: QPushButton\n    list_alergias: QListWidget",
         "detail": "dialogs.paciente_dialog",
         "documentation": {}
     },
@@ -4495,7 +4471,7 @@
         "kind": 6,
         "importPath": "models.alergia",
         "description": "models.alergia",
-        "peekOfCode": "class Alergia(Base):\n    __tablename__ = 'alergias'\n    __table_args__ = (\n        UniqueConstraint('nombre'),\n    )\n    id = Column(Integer, primary_key=True)\n    nombre = Column(String(100), nullable=False)\n    descripcion = Column(Text, nullable=True)",
+        "peekOfCode": "class Alergia(Base):\n    __tablename__ = 'alergias'\n    __table_args__ = (\n        UniqueConstraint('nombre'),\n    )\n    id = Column(Integer, primary_key=True)\n    nombre = Column(String(100), nullable=False)\n    descripcion = Column(Text, nullable=True)\n    pacientes = relationship(\n        \"Paciente\", secondary=\"paciente_alergias\", back_populates=\"alergias\")",
         "detail": "models.alergia",
         "documentation": {}
     },
@@ -4612,7 +4588,7 @@
         "kind": 6,
         "importPath": "models.paciente",
         "description": "models.paciente",
-        "peekOfCode": "class Paciente(Base):\n    __tablename__ = 'pacientes'\n    id = Column(Integer, primary_key=True)\n    condicion = Column(Enum(PacienteCondicionEnum), nullable=True)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    persona = relationship(\"Persona\")",
+        "peekOfCode": "class Paciente(Base):\n    __tablename__ = 'pacientes'\n    id = Column(Integer, primary_key=True)\n    condicion = Column(Enum(PacienteCondicionEnum), nullable=True)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    persona = relationship(\"Persona\")\n    alergias = relationship(\n        \"Alergia\", secondary=\"paciente_alergias\", back_populates=\"pacientes\", lazy='dynamic', passive_deletes=True)",
         "detail": "models.paciente",
         "documentation": {}
     },
@@ -4621,7 +4597,7 @@
         "kind": 6,
         "importPath": "models.paciente_alergia",
         "description": "models.paciente_alergia",
-        "peekOfCode": "class PacienteAlergia(Base):\n    __tablename__ = 'paciente_alergias'\n    __table_args__ = (\n        UniqueConstraint('paciente_id', 'alergia_id', name=\"u_paciente_ale\"),\n    )\n    id = Column(Integer, primary_key=True)\n    paciente_id = Column(Integer, ForeignKey(\"pacientes.id\"), nullable=False)\n    alergia_id = Column(Integer, ForeignKey(\"alergias.id\"), nullable=False)\n    paciente = relationship(\"Paciente\")\n    alergia = relationship(\"Alergia\")",
+        "peekOfCode": "class PacienteAlergia(Base):\n    __tablename__ = 'paciente_alergias'\n    paciente_id = Column(Integer, ForeignKey(\"pacientes.id\"), primary_key=True)\n    alergia_id = Column(Integer, ForeignKey(\"alergias.id\"), primary_key=True)",
         "detail": "models.paciente_alergia",
         "documentation": {}
     },

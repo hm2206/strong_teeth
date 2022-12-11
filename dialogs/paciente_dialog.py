@@ -1,7 +1,7 @@
 from app import App
 from PyQt5.QtGui import QShowEvent
 from PyQt5.QtCore import QObject
-from PyQt5.QtWidgets import QDialog, QLabel, QPushButton, QComboBox, QRadioButton, QLineEdit, QListWidget, QListWidgetItem
+from PyQt5.QtWidgets import QDialog, QLabel, QPushButton, QComboBox, QRadioButton, QListWidget, QListWidgetItem
 from PyQt5 import uic
 from message_boxs.critical_message_box import CriticalMessageBox
 from configs.db import session
@@ -10,7 +10,8 @@ from models.paciente import Paciente, PacienteCondicionEnum
 from models.persona import Persona
 from screens.paciente_frame import PacienteFrame
 from models.alergia import Alergia
-from models.contacto import Contacto, ContactoTipoEnum
+from models.paciente_alergia import PacienteAlergia
+from sqlalchemy.orm.collections import InstrumentedList
 
 
 class PacienteDialog(QDialog):
@@ -22,17 +23,11 @@ class PacienteDialog(QDialog):
     radio_embarazo: QRadioButton
     radio_lactancia: QRadioButton
 
-    cmb_contacto: QComboBox
-    input_contacto: QLineEdit
-    btn_contacto: QPushButton
-    list_contacto: QListWidget
-
     cmb_alergias: QComboBox
     btn_alergias: QPushButton
     list_alergias: QListWidget
 
-    alergias = []
-    contactos = []
+    alergias = InstrumentedList([])
 
     def __init__(self, app: App, parent: PacienteFrame, title=""):
         super(PacienteDialog, self).__init__(parent=parent)
@@ -46,9 +41,7 @@ class PacienteDialog(QDialog):
         self.radio_embarazo.toggled.connect(self.toggle_radio)
         self.radio_lactancia.toggled.connect(self.toggle_radio)
         self.btn_alergias.clicked.connect(self.add_alergias)
-        self.btn_contacto.clicked.connect(self.add_contacto)
         self.list_alergias.doubleClicked.connect(self.remove_alergias)
-        self.list_contacto.doubleClicked.connect(self.remove_contacto)
 
     def showEvent(self, evt: QShowEvent):
         self.load_personas()
@@ -65,6 +58,10 @@ class PacienteDialog(QDialog):
         self.cmb_persona.setCurrentText(persona.display_info())
         self.check_condicion()
 
+        # list alergias
+        self.alergias = InstrumentedList(entity.alergias)
+        self.draw_list_alergias()
+
     def load_personas(self):
         datos = session.query(Persona).all()
         for item in datos:
@@ -78,16 +75,27 @@ class PacienteDialog(QDialog):
             self.cmb_alergias.addItem(alergia.nombre, alergia)
 
     def save(self, evt: QObject):
-        persona: Persona = self.cmb_persona.currentData()
-        self.entity.persona_id = persona.id
-        session.add(self.entity)
-
         try:
+            persona: Persona = self.cmb_persona.currentData()
+            self.entity.persona_id = persona.id
+
+            # save paciente
+            session.add(self.entity)
+
+            if (self.entity.id):
+                session.query(PacienteAlergia).filter(
+                    PacienteAlergia.paciente_id == self.entity.id).delete()
+
+            # add alergias
+            self.entity.alergias.extend(self.alergias)
+
+            # save data
             session.commit()
             SuccessMessageBox(text="Los datos se guardaron").exec()
             self._frm_parent.load()
             self.close()
-        except Exception:
+        except Exception as e:
+            print(e)
             session.rollback()
             CriticalMessageBox(text="No se pudo guardar los datos").exec()
 
@@ -115,12 +123,20 @@ class PacienteDialog(QDialog):
     def add_alergias(self):
         data: Alergia = self.cmb_alergias.currentData()
         count = list(filter(lambda x: (x.id == data.id), self.alergias))
+
         if (len(count) == 0):
             item = QListWidgetItem()
             item.setText(self.cmb_alergias.currentText())
             item.setData(1, data)
             self.list_alergias.addItem(item)
             self.alergias.append(data)
+
+    def draw_list_alergias(self):
+        for alergia in self.alergias:
+            item = QListWidgetItem()
+            item.setText(alergia.nombre)
+            item.setData(1, alergia)
+            self.list_alergias.addItem(item)
 
     def remove_alergias(self):
         list_items: QListWidget = self.sender()
@@ -129,27 +145,4 @@ class PacienteDialog(QDialog):
         alergia: Alergia = item.data(1)
         tmp_alergias = list(
             filter(lambda x: (x.id != alergia.id), self.alergias))
-        self.alergias = tmp_alergias
-
-    def add_contacto(self):
-        data: ContactoTipoEnum = self.cmb_alergias.currentData()
-        count = list(filter(lambda x: (x.tipo == data), self.contactos))
-        if (len(count) == 0):
-            contacto = Contacto()
-            contacto.valor = self.input_contacto.text()
-            item = QListWidgetItem()
-            text = f"{self.cmb_contacto.currentText()} - {contacto.valor}"
-            item.setText(text)
-            item.setData(1, contacto)
-            self.list_contacto.addItem(item)
-            self.contactos.append(contacto)
-            self.input_contacto.setText("")
-
-    def remove_contacto(self):
-        list_items: QListWidget = self.sender()
-        item: QListWidgetItem = list_items.currentItem()
-        self.list_contacto.takeItem(list_items.currentRow())
-        contacto: Contacto = item.data(1)
-        tmp_alergias = list(
-            filter(lambda x: (x.tipo != contacto.tipo and x.valor == contacto.valor), self.alergias))
-        self.alergias = tmp_alergias
+        self.alergias = InstrumentedList(tmp_alergias)

@@ -10,7 +10,6 @@ class PacienteCondicionEnum(EnumLocal):
 
 
 class Paciente(Base):
-
     __tablename__ = 'pacientes'
 
     id = Column(Integer, primary_key=True)
@@ -19,3 +18,5 @@ class Paciente(Base):
                         nullable=False, unique=True)
 
     persona = relationship("Persona")
+    alergias = relationship(
+        "Alergia", secondary="paciente_alergias", back_populates="pacientes", lazy='dynamic', passive_deletes=True)
