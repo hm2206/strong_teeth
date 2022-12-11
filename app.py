@@ -60,7 +60,8 @@ class App:
 
                 self.auth = user
                 self.app_screen.show()
-            except Exception:
+            except Exception as e:
+                print(e)
                 self.login_screen.show()
 
     def distroy_session(self):

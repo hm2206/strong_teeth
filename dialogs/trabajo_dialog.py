@@ -17,6 +17,7 @@ class TrabajoDialog(QDialog):
     lbl_title: QLabel
     btn_save: QPushButton
     input_numero_essalud: QLineEdit
+    input_cmp: QLineEdit
     cmb_persona: QComboBox
     cmb_turno: QComboBox
 

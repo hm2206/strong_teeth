@@ -2,7 +2,6 @@ from configs.db import Base
 from enum import Enum as EnumLocal
 from sqlalchemy import Column, Integer, ForeignKey, Enum
 from sqlalchemy.orm import relationship
-from models.persona import Persona
 
 
 class PacienteCondicionEnum(EnumLocal):
@@ -19,4 +18,4 @@ class Paciente(Base):
     persona_id = Column(Integer, ForeignKey("personas.id"),
                         nullable=False, unique=True)
 
-    persona: Persona = relationship("Persona")
+    persona = relationship("Persona")

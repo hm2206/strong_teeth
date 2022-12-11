@@ -976,6 +976,22 @@
         "documentation": {}
     },
     {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "dotenv_values",
         "importPath": "dotenv",
         "description": "dotenv",
@@ -1440,31 +1456,7 @@
         "documentation": {}
     },
     {
-        "label": "Persona",
-        "importPath": "models.persona",
-        "description": "models.persona",
-        "isExtraImport": true,
-        "detail": "models.persona",
-        "documentation": {}
-    },
-    {
-        "label": "Persona",
-        "importPath": "models.persona",
-        "description": "models.persona",
-        "isExtraImport": true,
-        "detail": "models.persona",
-        "documentation": {}
-    },
-    {
         "label": "genero_to_str",
-        "importPath": "models.persona",
-        "description": "models.persona",
-        "isExtraImport": true,
-        "detail": "models.persona",
-        "documentation": {}
-    },
-    {
-        "label": "Persona",
         "importPath": "models.persona",
         "description": "models.persona",
         "isExtraImport": true,
@@ -1549,22 +1541,6 @@
         "description": "models.marca",
         "isExtraImport": true,
         "detail": "models.marca",
-        "documentation": {}
-    },
-    {
-        "label": "Marca",
-        "importPath": "models.marca",
-        "description": "models.marca",
-        "isExtraImport": true,
-        "detail": "models.marca",
-        "documentation": {}
-    },
-    {
-        "label": "Proveedor",
-        "importPath": "models.proveedor",
-        "description": "models.proveedor",
-        "isExtraImport": true,
-        "detail": "models.proveedor",
         "documentation": {}
     },
     {
@@ -1720,14 +1696,6 @@
         "documentation": {}
     },
     {
-        "label": "Turno",
-        "importPath": "models.turno",
-        "description": "models.turno",
-        "isExtraImport": true,
-        "detail": "models.turno",
-        "documentation": {}
-    },
-    {
         "label": "Horario",
         "importPath": "models.horario",
         "description": "models.horario",
@@ -1809,14 +1777,6 @@
     },
     {
         "label": "PacienteCondicionEnum",
-        "importPath": "models.paciente",
-        "description": "models.paciente",
-        "isExtraImport": true,
-        "detail": "models.paciente",
-        "documentation": {}
-    },
-    {
-        "label": "Paciente",
         "importPath": "models.paciente",
         "description": "models.paciente",
         "isExtraImport": true,
@@ -3840,14 +3800,6 @@
         "documentation": {}
     },
     {
-        "label": "CondicionDental",
-        "importPath": "models.condicion_dental",
-        "description": "models.condicion_dental",
-        "isExtraImport": true,
-        "detail": "models.condicion_dental",
-        "documentation": {}
-    },
-    {
         "label": "ProveedorFrame",
         "importPath": "screens.proveedor_frame",
         "description": "screens.proveedor_frame",
@@ -4120,7 +4072,7 @@
         "kind": 5,
         "importPath": "configs.db",
         "description": "configs.db",
-        "peekOfCode": "engine = create_engine(Environment.get_db_url())\nSessionMaker = sessionmaker(bind=engine)\nsession = SessionMaker()\nBase = declarative_base()",
+        "peekOfCode": "engine = create_engine(Environment.get_db_url(), echo=False)\nSessionMaker = sessionmaker(bind=engine)\nsession = SessionMaker()\nBase = declarative_base()",
         "detail": "configs.db",
         "documentation": {}
     },
@@ -4246,7 +4198,7 @@
         "kind": 6,
         "importPath": "dialogs.trabajo_dialog",
         "description": "dialogs.trabajo_dialog",
-        "peekOfCode": "class TrabajoDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    input_numero_essalud: QLineEdit\n    cmb_persona: QComboBox\n    cmb_turno: QComboBox\n    def __init__(self, app: App, parent: PersonaFrame, title=\"\"):\n        super(TrabajoDialog, self).__init__(parent=parent)\n        uic.loadUi(\"ui/trabajador_dialog.ui\", self)\n        self._app = app",
+        "peekOfCode": "class TrabajoDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    input_numero_essalud: QLineEdit\n    input_cmp: QLineEdit\n    cmb_persona: QComboBox\n    cmb_turno: QComboBox\n    def __init__(self, app: App, parent: PersonaFrame, title=\"\"):\n        super(TrabajoDialog, self).__init__(parent=parent)\n        uic.loadUi(\"ui/trabajador_dialog.ui\", self)",
         "detail": "dialogs.trabajo_dialog",
         "documentation": {}
     },
@@ -4354,7 +4306,7 @@
         "kind": 6,
         "importPath": "models.condicion_dental",
         "description": "models.condicion_dental",
-        "peekOfCode": "class CondicionDental(Base):\n    __tablename__ = 'condicion_dentales'\n    id = Column(Integer, primary_key=True)\n    nombre = Column(String(20), nullable=False)",
+        "peekOfCode": "class CondicionDental(Base):\n    __tablename__ = 'condicion_dentales'\n    id = Column(Integer, primary_key=True)\n    nombre = Column(String(20), nullable=False)\n    odontogramas = relationship(\n        \"Odontograma\", back_populates=\"condicion\")",
         "detail": "models.condicion_dental",
         "documentation": {}
     },
@@ -4381,7 +4333,7 @@
         "kind": 6,
         "importPath": "models.doctor",
         "description": "models.doctor",
-        "peekOfCode": "class Doctor(Base):\n    __tablename__ = 'doctores'\n    id = Column(Integer, primary_key=True)\n    cmp = Column(String(10), nullable=False)\n    trabajador_id = Column(Integer, ForeignKey(\n        \"trabajadores.id\"), nullable=False)\n    trabajador = relationship(\"Trabajador\")",
+        "peekOfCode": "class Doctor(Base):\n    __tablename__ = 'doctores'\n    id = Column(Integer, primary_key=True)\n    cmp = Column(String(10), nullable=False)\n    trabajador_id = Column(Integer, ForeignKey(\"trabajadores.id\"))\n    trabajador = relationship(\"Trabajador\", back_populates=\"doctor\")",
         "detail": "models.doctor",
         "documentation": {}
     },
@@ -4417,7 +4369,7 @@
         "kind": 6,
         "importPath": "models.odontograma",
         "description": "models.odontograma",
-        "peekOfCode": "class Odontograma(Base):\n    __tablename__ = 'odontogramas'\n    __table_args__ = (\n        UniqueConstraint('paciente_id', 'numero_diente', name=\"u_odontograma\"),\n    )\n    id = Column(Integer, primary_key=True)\n    numero_diente = Column(Integer, nullable=False)\n    observacion = Column(Text, nullable=True)\n    paciente_id = Column(Integer, ForeignKey(\"pacientes.id\"), nullable=False)\n    condicion_id = Column(Integer, ForeignKey(",
+        "peekOfCode": "class Odontograma(Base):\n    from models.condicion_dental import CondicionDental\n    __tablename__ = 'odontogramas'\n    __table_args__ = (\n        UniqueConstraint('paciente_id', 'numero_diente', name=\"u_odontograma\"),\n    )\n    id = Column(Integer, primary_key=True)\n    numero_diente = Column(Integer, nullable=False)\n    observacion = Column(Text, nullable=True)\n    paciente_id = Column(Integer, ForeignKey(\"pacientes.id\"), nullable=False)",
         "detail": "models.odontograma",
         "documentation": {}
     },
@@ -4426,7 +4378,7 @@
         "kind": 6,
         "importPath": "models.paciente",
         "description": "models.paciente",
-        "peekOfCode": "class PacienteCondicionEnum(EnumLocal):\n    Embarazo = \"Embarazo\"\n    Lactancia = \"Lactancia\"\nclass Paciente(Base):\n    __tablename__ = 'pacientes'\n    id = Column(Integer, primary_key=True)\n    condicion = Column(Enum(PacienteCondicionEnum), nullable=True)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    persona: Persona = relationship(\"Persona\")",
+        "peekOfCode": "class PacienteCondicionEnum(EnumLocal):\n    Embarazo = \"Embarazo\"\n    Lactancia = \"Lactancia\"\nclass Paciente(Base):\n    __tablename__ = 'pacientes'\n    id = Column(Integer, primary_key=True)\n    condicion = Column(Enum(PacienteCondicionEnum), nullable=True)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    persona = relationship(\"Persona\")",
         "detail": "models.paciente",
         "documentation": {}
     },
@@ -4435,7 +4387,7 @@
         "kind": 6,
         "importPath": "models.paciente",
         "description": "models.paciente",
-        "peekOfCode": "class Paciente(Base):\n    __tablename__ = 'pacientes'\n    id = Column(Integer, primary_key=True)\n    condicion = Column(Enum(PacienteCondicionEnum), nullable=True)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    persona: Persona = relationship(\"Persona\")",
+        "peekOfCode": "class Paciente(Base):\n    __tablename__ = 'pacientes'\n    id = Column(Integer, primary_key=True)\n    condicion = Column(Enum(PacienteCondicionEnum), nullable=True)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    persona = relationship(\"Persona\")",
         "detail": "models.paciente",
         "documentation": {}
     },
@@ -4516,7 +4468,7 @@
         "kind": 6,
         "importPath": "models.trabajador",
         "description": "models.trabajador",
-        "peekOfCode": "class Trabajador(Base):\n    __tablename__ = 'trabajadores'\n    id = Column(Integer, primary_key=True)\n    numero_essalud = Column(String(30), nullable=True)\n    turno_id = Column(Integer, ForeignKey(\"turnos.id\"), nullable=False)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    turno = relationship(\"Turno\")\n    persona = relationship(\"Persona\")",
+        "peekOfCode": "class Trabajador(Base):\n    __tablename__ = 'trabajadores'\n    id = Column(Integer, primary_key=True)\n    numero_essalud = Column(String(30), nullable=True)\n    turno_id = Column(Integer, ForeignKey(\"turnos.id\"), nullable=False)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"), unique=True)\n    turno = relationship(\"Turno\")\n    persona = relationship(\"Persona\")\n    doctor = relationship(\"Doctor\", back_populates=\"trabajador\", uselist=False)",
         "detail": "models.trabajador",
         "documentation": {}
     },

@@ -1,5 +1,6 @@
 from configs.db import Base
 from sqlalchemy import Column, Integer, String
+from sqlalchemy.orm import relationship
 
 
 class CondicionDental(Base):
@@ -8,3 +9,6 @@ class CondicionDental(Base):
 
     id = Column(Integer, primary_key=True)
     nombre = Column(String(20), nullable=False)
+
+    odontogramas = relationship(
+        "Odontograma", back_populates="condicion")

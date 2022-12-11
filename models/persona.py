@@ -1,6 +1,7 @@
 from enum import Enum as EnumLocal
 from configs.db import Base
 from sqlalchemy import Column, Integer, String, Date, UniqueConstraint, Enum
+from sqlalchemy.orm import relationship
 
 
 class PersonGeneroEnum(EnumLocal):
@@ -38,6 +39,8 @@ class Persona(Base):
     numero_identidad = Column(String(10), nullable=False)
     fecha_nacimiento = Column(Date, nullable=False)
     genero = Column(Enum(PersonGeneroEnum), nullable=False)
+
+    usuario = relationship("Usuario", back_populates="persona", uselist=False)
 
     def display_nombre(self):
         return f"{self.nombres} {self.apellido_paterno} {self.apellido_materno}"

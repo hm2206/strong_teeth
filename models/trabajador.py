@@ -10,8 +10,8 @@ class Trabajador(Base):
     id = Column(Integer, primary_key=True)
     numero_essalud = Column(String(30), nullable=True)
     turno_id = Column(Integer, ForeignKey("turnos.id"), nullable=False)
-    persona_id = Column(Integer, ForeignKey("personas.id"),
-                        nullable=False, unique=True)
+    persona_id = Column(Integer, ForeignKey("personas.id"), unique=True)
 
     turno = relationship("Turno")
     persona = relationship("Persona")
+    doctor = relationship("Doctor", back_populates="trabajador", uselist=False)

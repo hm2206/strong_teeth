@@ -4,9 +4,7 @@ from PyQt5.QtCore import QEvent
 from PyQt5.QtWidgets import QPushButton, QFrame, QTableWidget, QTableWidgetItem
 from PyQt5 import uic
 from configs.db import session
-from models.persona import Persona
 from models.trabajador import Trabajador
-from models.turno import Turno
 
 
 class TrabajadorFrame(QFrame):
@@ -47,13 +45,13 @@ class TrabajadorFrame(QFrame):
         self.table.setRowCount(self.data.__len__())
         for index, item in enumerate(self.data):
             entity: Trabajador = item
-            persona: Persona = entity.persona
-            turno: Turno = entity.turno
 
             self.table.setItem(index, 0, QTableWidgetItem(str(entity.id)))
             self.table.setItem(index, 1, QTableWidgetItem(
-                persona.display_nombre()))
-            self.table.setItem(index, 2, QTableWidgetItem(turno.nombre))
+                entity.persona.display_nombre()))
+            self.table.setItem(index, 2, QTableWidgetItem(entity.turno.nombre))
             self.table.setItem(
                 index, 3, QTableWidgetItem(entity.numero_essalud))
+            self.table.setItem(
+                index, 4, QTableWidgetItem(entity.doctor.cmp))
             self.table.resizeColumnsToContents()

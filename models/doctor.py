@@ -9,7 +9,6 @@ class Doctor(Base):
 
     id = Column(Integer, primary_key=True)
     cmp = Column(String(10), nullable=False)
-    trabajador_id = Column(Integer, ForeignKey(
-        "trabajadores.id"), nullable=False)
+    trabajador_id = Column(Integer, ForeignKey("trabajadores.id"))
 
-    trabajador = relationship("Trabajador")
+    trabajador = relationship("Trabajador", back_populates="doctor")

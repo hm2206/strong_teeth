@@ -1,8 +1,6 @@
 from configs.db import Base
 from sqlalchemy import Column, Integer, String, Float, ForeignKey, Text
 from sqlalchemy.orm import relationship
-from models.marca import Marca
-from models.proveedor import Proveedor
 
 
 class Producto(Base):
@@ -17,5 +15,5 @@ class Producto(Base):
     marca_id = Column(Integer, ForeignKey("marcas.id"), nullable=True)
     proveedor_id = Column(Integer, ForeignKey("proveedores.id"), nullable=True)
 
-    marca: Marca = relationship("Marca")
-    proveedor: Proveedor = relationship("Proveedor")
+    marca = relationship("Marca")
+    proveedor = relationship("Proveedor")

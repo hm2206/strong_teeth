@@ -25,9 +25,9 @@ class Usuario(Base):
     password = Column(String(255), nullable=False)
     role = Column(Enum(UsuarioRoleEnum), nullable=False)
     estado = Column(Boolean, nullable=False, default=True)
-    persona_id = Column(Integer, ForeignKey("personas.id"), nullable=False)
+    persona_id = Column(Integer, ForeignKey("personas.id"))
 
-    persona = relationship("Persona")
+    persona = relationship("Persona", back_populates="usuario")
 
     def set_password(self, password: str):
         password_hashed = bcrypt.hashpw(
