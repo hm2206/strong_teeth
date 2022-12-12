@@ -16,7 +16,7 @@
         "documentation": {}
     },
     {
-        "label": "Column",
+        "label": "asc",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -24,47 +24,7 @@
         "documentation": {}
     },
     {
-        "label": "UniqueConstraint",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Integer",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "ForeignKey",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Date",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Time",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Enum",
+        "label": "desc",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -185,6 +145,70 @@
     },
     {
         "label": "Time",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Date",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -1288,7 +1312,7 @@
         "documentation": {}
     },
     {
-        "label": "session",
+        "label": "Base",
         "importPath": "configs.db",
         "description": "configs.db",
         "isExtraImport": true,
@@ -1384,11 +1408,11 @@
         "documentation": {}
     },
     {
-        "label": "Persona",
-        "importPath": "models.persona",
-        "description": "models.persona",
+        "label": "session",
+        "importPath": "configs.db",
+        "description": "configs.db",
         "isExtraImport": true,
-        "detail": "models.persona",
+        "detail": "configs.db",
         "documentation": {}
     },
     {
@@ -1584,14 +1608,6 @@
         "documentation": {}
     },
     {
-        "label": "Proveedor",
-        "importPath": "models.proveedor",
-        "description": "models.proveedor",
-        "isExtraImport": true,
-        "detail": "models.proveedor",
-        "documentation": {}
-    },
-    {
         "label": "Producto",
         "importPath": "models.producto",
         "description": "models.producto",
@@ -1613,6 +1629,22 @@
         "description": "models.producto",
         "isExtraImport": true,
         "detail": "models.producto",
+        "documentation": {}
+    },
+    {
+        "label": "Producto",
+        "importPath": "models.producto",
+        "description": "models.producto",
+        "isExtraImport": true,
+        "detail": "models.producto",
+        "documentation": {}
+    },
+    {
+        "label": "Tratamiento",
+        "importPath": "models.tratamiento",
+        "description": "models.tratamiento",
+        "isExtraImport": true,
+        "detail": "models.tratamiento",
         "documentation": {}
     },
     {
@@ -1736,11 +1768,11 @@
         "documentation": {}
     },
     {
-        "label": "Agenda",
-        "importPath": "models.agenda",
-        "description": "models.agenda",
+        "label": "Doctor",
+        "importPath": "models.doctor",
+        "description": "models.doctor",
         "isExtraImport": true,
-        "detail": "models.agenda",
+        "detail": "models.doctor",
         "documentation": {}
     },
     {
@@ -1805,6 +1837,14 @@
         "description": "models.paciente",
         "isExtraImport": true,
         "detail": "models.paciente",
+        "documentation": {}
+    },
+    {
+        "label": "Odontograma",
+        "importPath": "models.odontograma",
+        "description": "models.odontograma",
+        "isExtraImport": true,
+        "detail": "models.odontograma",
         "documentation": {}
     },
     {
@@ -1909,6 +1949,14 @@
         "description": "models.usuario",
         "isExtraImport": true,
         "detail": "models.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "Historia",
+        "importPath": "models.historia",
+        "description": "models.historia",
+        "isExtraImport": true,
+        "detail": "models.historia",
         "documentation": {}
     },
     {
@@ -1957,6 +2005,54 @@
         "description": "models.cita",
         "isExtraImport": true,
         "detail": "models.cita",
+        "documentation": {}
+    },
+    {
+        "label": "Cita",
+        "importPath": "models.cita",
+        "description": "models.cita",
+        "isExtraImport": true,
+        "detail": "models.cita",
+        "documentation": {}
+    },
+    {
+        "label": "CitaEstadoEnum",
+        "importPath": "models.cita",
+        "description": "models.cita",
+        "isExtraImport": true,
+        "detail": "models.cita",
+        "documentation": {}
+    },
+    {
+        "label": "CitaOdontograma",
+        "importPath": "models.cita_odontograma",
+        "description": "models.cita_odontograma",
+        "isExtraImport": true,
+        "detail": "models.cita_odontograma",
+        "documentation": {}
+    },
+    {
+        "label": "CitaOdontograma",
+        "importPath": "models.cita_odontograma",
+        "description": "models.cita_odontograma",
+        "isExtraImport": true,
+        "detail": "models.cita_odontograma",
+        "documentation": {}
+    },
+    {
+        "label": "CitaProducto",
+        "importPath": "models.cita_producto",
+        "description": "models.cita_producto",
+        "isExtraImport": true,
+        "detail": "models.cita_producto",
+        "documentation": {}
+    },
+    {
+        "label": "CitaProducto",
+        "importPath": "models.cita_producto",
+        "description": "models.cita_producto",
+        "isExtraImport": true,
+        "detail": "models.cita_producto",
         "documentation": {}
     },
     {
@@ -2392,6 +2488,14 @@
         "documentation": {}
     },
     {
+        "label": "QAbstractItemModel",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
         "label": "QObject",
         "importPath": "PyQt5.QtCore",
         "description": "PyQt5.QtCore",
@@ -2712,7 +2816,31 @@
         "documentation": {}
     },
     {
-        "label": "QLineEdit",
+        "label": "QListWidget",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QListWidgetItem",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDoubleSpinBox",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTextEdit",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
         "isExtraImport": true,
@@ -2721,6 +2849,22 @@
     },
     {
         "label": "QComboBox",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDateEdit",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTimeEdit",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
         "isExtraImport": true,
@@ -3960,6 +4104,14 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "date",
         "importPath": "datetime",
         "description": "datetime",
@@ -3992,19 +4144,11 @@
         "documentation": {}
     },
     {
-        "label": "ProveedorFrame",
-        "importPath": "screens.proveedor_frame",
-        "description": "screens.proveedor_frame",
+        "label": "PacienteFrame",
+        "importPath": "screens.paciente_frame",
+        "description": "screens.paciente_frame",
         "isExtraImport": true,
-        "detail": "screens.proveedor_frame",
-        "documentation": {}
-    },
-    {
-        "label": "ProveedorFrame",
-        "importPath": "screens.proveedor_frame",
-        "description": "screens.proveedor_frame",
-        "isExtraImport": true,
-        "detail": "screens.proveedor_frame",
+        "detail": "screens.paciente_frame",
         "documentation": {}
     },
     {
@@ -4029,6 +4173,30 @@
         "description": "sqlalchemy.orm.collections",
         "isExtraImport": true,
         "detail": "sqlalchemy.orm.collections",
+        "documentation": {}
+    },
+    {
+        "label": "InstrumentedList",
+        "importPath": "sqlalchemy.orm.collections",
+        "description": "sqlalchemy.orm.collections",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm.collections",
+        "documentation": {}
+    },
+    {
+        "label": "estado_to_str",
+        "importPath": "utils.cita_util",
+        "description": "utils.cita_util",
+        "isExtraImport": true,
+        "detail": "utils.cita_util",
+        "documentation": {}
+    },
+    {
+        "label": "str_to_estado",
+        "importPath": "utils.cita_util",
+        "description": "utils.cita_util",
+        "isExtraImport": true,
+        "detail": "utils.cita_util",
         "documentation": {}
     },
     {
@@ -4061,6 +4229,14 @@
         "description": "screens.producto_frame",
         "isExtraImport": true,
         "detail": "screens.producto_frame",
+        "documentation": {}
+    },
+    {
+        "label": "ProveedorFrame",
+        "importPath": "screens.proveedor_frame",
+        "description": "screens.proveedor_frame",
+        "isExtraImport": true,
+        "detail": "screens.proveedor_frame",
         "documentation": {}
     },
     {
@@ -4345,7 +4521,7 @@
         "kind": 6,
         "importPath": "dialogs.paciente_cita_dialog",
         "description": "dialogs.paciente_cita_dialog",
-        "peekOfCode": "class PacienteCitaDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    def __init__(self, app: App, parent: ProveedorFrame, title=\"\"):\n        super(PacienteCitaDialog, self).__init__(parent=parent)\n        uic.loadUi(\"ui/paciente_cita_dialog.ui\", self)\n        self._app = app\n        self._frm_parent = parent\n        self.entity = Proveedor()\n        self.lbl_title.setText(title)",
+        "peekOfCode": "class PacienteCitaDialog(QDialog):\n    lbl_title: QLabel\n    btn_save: QPushButton\n    btn_nuevo: QPushButton\n    btn_cancelar: QPushButton\n    cmb_info_cita: QComboBox\n    date_fecha: QDateEdit\n    time_hora: QTimeEdit\n    cmb_doctor: QComboBox\n    cmb_tratamiento: QComboBox",
         "detail": "dialogs.paciente_cita_dialog",
         "documentation": {}
     },
@@ -4449,24 +4625,6 @@
         "documentation": {}
     },
     {
-        "label": "AgendaEstadoEnum",
-        "kind": 6,
-        "importPath": "models.agenda",
-        "description": "models.agenda",
-        "peekOfCode": "class AgendaEstadoEnum(EnumLocal):\n    Pendiente = \"Pendiente\"\nclass Agenda(Base):\n    __tablename__ = 'agendas'\n    __table_args__ = (\n        UniqueConstraint('fecha', 'hora', 'doctor_id', name=\"u_agenda\"),\n    )\n    id = Column(Integer, primary_key=True)\n    fecha = Column(Date, nullable=False)\n    hora = Column(Time, nullable=False)",
-        "detail": "models.agenda",
-        "documentation": {}
-    },
-    {
-        "label": "Agenda",
-        "kind": 6,
-        "importPath": "models.agenda",
-        "description": "models.agenda",
-        "peekOfCode": "class Agenda(Base):\n    __tablename__ = 'agendas'\n    __table_args__ = (\n        UniqueConstraint('fecha', 'hora', 'doctor_id', name=\"u_agenda\"),\n    )\n    id = Column(Integer, primary_key=True)\n    fecha = Column(Date, nullable=False)\n    hora = Column(Time, nullable=False)\n    estado = Column(Enum(AgendaEstadoEnum), nullable=False)\n    doctor_id = Column(Integer, ForeignKey(\"doctores.id\"), nullable=False)",
-        "detail": "models.agenda",
-        "documentation": {}
-    },
-    {
         "label": "Alergia",
         "kind": 6,
         "importPath": "models.alergia",
@@ -4494,12 +4652,39 @@
         "documentation": {}
     },
     {
+        "label": "CitaEstadoEnum",
+        "kind": 6,
+        "importPath": "models.cita",
+        "description": "models.cita",
+        "peekOfCode": "class CitaEstadoEnum(EnumLocal):\n    Pendiente = \"Pendiente\"\n    Proceso = \"Proceso\"\n    Finalizado = \"Finalizado\"\nclass Cita(Base):\n    __tablename__ = \"citas\"\n    id = Column(Integer, primary_key=True)\n    fecha = Column(Date, nullable=False)\n    hora = Column(Time, nullable=False)\n    doctor_id = Column(Integer, ForeignKey(\"doctores.id\"), nullable=False)",
+        "detail": "models.cita",
+        "documentation": {}
+    },
+    {
         "label": "Cita",
         "kind": 6,
         "importPath": "models.cita",
         "description": "models.cita",
-        "peekOfCode": "class Cita(Base):\n    __tablename__ = \"citas\"\n    id = Column(Integer, primary_key=True)\n    asistencia = Column(Time, nullable=False)\n    abono = Column(Float, nullable=False, default=0)\n    descripcion = Column(Text, nullable=True)\n    agenda_id = Column(Integer, ForeignKey(\"agendas.id\"), nullable=False)\n    tratamiento_id = Column(Integer, ForeignKey(\n        \"tratamientos.id\"), nullable=False)\n    paciente_id = Column(Integer, ForeignKey(\"pacientes.id\"), nullable=False)",
+        "peekOfCode": "class Cita(Base):\n    __tablename__ = \"citas\"\n    id = Column(Integer, primary_key=True)\n    fecha = Column(Date, nullable=False)\n    hora = Column(Time, nullable=False)\n    doctor_id = Column(Integer, ForeignKey(\"doctores.id\"), nullable=False)\n    paciente_id = Column(Integer, ForeignKey(\"pacientes.id\"), nullable=False)\n    estado = Column(Enum(CitaEstadoEnum), nullable=False)\n    detalles = Column(Text, nullable=True)\n    tratamiento_id = Column(Integer, ForeignKey(\"tratamientos.id\"))",
         "detail": "models.cita",
+        "documentation": {}
+    },
+    {
+        "label": "CitaOdontograma",
+        "kind": 6,
+        "importPath": "models.cita_odontograma",
+        "description": "models.cita_odontograma",
+        "peekOfCode": "class CitaOdontograma(Base):\n    __tablename__ = 'cita_odontogramas'\n    cita_id = Column(Integer, ForeignKey(\"citas.id\"), primary_key=True)\n    producto_id = Column(Integer, ForeignKey(\n        \"odontogramas.id\"), primary_key=True)",
+        "detail": "models.cita_odontograma",
+        "documentation": {}
+    },
+    {
+        "label": "CitaProducto",
+        "kind": 6,
+        "importPath": "models.cita_producto",
+        "description": "models.cita_producto",
+        "peekOfCode": "class CitaProducto(Base):\n    __tablename__ = 'cita_productos'\n    cita_id = Column(Integer, ForeignKey(\"citas.id\"), primary_key=True)\n    producto_id = Column(Integer, ForeignKey(\"productos.id\"), primary_key=True)",
+        "detail": "models.cita_producto",
         "documentation": {}
     },
     {
@@ -4534,7 +4719,7 @@
         "kind": 6,
         "importPath": "models.doctor",
         "description": "models.doctor",
-        "peekOfCode": "class Doctor(Base):\n    __tablename__ = 'doctores'\n    id = Column(Integer, primary_key=True)\n    cmp = Column(String(10), nullable=False)\n    trabajador_id = Column(Integer, ForeignKey(\"trabajadores.id\"))\n    trabajador = relationship(\"Trabajador\", back_populates=\"doctor\")",
+        "peekOfCode": "class Doctor(Base):\n    __tablename__ = 'doctores'\n    id = Column(Integer, primary_key=True)\n    cmp = Column(String(10), nullable=False)\n    trabajador_id = Column(Integer, ForeignKey(\"trabajadores.id\"))\n    trabajador = relationship(\"Trabajador\", back_populates=\"doctor\")\n    citas = relationship(\"Cita\", back_populates=\"doctor\")\n    def display_info(self):\n        return self.trabajador.persona.display_info()",
         "detail": "models.doctor",
         "documentation": {}
     },
@@ -4588,7 +4773,7 @@
         "kind": 6,
         "importPath": "models.paciente",
         "description": "models.paciente",
-        "peekOfCode": "class Paciente(Base):\n    __tablename__ = 'pacientes'\n    id = Column(Integer, primary_key=True)\n    condicion = Column(Enum(PacienteCondicionEnum), nullable=True)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    persona = relationship(\"Persona\")\n    alergias = relationship(\n        \"Alergia\", secondary=\"paciente_alergias\", back_populates=\"pacientes\", lazy='dynamic', passive_deletes=True)",
+        "peekOfCode": "class Paciente(Base):\n    __tablename__ = 'pacientes'\n    id = Column(Integer, primary_key=True)\n    condicion = Column(Enum(PacienteCondicionEnum), nullable=True)\n    persona_id = Column(Integer, ForeignKey(\"personas.id\"),\n                        nullable=False, unique=True)\n    persona = relationship(\"Persona\")\n    citas = relationship(\"Cita\", back_populates=\"paciente\")\n    alergias = relationship(\n        \"Alergia\", secondary=\"paciente_alergias\", back_populates=\"pacientes\", lazy='dynamic', passive_deletes=True)",
         "detail": "models.paciente",
         "documentation": {}
     },
@@ -4678,7 +4863,7 @@
         "kind": 6,
         "importPath": "models.tratamiento",
         "description": "models.tratamiento",
-        "peekOfCode": "class Tratamiento(Base):\n    __tablename__ = 'tratamientos'\n    id = Column(Integer, primary_key=True)\n    nombre = Column(String(100), nullable=False, unique=True)\n    descripcion = Column(Text, nullable=True)\n    precio = Column(Float, nullable=False, default=0)",
+        "peekOfCode": "class Tratamiento(Base):\n    __tablename__ = 'tratamientos'\n    id = Column(Integer, primary_key=True)\n    nombre = Column(String(100), nullable=False, unique=True)\n    descripcion = Column(Text, nullable=True)\n    precio = Column(Float, nullable=False, default=0)\n    citas = relationship(\"Cita\", back_populates=\"tratamiento\")\n    def display_info(self):\n        return self.nombre",
         "detail": "models.tratamiento",
         "documentation": {}
     },
@@ -4741,7 +4926,7 @@
         "kind": 6,
         "importPath": "screens.paciente_frame",
         "description": "screens.paciente_frame",
-        "peekOfCode": "class PacienteFrame(QFrame):\n    table: QTableWidget\n    btn_plus: QPushButton\n    frm_footer: QFrame\n    lbl_selected: QLabel\n    btn_cita: QPushButton\n    btn_historia: QPushButton\n    btn_odontograma: QPushButton\n    btn_tratamiento: QPushButton\n    current_pacient: Paciente",
+        "peekOfCode": "class PacienteFrame(QFrame):\n    table: QTableWidget\n    btn_plus: QPushButton\n    frm_footer: QFrame\n    lbl_selected: QLabel\n    btn_cita: QPushButton\n    btn_historia: QPushButton\n    btn_odontograma: QPushButton\n    current_pacient: Paciente\n    def __init__(self, app: App, parent=None):",
         "detail": "screens.paciente_frame",
         "documentation": {}
     },
@@ -4806,6 +4991,24 @@
         "description": "screens.usuario_frame",
         "peekOfCode": "class UsuarioFrame(QFrame):\n    table: QTableWidget\n    btn_plus: QPushButton\n    def __init__(self, app: App, parent=None):\n        super(UsuarioFrame, self).__init__(parent=parent)\n        uic.loadUi(\"ui/usuario_frame.ui\", self)\n        self._app = app\n        self.btn_plus.clicked.connect(self.action_create)\n        self.table.doubleClicked.connect(self.action_edit)\n    def showEvent(self, evt: QShowEvent):",
         "detail": "screens.usuario_frame",
+        "documentation": {}
+    },
+    {
+        "label": "estado_to_str",
+        "kind": 2,
+        "importPath": "utils.cita_util",
+        "description": "utils.cita_util",
+        "peekOfCode": "def estado_to_str(value: CitaEstadoEnum):\n    data = {\n        CitaEstadoEnum.Pendiente: \"Pendiente\",\n        CitaEstadoEnum.Proceso: \"Proceso\",\n        CitaEstadoEnum.Finalizado: \"Finalizado\"\n    }\n    return data[value]\ndef str_to_estado(value: str):\n    data = {\n        \"Pendiente\": CitaEstadoEnum.Pendiente,",
+        "detail": "utils.cita_util",
+        "documentation": {}
+    },
+    {
+        "label": "str_to_estado",
+        "kind": 2,
+        "importPath": "utils.cita_util",
+        "description": "utils.cita_util",
+        "peekOfCode": "def str_to_estado(value: str):\n    data = {\n        \"Pendiente\": CitaEstadoEnum.Pendiente,\n        \"Proceso\": CitaEstadoEnum.Proceso,\n        \"Finalizado\": CitaEstadoEnum.Finalizado\n    }\n    return data[value]",
+        "detail": "utils.cita_util",
         "documentation": {}
     },
     {

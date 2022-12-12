@@ -17,3 +17,8 @@ class Producto(Base):
 
     marca = relationship("Marca")
     proveedor = relationship("Proveedor")
+    citas = relationship("Cita", secondary="cita_productos",
+                         back_populates="productos")
+
+    def display_info(self):
+        return f"{self.nombre} - {self.marca.nombre}"

@@ -12,3 +12,7 @@ class Doctor(Base):
     trabajador_id = Column(Integer, ForeignKey("trabajadores.id"))
 
     trabajador = relationship("Trabajador", back_populates="doctor")
+    citas = relationship("Cita", back_populates="doctor")
+
+    def display_info(self):
+        return self.trabajador.persona.display_info()

@@ -20,3 +20,8 @@ class Odontograma(Base):
 
     historia = relationship("Historia", back_populates="odontogramas")
     condicion = relationship(CondicionDental, back_populates="odontogramas")
+    citas = relationship("Cita", secondary="cita_odontogramas",
+                         back_populates="odontogramas")
+
+    def display_info(self):
+        return f"{self.numero_diente} - {self.condicion.nombre}"

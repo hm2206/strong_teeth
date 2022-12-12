@@ -9,7 +9,6 @@ from models.turno import Turno
 from models.horario import Horario
 from models.trabajador import Trabajador
 from models.doctor import Doctor
-from models.agenda import Agenda
 from models.alergia import Alergia
 from models.paciente import Paciente
 from models.odontograma import Odontograma
@@ -19,6 +18,8 @@ from models.historia import Historia
 from models.paciente_tratamiento import PacienteTratamiento
 from models.asistencia import Asistencia
 from models.cita import Cita
+from models.cita_odontograma import CitaOdontograma
+from models.cita_producto import CitaProducto
 
 
 class Migration:

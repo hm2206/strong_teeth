@@ -18,5 +18,6 @@ class Paciente(Base):
                         nullable=False, unique=True)
 
     persona = relationship("Persona")
+    citas = relationship("Cita", back_populates="paciente")
     alergias = relationship(
         "Alergia", secondary="paciente_alergias", back_populates="pacientes", lazy='dynamic', passive_deletes=True)

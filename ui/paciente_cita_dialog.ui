@@ -139,6 +139,19 @@ QSpinBox {
     border-color: #0097a7;
 	border-radius: 10px;
 	padding: 10px;
+}
+
+QComboBox:disabled {
+    color:  white;
+    border-style:  solid;
+    border-width: 1.5px;
+    border-color: gray;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+QPushButton:disabled {
+    background-color: gray;
 }</string>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,9">
@@ -216,6 +229,9 @@ QSpinBox {
            <layout class="QGridLayout" name="gridLayout_4" columnstretch="8,2">
             <item row="0" column="0">
              <widget class="QGroupBox" name="groupBox_16">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="minimumSize">
                <size>
                 <width>0</width>
@@ -248,16 +264,23 @@ QSpinBox {
                 <number>0</number>
                </property>
                <item>
-                <widget class="QComboBox" name="comboBox"/>
+                <widget class="QComboBox" name="cmb_info_cita">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                </widget>
                </item>
               </layout>
              </widget>
             </item>
             <item row="0" column="1">
              <widget class="QGroupBox" name="groupBox_17">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="minimumSize">
                <size>
-                <width>0</width>
+                <width>300</width>
                 <height>80</height>
                </size>
               </property>
@@ -267,10 +290,16 @@ QSpinBox {
                 <height>80</height>
                </size>
               </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
               <property name="title">
                <string/>
               </property>
-              <widget class="QPushButton" name="pushButton">
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+              <widget class="QPushButton" name="btn_nuevo">
                <property name="geometry">
                 <rect>
                  <x>40</x>
@@ -279,11 +308,45 @@ QSpinBox {
                  <height>41</height>
                 </rect>
                </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
                <property name="styleSheet">
-                <string notr="true">background-color: #4caf50;</string>
+                <string notr="true">QPushButton {
+	background-color: #4caf50;
+}
+
+QPushButton:disabled {
+	background-color: gray;
+}</string>
                </property>
                <property name="text">
                 <string>Nuevo</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="btn_cancelar">
+               <property name="geometry">
+                <rect>
+                 <x>160</x>
+                 <y>30</y>
+                 <width>101</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	background-color: #d32f2f;
+}
+
+QPushButton:disabled {
+	background-color: gray;
+}</string>
+               </property>
+               <property name="text">
+                <string>Cancelar</string>
                </property>
               </widget>
              </widget>
@@ -297,62 +360,6 @@ QSpinBox {
             <string>Detalles</string>
            </property>
            <layout class="QGridLayout" name="gridLayout">
-            <item row="0" column="0">
-             <widget class="QGroupBox" name="groupBox_4">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>70</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>70</height>
-               </size>
-              </property>
-              <property name="title">
-               <string>Fecha</string>
-              </property>
-              <property name="flat">
-               <bool>true</bool>
-              </property>
-              <layout class="QVBoxLayout" name="verticalLayout_5">
-               <property name="spacing">
-                <number>0</number>
-               </property>
-               <property name="sizeConstraint">
-                <enum>QLayout::SetDefaultConstraint</enum>
-               </property>
-               <property name="leftMargin">
-                <number>0</number>
-               </property>
-               <property name="topMargin">
-                <number>0</number>
-               </property>
-               <property name="rightMargin">
-                <number>0</number>
-               </property>
-               <property name="bottomMargin">
-                <number>0</number>
-               </property>
-               <item>
-                <widget class="QDateEdit" name="date_fecha">
-                 <property name="displayFormat">
-                  <string>dd/MM/yyyy</string>
-                 </property>
-                 <property name="date">
-                  <date>
-                   <year>2000</year>
-                   <month>1</month>
-                   <day>19</day>
-                  </date>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </widget>
-            </item>
             <item row="0" column="1">
              <widget class="QGroupBox" name="groupBox_5">
               <property name="minimumSize">
@@ -368,7 +375,7 @@ QSpinBox {
                </size>
               </property>
               <property name="title">
-               <string>Tiempo</string>
+               <string>Hora</string>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_7">
                <property name="spacing">
@@ -431,7 +438,63 @@ QSpinBox {
               </layout>
              </widget>
             </item>
-            <item row="1" column="1">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_4">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="title">
+               <string>Fecha</string>
+              </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="sizeConstraint">
+                <enum>QLayout::SetDefaultConstraint</enum>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QDateEdit" name="date_fecha">
+                 <property name="displayFormat">
+                  <string>dd/MM/yyyy</string>
+                 </property>
+                 <property name="date">
+                  <date>
+                   <year>2000</year>
+                   <month>1</month>
+                   <day>19</day>
+                  </date>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="1">
              <widget class="QGroupBox" name="groupBox_7">
               <property name="minimumSize">
                <size>
@@ -486,6 +549,45 @@ QSpinBox {
               </layout>
              </widget>
             </item>
+            <item row="1" column="1">
+             <widget class="QGroupBox" name="groupBox_9">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>70</height>
+               </size>
+              </property>
+              <property name="title">
+               <string>Tratamiento</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QComboBox" name="cmb_tratamiento"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
            </layout>
           </widget>
          </item>
@@ -497,10 +599,37 @@ QSpinBox {
            <layout class="QVBoxLayout" name="verticalLayout_4" stretch="3,7">
             <item>
              <widget class="QGroupBox" name="groupBox_8">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>100</height>
+               </size>
+              </property>
               <property name="title">
                <string>Detalles</string>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_10">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
                <item>
                 <widget class="QTextEdit" name="txt_detalles"/>
                </item>
@@ -528,27 +657,12 @@ QSpinBox {
                <property name="bottomMargin">
                 <number>0</number>
                </property>
-               <item row="0" column="1">
-                <widget class="QGroupBox" name="groupBox_10">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>70</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>70</height>
-                  </size>
-                 </property>
+               <item row="1" column="1">
+                <widget class="QGroupBox" name="groupBox_12">
                  <property name="title">
-                  <string>N° Unidades</string>
+                  <string>Prescripción</string>
                  </property>
-                 <layout class="QVBoxLayout" name="verticalLayout_11">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_14">
                   <property name="leftMargin">
                    <number>0</number>
                   </property>
@@ -562,46 +676,14 @@ QSpinBox {
                    <number>0</number>
                   </property>
                   <item>
-                   <widget class="QSpinBox" name="input_unidades"/>
+                   <widget class="QComboBox" name="cmb_prescripcion"/>
                   </item>
-                 </layout>
-                </widget>
-               </item>
-               <item row="0" column="0">
-                <widget class="QGroupBox" name="groupBox_9">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>70</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>70</height>
-                  </size>
-                 </property>
-                 <property name="title">
-                  <string>Tratamiento</string>
-                 </property>
-                 <layout class="QVBoxLayout" name="verticalLayout_12">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
                   <item>
-                   <widget class="QComboBox" name="cmb_tratamiento"/>
+                   <widget class="QListWidget" name="list_prescripcion">
+                    <property name="styleSheet">
+                     <string notr="true">color: white;</string>
+                    </property>
+                   </widget>
                   </item>
                  </layout>
                 </widget>
@@ -628,34 +710,11 @@ QSpinBox {
                    <widget class="QComboBox" name="cmb_dientes"/>
                   </item>
                   <item>
-                   <widget class="QListWidget" name="list_dients"/>
-                  </item>
-                 </layout>
-                </widget>
-               </item>
-               <item row="1" column="1">
-                <widget class="QGroupBox" name="groupBox_12">
-                 <property name="title">
-                  <string>Prescripción</string>
-                 </property>
-                 <layout class="QVBoxLayout" name="verticalLayout_14">
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item>
-                   <widget class="QComboBox" name="list_prescripcion"/>
-                  </item>
-                  <item>
-                   <widget class="QListWidget" name="listWidget_2"/>
+                   <widget class="QListWidget" name="list_dientes">
+                    <property name="styleSheet">
+                     <string notr="true">color: white;</string>
+                    </property>
+                   </widget>
                   </item>
                  </layout>
                 </widget>
@@ -706,7 +765,11 @@ QSpinBox {
                 <number>0</number>
                </property>
                <item>
-                <widget class="QDoubleSpinBox" name="dbl_pagado"/>
+                <widget class="QDoubleSpinBox" name="dbl_pagado">
+                 <property name="maximum">
+                  <double>99999.000000000000000</double>
+                 </property>
+                </widget>
                </item>
               </layout>
              </widget>
@@ -745,7 +808,11 @@ QSpinBox {
                 <number>0</number>
                </property>
                <item>
-                <widget class="QDoubleSpinBox" name="dbl_precio"/>
+                <widget class="QDoubleSpinBox" name="dbl_precio">
+                 <property name="maximum">
+                  <double>99999.000000000000000</double>
+                 </property>
+                </widget>
                </item>
               </layout>
              </widget>
@@ -785,6 +852,9 @@ QSpinBox {
                </property>
                <item>
                 <widget class="QPushButton" name="btn_save">
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
                  <property name="text">
                   <string>Guardar</string>
                  </property>

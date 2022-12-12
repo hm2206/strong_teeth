@@ -20,7 +20,6 @@ class PacienteFrame(QFrame):
     btn_cita: QPushButton
     btn_historia: QPushButton
     btn_odontograma: QPushButton
-    btn_tratamiento: QPushButton
 
     current_pacient: Paciente
 
@@ -37,8 +36,12 @@ class PacienteFrame(QFrame):
 
     def dispatch_dialogs(self):
         from dialogs.paciente_odontograma_dialog import PacienteOdontogramaDialog
+        from dialogs.paciente_cita_dialog import PacienteCitaDialog
+
         self.btn_odontograma.clicked.connect(
             lambda x: self.action_dialog(PacienteOdontogramaDialog))
+        self.btn_cita.clicked.connect(
+            lambda x: self.action_dialog(PacienteCitaDialog))
 
     def showEvent(self, evt: QShowEvent):
         self.load()
